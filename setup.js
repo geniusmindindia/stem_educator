@@ -124,7 +124,7 @@ function findPsql() {
     candidates.push(`C:\\Program Files\\PostgreSQL\\${v}\\bin\\psql.exe`);
     candidates.push(`C:\\Program Files (x86)\\PostgreSQL\\${v}\\bin\\psql.exe`);
   }
-  for (const p of candidates) { try { if (fs.existsSync(p)) return `"${p}"`; } catch {} }
+  for (const p of candidates) { try { if (fs.existsSync(p)) return p; } catch {} }
   return null;
 }
 let _psqlCmd = null;
@@ -132,7 +132,11 @@ function checkPostgres() {
   _psqlCmd = findPsql();
   if (_psqlCmd) {
     try {
-      const r = spawnSync(_psqlCmd.replace(/"/g, ''), ['--version'], { encoding: 'utf8', shell: _psqlCmd.includes('"'), windowsHide: true });
+      // No shell: Node's spawnSync handles a path with spaces (e.g. "C:\Program
+      // Files\...") correctly on its own. Wrapping in quotes + shell:true here
+      // used to break it instead - cmd.exe re-tokenized on the space and tried
+      // to run "C:\Program" as the executable.
+      const r = spawnSync(_psqlCmd, ['--version'], { encoding: 'utf8', windowsHide: true });
       if (r.stdout) { ok('PostgreSQL client: ' + r.stdout.trim()); return true; }
       ok('PostgreSQL client found: ' + _psqlCmd);
       return true;
@@ -203,13 +207,12 @@ function ensureDeps() {
 // ---- postgres connection test (validates host/port/user/password BEFORE create) ----
 function testPgConnection(host, port, user, password) {
   try {
-    const psql = _psqlCmd ? _psqlCmd.replace(/"/g, '') : 'psql';
-    const useShell = _psqlCmd ? _psqlCmd.includes('"') : false;
+    const psql = _psqlCmd || 'psql';
     const env = Object.assign({}, process.env, { PGPASSWORD: password });
     const r = spawnSync(
       psql,
       ['-h', host, '-p', String(port), '-U', user, '-d', 'postgres', '-w', '-c', 'SELECT 1;'],
-      { env, encoding: 'utf8', shell: useShell, windowsHide: true, timeout: 10000 }
+      { env, encoding: 'utf8', windowsHide: true, timeout: 10000 }
     );
     if (r.status === 0) return { ok: true };
     if (r.status === null) return { ok: false, error: 'psql timed out (wrong/missing password, or server unreachable)' };
@@ -222,14 +225,13 @@ function testPgConnection(host, port, user, password) {
 
 function dbExists(host, port, user, password, dbName) {
   try {
-    const psql = _psqlCmd ? _psqlCmd.replace(/"/g, '') : 'psql';
-    const useShell = _psqlCmd ? _psqlCmd.includes('"') : false;
+    const psql = _psqlCmd || 'psql';
     const env = Object.assign({}, process.env, { PGPASSWORD: password });
     const q = "SELECT 1 FROM pg_database WHERE datname='" + dbName.replace(/'/g, "''") + "';";
     const r = spawnSync(
       psql,
       ['-h', host, '-p', String(port), '-U', user, '-d', 'postgres', '-w', '-tAc', q],
-      { env, encoding: 'utf8', shell: useShell, windowsHide: true, timeout: 10000 }
+      { env, encoding: 'utf8', windowsHide: true, timeout: 10000 }
     );
     return r.status === 0 && (r.stdout || '').indexOf('1') !== -1;
   } catch (e) { return false; }
@@ -238,13 +240,12 @@ function dbExists(host, port, user, password, dbName) {
 // ---- database creation ----
 function createDatabase(host, port, user, password, dbName) {
   try {
-    const psql = _psqlCmd ? _psqlCmd.replace(/"/g, '') : 'psql';
-    const useShell = _psqlCmd ? _psqlCmd.includes('"') : false;
+    const psql = _psqlCmd || 'psql';
     const env = Object.assign({}, process.env, { PGPASSWORD: password });
     const r = spawnSync(
       psql,
       ['-h', host, '-p', String(port), '-U', user, '-w', '-c', `CREATE DATABASE "${dbName}";`],
-      { env, encoding: 'utf8', shell: useShell, windowsHide: true, timeout: 10000 }
+      { env, encoding: 'utf8', windowsHide: true, timeout: 10000 }
     );
     if (r.status === 0 || (r.stderr && r.stderr.includes('already exists'))) {
       ok(`Database "${dbName}" ready`);
