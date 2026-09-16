@@ -27,7 +27,7 @@ import DeletionRestorer from '../../containers/deletion-restorer.jsx';
 import TurboMode from '../../containers/turbo-mode.jsx';
 import MenuBarHOC from '../../containers/menu-bar-hoc.jsx';
 import SettingsMenu from './settings-menu.jsx';
-import {getHwApiBase} from '../../lib/tw-hardware-agent';
+import {getHwApiBase, isLocalhost} from '../../lib/tw-hardware-agent';
 import {openWebSerialConnection} from '../../lib/web-serial-connection';
 
 import FramerateChanger from '../../containers/tw-framerate-changer.jsx';
@@ -1451,7 +1451,17 @@ class MenuBar extends React.Component {
                                             />
                                             {'Bluetooth'}
                                         </div>
-                                        {typeof navigator !== 'undefined' && !navigator.serial && (
+                                        {/*
+                                            Web Serial only ever helps with LIVE control (Phase 1) - it
+                                            has no bearing on compiling/flashing code, which the cloud
+                                            backend (Render etc.) can never do at all (wrong OS/arch for
+                                            the bundled Windows avrdude/arduino-cli - not just "missing").
+                                            So the agent is still required on the cloud-hosted site
+                                            regardless of browser; only hide this when BOTH Web Serial is
+                                            supported AND the page's own backend can already do everything
+                                            itself (i.e. we're running locally).
+                                        */}
+                                        {!(typeof navigator !== 'undefined' && navigator.serial && isLocalhost()) && (
                                             <a
                                                 className={styles.hwConnectItem}
                                                 // Bump ?v=N every time downloads/hardware-agent.zip is

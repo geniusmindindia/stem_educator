@@ -56,4 +56,4 @@ export async function isUsingLocalAgent () {
     return base.indexOf(LOCAL_AGENT_ORIGIN) === 0;
 }
 
-export {LOCAL_AGENT_ORIGIN};
+export {LOCAL_AGENT_ORIGIN, isLocalhost};

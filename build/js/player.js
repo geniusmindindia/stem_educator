@@ -15220,7 +15220,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       draggable: false,
       width: 16,
       height: 16
-    }), 'Bluetooth'), typeof navigator !== 'undefined' && !navigator.serial && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+    }), 'Bluetooth'), !(typeof navigator !== 'undefined' && navigator.serial && Object(_lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_27__["isLocalhost"])()) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectItem
       // Bump ?v=N every time downloads/hardware-agent.zip is
       // rebuilt - a browser that cached an old download won't
@@ -47343,7 +47343,7 @@ const TWFullScreenResizerHOC = function TWFullScreenResizerHOC(WrappedComponent)
 /*!**************************************!*\
   !*** ./src/lib/tw-hardware-agent.js ***!
   \**************************************/
-/*! exports provided: getHwApiBase, isUsingLocalAgent, LOCAL_AGENT_ORIGIN */
+/*! exports provided: getHwApiBase, isUsingLocalAgent, LOCAL_AGENT_ORIGIN, isLocalhost */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47351,6 +47351,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getHwApiBase", function() { return getHwApiBase; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isUsingLocalAgent", function() { return isUsingLocalAgent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOCAL_AGENT_ORIGIN", function() { return LOCAL_AGENT_ORIGIN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isLocalhost", function() { return isLocalhost; });
 /**
  * Resolves which backend should handle serial/compile/upload requests.
  *
