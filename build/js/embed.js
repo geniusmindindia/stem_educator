@@ -14047,7 +14047,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       draggable: false,
       width: 16,
       height: 16
-    }), 'Bluetooth'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+    }), 'Bluetooth'), typeof navigator !== 'undefined' && !navigator.serial && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectItem
       // Bump ?v=N every time downloads/hardware-agent.zip is
       // rebuilt - a browser that cached an old download won't

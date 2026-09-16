@@ -1451,24 +1451,26 @@ class MenuBar extends React.Component {
                                             />
                                             {'Bluetooth'}
                                         </div>
-                                        <a
-                                            className={styles.hwConnectItem}
-                                            // Bump ?v=N every time downloads/hardware-agent.zip is
-                                            // rebuilt - a browser that cached an old download won't
-                                            // otherwise notice the file changed (no-store header on
-                                            // the route helps, but this guarantees a fresh fetch).
-                                            href="/downloads/hardware-agent.zip?v=2"
-                                            title="On the cloud-hosted app? The server has no USB access - download this small local helper to connect your Arduino."
-                                            style={{display: 'block', textDecoration: 'none', borderTop: '1px solid rgba(0,0,0,0.08)'}}
-                                        >
-                                            <img
-                                                src={usbIcon}
-                                                draggable={false}
-                                                width={16}
-                                                height={16}
-                                            />
-                                            {'Get Hardware Agent'}
-                                        </a>
+                                        {typeof navigator !== 'undefined' && !navigator.serial && (
+                                            <a
+                                                className={styles.hwConnectItem}
+                                                // Bump ?v=N every time downloads/hardware-agent.zip is
+                                                // rebuilt - a browser that cached an old download won't
+                                                // otherwise notice the file changed (no-store header on
+                                                // the route helps, but this guarantees a fresh fetch).
+                                                href="/downloads/hardware-agent.zip?v=2"
+                                                title="On the cloud-hosted app? The server has no USB access - download this small local helper to connect your Arduino."
+                                                style={{display: 'block', textDecoration: 'none', borderTop: '1px solid rgba(0,0,0,0.08)'}}
+                                            >
+                                                <img
+                                                    src={usbIcon}
+                                                    draggable={false}
+                                                    width={16}
+                                                    height={16}
+                                                />
+                                                {'Get Hardware Agent'}
+                                            </a>
+                                        )}
                                     </div>
                                 </React.Fragment>
                             )}
