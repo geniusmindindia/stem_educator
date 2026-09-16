@@ -521,10 +521,16 @@ class MenuBar extends React.Component {
         openWebSerialConnection(webSerialPort, {baudRate: 115200}).then(function(conn) {
             self.activateWebSerialConnection(conn, board, skipLoad);
         }).catch(function() {
+            // Defense in depth: openWebSerialConnection() already closes the
+            // port on its own internal failures, but if it's still open here
+            // for any other reason, release it now so the agent fallback
+            // below doesn't hit "Access denied" trying to open the same port.
+            try { if (webSerialPort.readable) { webSerialPort.close().catch(function(){}); } } catch (e) {}
             self.autoConnectViaAgent(webSerialPort, board, title, skipLoad);
         });
     }
     activateWebSerialConnection(conn, board, skipLoad) {
+        var self = this;
         var boardObj = board || this.state.hwSelectedBoard;
         window.STEMWebSerial = {
             available: true,
@@ -532,6 +538,12 @@ class MenuBar extends React.Component {
             writeCmdWait: conn.writeCmdWait
         };
         window.__hardwareConnection = {
+            // Web Serial deliberately doesn't expose the OS-level COM path
+            // (privacy) - 'USB' is a display-only placeholder. It gets
+            // upgraded to a real path below if the agent/backend can resolve
+            // one, since firmware upload/"Upload Code" still shells out to
+            // avrdude/arduino-cli (Phase 2, not built yet) and needs a real
+            // port, not this placeholder.
             port: 'USB',
             id: null,
             webSerial: true,
@@ -551,6 +563,22 @@ class MenuBar extends React.Component {
             const url = `${window.location.origin}/${boardObj.file}.js`;
             this.props.vm.extensionManager.loadExtensionURL(url)
                 .catch(function(e){alert('Extension load error: '+e.message);});
+        }
+        var info = conn.port.getInfo ? conn.port.getInfo() : {};
+        var vid = info && info.usbVendorId ? info.usbVendorId.toString(16).toUpperCase() : null;
+        var pid = info && info.usbProductId ? info.usbProductId.toString(16).toUpperCase() : null;
+        if (vid) {
+            self.hwFetch('/serial/ports').then(function(r){return r.json();}).then(function(data){
+                var ports = (data && data.ports) || [];
+                var match = ports.find(function(p) {
+                    return p.vendorId && p.vendorId.toUpperCase() === vid &&
+                        (!pid || (p.productId && p.productId.toUpperCase() === pid));
+                });
+                if (match && window.__hardwareConnection && window.__hardwareConnection.webSerial) {
+                    window.__hardwareConnection.port = match.path;
+                    self.setState({hwConnectedPort: match.path + ' (direct)'});
+                }
+            }).catch(function(){ /* agent/backend unreachable - firmware upload stays unavailable until Phase 2; live control is unaffected */ });
         }
     }
     autoConnectViaAgent(webSerialPort, board, title, skipLoad) {

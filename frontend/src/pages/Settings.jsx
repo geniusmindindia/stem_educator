@@ -102,10 +102,12 @@ export default function Settings() {
   const handleSave = async () => {
     setSaving(true);
     try {
+      // Logo/favicon are NOT sent here - /tenant/logo and /tenant/favicon
+      // already save them immediately on upload, and this endpoint is
+      // Super-Admin-only, so re-sending them here would just 403 for
+      // anyone else and make an already-successful upload look like it failed.
       await api.patch('/tenant/settings', {
         customDomain,
-        logo_url: logoUrl,
-        favicon_url: faviconUrl,
         config: {
           customDomain,
         }

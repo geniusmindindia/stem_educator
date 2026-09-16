@@ -11,13 +11,24 @@
 export async function openWebSerialConnection (port, {baudRate = 115200} = {}) {
     await port.open({baudRate});
 
-    const textEncoder = new TextEncoderStream();
-    const writableClosed = textEncoder.readable.pipeTo(port.writable).catch(() => {});
-    const writer = textEncoder.writable.getWriter();
+    // From here on the OS-level port is claimed by this tab - if anything
+    // below throws, we MUST close it before rethrowing. Otherwise the
+    // caller's fallback to the agent (or a retry) finds the port stuck
+    // "Access denied", since Chrome is still holding it with nothing to
+    // show for it.
+    let textEncoder, writableClosed, writer, textDecoder, readableClosed, reader;
+    try {
+        textEncoder = new TextEncoderStream();
+        writableClosed = textEncoder.readable.pipeTo(port.writable).catch(() => {});
+        writer = textEncoder.writable.getWriter();
 
-    const textDecoder = new TextDecoderStream();
-    const readableClosed = port.readable.pipeTo(textDecoder.writable).catch(() => {});
-    const reader = textDecoder.readable.getReader();
+        textDecoder = new TextDecoderStream();
+        readableClosed = port.readable.pipeTo(textDecoder.writable).catch(() => {});
+        reader = textDecoder.readable.getReader();
+    } catch (e) {
+        try { await port.close(); } catch (e2) { /* ignore */ }
+        throw e;
+    }
 
     let lineBuffer = '';
     let pending = null; // {resolve, timer} - the one in-flight ack/response we're waiting on

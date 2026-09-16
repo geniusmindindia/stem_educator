@@ -179,13 +179,15 @@
     }
 
     onStart() {
+      // Report connection state only - must NOT trigger a connect flow here.
+      // This hat has shouldRestartExistingThreads:true, so Scratch/TurboWarp
+      // re-fires it on ANY workspace edit (dragging any block anywhere in
+      // the project), not just pressing the green flag. Calling
+      // scanAndConnect() from here popped a serial-port picker on every drag.
       var self = this;
       self._started = true;
       var existingId = getDeviceId(this._deviceId);
-      if (!existingId) {
-        self.scanAndConnect();
-        return false;
-      }
+      if (!existingId) return false;
       self._deviceId = existingId;
       self._connected = true;
       return true;
