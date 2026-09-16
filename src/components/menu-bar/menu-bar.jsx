@@ -28,6 +28,7 @@ import TurboMode from '../../containers/turbo-mode.jsx';
 import MenuBarHOC from '../../containers/menu-bar-hoc.jsx';
 import SettingsMenu from './settings-menu.jsx';
 import {getHwApiBase} from '../../lib/tw-hardware-agent';
+import {openWebSerialConnection} from '../../lib/web-serial-connection';
 
 import FramerateChanger from '../../containers/tw-framerate-changer.jsx';
 import ChangeUsername from '../../containers/tw-change-username.jsx';
@@ -269,6 +270,8 @@ class MenuBar extends React.Component {
             'handleRefreshPorts',
             'fetchAndShowPorts',
             'tryAutoConnect',
+            'activateWebSerialConnection',
+            'autoConnectViaAgent',
             'handleShowPortPicker',
             'handleAuthChanged',
             'handleAuthMenuToggle',
@@ -511,6 +514,47 @@ class MenuBar extends React.Component {
     }
     tryAutoConnect(webSerialPort, board, title, skipLoad) {
         var self = this;
+        // Try talking to the board directly over Web Serial first - if the
+        // browser can open it, no local agent is needed at all for live
+        // control. Only fall back to the agent-dependent flow (which needs
+        // the agent running to list/open the OS-level COM port) if that fails.
+        openWebSerialConnection(webSerialPort, {baudRate: 115200}).then(function(conn) {
+            self.activateWebSerialConnection(conn, board, skipLoad);
+        }).catch(function() {
+            self.autoConnectViaAgent(webSerialPort, board, title, skipLoad);
+        });
+    }
+    activateWebSerialConnection(conn, board, skipLoad) {
+        var boardObj = board || this.state.hwSelectedBoard;
+        window.STEMWebSerial = {
+            available: true,
+            writeCmd: conn.writeCmd,
+            writeCmdWait: conn.writeCmdWait
+        };
+        window.__hardwareConnection = {
+            port: 'USB',
+            id: null,
+            webSerial: true,
+            sendCommand: function (str) { return conn.writeRaw(str); },
+            disconnect: function () {
+                window.STEMWebSerial = null;
+                return conn.close().catch(function(){});
+            }
+        };
+        this.setState({
+            hwConnectedPort: 'USB (direct)',
+            hwPortPickerOpen: false,
+            hwPortPickerSuffix: '',
+            hwSerialPort: conn.port
+        });
+        if (!skipLoad && boardObj && boardObj.file) {
+            const url = `${window.location.origin}/${boardObj.file}.js`;
+            this.props.vm.extensionManager.loadExtensionURL(url)
+                .catch(function(e){alert('Extension load error: '+e.message);});
+        }
+    }
+    autoConnectViaAgent(webSerialPort, board, title, skipLoad) {
+        var self = this;
         var info = webSerialPort.getInfo ? webSerialPort.getInfo() : {};
         var vid = info && info.usbVendorId ? info.usbVendorId.toString(16).toUpperCase() : null;
         var pid = info && info.usbProductId ? info.usbProductId.toString(16).toUpperCase() : null;
@@ -533,9 +577,9 @@ class MenuBar extends React.Component {
                     hwPortPickerBoard: board
                 });
             } else {
-                alert('No serial ports found. Make sure your Arduino is connected.');
+                alert('No serial ports found. Make sure your Arduino is connected, or install the Hardware Agent for full support.');
             }
-        }).catch(function(){alert('Failed to fetch serial ports.');});
+        }).catch(function(){alert('Failed to fetch serial ports. If you\'re not running the Hardware Agent, make sure your browser supports Web Serial (Chrome/Edge) and try connecting again.');});
     }
     fetchAndShowPorts (board, title, suffix) {
         var self = this;
@@ -778,13 +822,19 @@ class MenuBar extends React.Component {
             }));
     }
     handleDisconnect () {
-        if (this.state.hwSerialPort) {
+        if (window.__hardwareConnection && window.__hardwareConnection.disconnect) {
+            // Properly releases the Web Serial reader/writer locks before
+            // closing the port - closing it directly (as below) would throw
+            // since the streams are still piped through TextEncoder/DecoderStream.
+            window.__hardwareConnection.disconnect().catch(function(){});
+        } else if (this.state.hwSerialPort) {
             this.state.hwSerialPort.close()
                 .catch(() => {});
         }
         if (window.__hardwareConnection && window.__hardwareConnection.id) {
             this.hwFetch('/serial/disconnect/' + window.__hardwareConnection.id, {method: 'POST'}).catch(function(){});
         }
+        window.STEMWebSerial = null;
         window.__hardwareConnection = null;
         this.setState({hwConnectedPort: null, hwSerialPort: null});
     }

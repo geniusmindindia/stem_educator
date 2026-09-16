@@ -82,10 +82,18 @@
   }
 
   function doSend(deviceId, cmd) {
+    // Prefer talking straight to the board over Web Serial - no local agent
+    // needed once it's already flashed with the interpreter firmware.
+    if (window.STEMWebSerial && window.STEMWebSerial.available) {
+      return window.STEMWebSerial.writeCmd(cmd);
+    }
     return jsonFetch('/serial/send/' + deviceId, cmd);
   }
 
   function doSendWait(deviceId, cmd, timeout) {
+    if (window.STEMWebSerial && window.STEMWebSerial.available) {
+      return window.STEMWebSerial.writeCmdWait(cmd, timeout || 5000);
+    }
     cmd._wait = true;
     cmd._timeout = timeout || 5000;
     return jsonFetch('/serial/send/' + deviceId, cmd).then(function(d) {
