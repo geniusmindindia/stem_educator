@@ -55,3 +55,7 @@ backend/.env
 
 # Built installer binaries (large; rebuild locally via installer/Build-SetupExe.ps1)
 installer/Output/
+
+# Agent installer build artifacts (large; see agent-installer/README.md to rebuild)
+agent-installer/Output/
+agent-installer/staging/node-runtime/
