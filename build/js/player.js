@@ -15227,7 +15227,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       // otherwise notice the file changed (no-store header on
       // the route helps, but this guarantees a fresh fetch).
       ,
-      href: "/downloads/hardware-agent.zip?v=2",
+      href: "/downloads/hardware-agent.zip?v=3",
       title: "On the cloud-hosted app? The server has no USB access - download this small local helper to connect your Arduino.",
       style: {
         display: 'block',

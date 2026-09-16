@@ -49,15 +49,22 @@ app.use(express.json({limit: '5mb'}));
 // using) - but Chrome's Private Network Access policy additionally requires
 // this preflight response before an HTTPS page may reach a localhost server
 // at all, which already rules out silent access from a random tab.
+//
+// MUST run before cors() - the cors package answers and ends OPTIONS
+// preflight requests itself without calling next(), so a middleware placed
+// after it never gets to add this header to the preflight response. Chrome
+// requires it on the preflight specifically, so without this ordering the
+// preflight silently fails and every cross-origin health-check/API call to
+// this agent from an HTTPS page (e.g. the Render-hosted site) gets blocked.
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Private-Network', 'true');
+  next();
+});
 app.use(cors({
   origin: true,
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Private-Network', 'true');
-  next();
-});
 
 app.get('/health', (req, res) => {
   res.json({ok: true, name: 'stemapp-hardware-agent', version: '1.0.0'});
