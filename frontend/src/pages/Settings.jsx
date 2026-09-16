@@ -132,6 +132,11 @@ export default function Settings() {
       });
       setLogoUrl(res.data.url || res.data.logoUrl || '');
       toast.success('Logo uploaded');
+      // AdminLayout's sidebar/topnav logo is fetched once on mount and
+      // doesn't re-fetch on its own - reload so it (and BrandContext
+      // elsewhere) picks up the new logo_url, matching the same pattern
+      // WhiteLabelOnboarding.jsx already uses after a branding save.
+      setTimeout(() => window.location.reload(), 800);
     } catch {
       toast.error('Failed to upload logo');
     } finally {
@@ -152,6 +157,7 @@ export default function Settings() {
       });
       setFaviconUrl(res.data.url || res.data.faviconUrl || '');
       toast.success('Favicon uploaded');
+      setTimeout(() => window.location.reload(), 800);
     } catch {
       toast.error('Failed to upload favicon');
     } finally {

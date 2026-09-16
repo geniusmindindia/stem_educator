@@ -16,7 +16,11 @@ function getCached() {
 
 export async function fetchBranding() {
   try {
-    const res = await fetch('/api/tenant/config');
+    let token = null;
+    try { token = localStorage.getItem('auth_token'); } catch (e) { /* ignore */ }
+    const res = await fetch('/api/tenant/config', {
+      headers: token ? { Authorization: `Bearer ${token}` } : {}
+    });
     const data = await res.json();
     cachedConfig = data;
     try { localStorage.setItem(CONFIG_KEY, JSON.stringify(data)); } catch (e) { /* ignore */ }

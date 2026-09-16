@@ -700,6 +700,37 @@ function setupTenantRoutes(app) {
         const { rows } = await query('SELECT * FROM tenants WHERE custom_domain = $1 OR subdomain = $1 LIMIT 1', [domain]);
         tenant = rows[0] || null;
       }
+      // Host-header matching only works for real custom domains/subdomains -
+      // on localhost (or any host with no matching tenant) it always fell
+      // through to 'default', showing the wrong branding no matter who was
+      // logged in. Resolve via the caller's own JWT next, same fallback
+      // chain /editor.html already uses, before giving up to 'default'.
+      if (!tenant) {
+        const header = req.headers.authorization || '';
+        const token = header.startsWith('Bearer ') ? header.slice(7) : null;
+        if (token) {
+          try {
+            const jwt = require('jsonwebtoken');
+            const auth = jwt.verify(token, process.env.JWT_SECRET || 'change-me-in-production');
+            if (auth?.tenant_id) {
+              const { rows } = await query('SELECT * FROM tenants WHERE id = $1', [auth.tenant_id]);
+              tenant = rows[0] || null;
+            }
+            if (!tenant && auth?.sub) {
+              const { rows } = await query('SELECT * FROM users WHERE id = $1 LIMIT 1', [auth.sub]);
+              const adminUser = rows[0] || null;
+              if (adminUser?.tenant_id) {
+                const t = await query('SELECT * FROM tenants WHERE id = $1', [adminUser.tenant_id]);
+                tenant = t.rows[0] || null;
+              }
+              if (!tenant && adminUser?.email) {
+                const t = await query('SELECT * FROM tenants WHERE owner_email = $1 LIMIT 1', [adminUser.email]);
+                tenant = t.rows[0] || null;
+              }
+            }
+          } catch (_) {}
+        }
+      }
       if (!tenant) {
         const { rows } = await query("SELECT * FROM tenants WHERE id = 'default' OR instance_id = 'default' LIMIT 1");
         tenant = rows[0] || null;

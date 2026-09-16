@@ -158,6 +158,7 @@ app.get('/editor.html', async (req, res) => {
     html = html.replace('</head>', headInject + '</head>');
     res.type('html').send(html);
   } catch (err) {
+    logger.error(`Error loading editor: ${err.message}\n${err.stack}`);
     res.status(500).send('Error loading editor');
   }
 });

@@ -38439,6 +38439,18 @@ __webpack_require__.r(__webpack_exports__);
  */
 /* harmony default export */ __webpack_exports__["default"] = (function (vm) {
   const ScratchBlocks = _tw_lazy_scratch_blocks__WEBPACK_IMPORTED_MODULE_0__["default"].get();
+
+  // The default 12px bottom margin (Blockly.Flyout.prototype.MARGIN) isn't
+  // enough room for the last block in a long category - it reads as
+  // "cut off" against the flyout's bottom edge. Only override the vertical
+  // flyout (used for the block palette), not the shared base class other
+  // flyout types might still rely on the original value for.
+  ScratchBlocks.VerticalFlyout.prototype.MARGIN = 48;
+
+  // The flyout's width is a fixed constant (not auto-sized to content), so
+  // wide blocks/labels (e.g. "temperature pin [2] sensor [DHT11]") get
+  // clipped on the right edge. Widen it by 20px.
+  ScratchBlocks.VerticalFlyout.prototype.DEFAULT_WIDTH = 270;
   const jsonForMenuBlock = function jsonForMenuBlock(name, menuOptionsFn, colors, start) {
     return {
       message0: '%1',
