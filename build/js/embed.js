@@ -14049,13 +14049,13 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       height: 16
     }), 'Bluetooth'), !(typeof navigator !== 'undefined' && navigator.serial && Object(_lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_27__["isLocalhost"])()) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectItem
-      // Bump ?v=N every time downloads/hardware-agent.zip is
-      // rebuilt - a browser that cached an old download won't
+      // Bump ?v=N every time downloads/StemHardwareAgent-Setup.exe
+      // is rebuilt - a browser that cached an old download won't
       // otherwise notice the file changed (no-store header on
       // the route helps, but this guarantees a fresh fetch).
       ,
-      href: "/downloads/hardware-agent.zip?v=3",
-      title: "On the cloud-hosted app? The server has no USB access - download this small local helper to connect your Arduino.",
+      href: "/downloads/StemHardwareAgent-Setup.exe?v=1",
+      title: "On the cloud-hosted app? The server has no USB access - install this small local helper to connect your Arduino. No prerequisites needed - just run it.",
       style: {
         display: 'block',
         textDecoration: 'none',
@@ -14066,7 +14066,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       draggable: false,
       width: 16,
       height: 16
-    }), 'Get Hardware Agent')))), this.state.hwBoardWarningOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+    }), 'Install Hardware Agent')))), this.state.hwBoardWarningOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModalBackdrop,
       onClick: this.handleBoardWarningClose
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {

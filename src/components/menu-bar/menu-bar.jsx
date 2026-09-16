@@ -1464,12 +1464,12 @@ class MenuBar extends React.Component {
                                         {!(typeof navigator !== 'undefined' && navigator.serial && isLocalhost()) && (
                                             <a
                                                 className={styles.hwConnectItem}
-                                                // Bump ?v=N every time downloads/hardware-agent.zip is
-                                                // rebuilt - a browser that cached an old download won't
+                                                // Bump ?v=N every time downloads/StemHardwareAgent-Setup.exe
+                                                // is rebuilt - a browser that cached an old download won't
                                                 // otherwise notice the file changed (no-store header on
                                                 // the route helps, but this guarantees a fresh fetch).
-                                                href="/downloads/hardware-agent.zip?v=3"
-                                                title="On the cloud-hosted app? The server has no USB access - download this small local helper to connect your Arduino."
+                                                href="/downloads/StemHardwareAgent-Setup.exe?v=1"
+                                                title="On the cloud-hosted app? The server has no USB access - install this small local helper to connect your Arduino. No prerequisites needed - just run it."
                                                 style={{display: 'block', textDecoration: 'none', borderTop: '1px solid rgba(0,0,0,0.08)'}}
                                             >
                                                 <img
@@ -1478,7 +1478,7 @@ class MenuBar extends React.Component {
                                                     width={16}
                                                     height={16}
                                                 />
-                                                {'Get Hardware Agent'}
+                                                {'Install Hardware Agent'}
                                             </a>
                                         )}
                                     </div>
