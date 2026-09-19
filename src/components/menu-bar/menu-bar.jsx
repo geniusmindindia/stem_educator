@@ -541,12 +541,17 @@ class MenuBar extends React.Component {
             // Web Serial deliberately doesn't expose the OS-level COM path
             // (privacy) - 'USB' is a display-only placeholder. It gets
             // upgraded to a real path below if the agent/backend can resolve
-            // one, since firmware upload/"Upload Code" still shells out to
-            // avrdude/arduino-cli (Phase 2, not built yet) and needs a real
-            // port, not this placeholder.
+            // one, since firmware upload for boards Phase 2's browser
+            // flasher doesn't cover yet (Mega, ESP32) still shells out to
+            // avrdude/arduino-cli via the agent and needs a real port.
             port: 'USB',
             id: null,
             webSerial: true,
+            // The raw SerialPort - closing it (via disconnect()) and
+            // reopening it (e.g. in stk500-flasher.js) needs no new
+            // permission prompt, since Web Serial grants persist for the
+            // port object's lifetime in this page.
+            webSerialPort: conn.port,
             sendCommand: function (str) { return conn.writeRaw(str); },
             disconnect: function () {
                 window.STEMWebSerial = null;

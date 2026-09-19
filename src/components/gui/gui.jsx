@@ -43,6 +43,7 @@ import TWWindChimeSubmitter from '../../containers/tw-windchime-submitter.jsx';
 import {STAGE_SIZE_MODES, FIXED_WIDTH, UNCONSTRAINED_NON_STAGE_WIDTH} from '../../lib/layout-constants';
 import {resolveStageSize} from '../../lib/screen-utils';
 import {getHwApiBase} from '../../lib/tw-hardware-agent';
+import {flashAtmega328p} from '../../lib/stk500-flasher';
 import {Theme} from '../../lib/themes';
 
 import {isRendererSupported, isBrowserSupported} from '../../lib/tw-environment-support-prober';
@@ -947,6 +948,49 @@ const GUIComponent = props => {
                                                 hwFlashBusyRef.current = true;
                                                 setHwLogLines(prev => prev.concat('[' + ts + '] Starting upload...'));
                                                 setHwBottomTab(0);
+
+                                                // Phase 2: flash directly from the browser over Web Serial - no
+                                                // agent needed for the flashing step itself (compiling still
+                                                // needs a reachable arduino-cli, via the agent or local backend,
+                                                // through getHwApiBase()). Only covers Uno/Nano (STK500v1/
+                                                // Optiboot) for now - Mega (STK500v2) and ESP32 (its own ROM
+                                                // loader protocol) fall through to the existing agent-based path.
+                                                const boardId = hwUploadBoard ? hwUploadBoard.id : 'arduino_uno';
+                                                const isAtmega328p = boardId === 'arduino_uno' || boardId === 'arduino_nano';
+                                                const webSerialPort = window.__hardwareConnection && window.__hardwareConnection.webSerialPort;
+                                                if (isAtmega328p && webSerialPort) {
+                                                    try {
+                                                        if (window.__hardwareConnection.disconnect) {
+                                                            await window.__hardwareConnection.disconnect();
+                                                        }
+                                                        const apiBase = await getHwApiBase();
+                                                        setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Compiling...'));
+                                                        const r = await fetch(apiBase + '/compiler/compile-only', {
+                                                            method: 'POST',
+                                                            headers: {'Content-Type': 'application/json'},
+                                                            body: JSON.stringify({cppCode: hwUploadCode, board: BOARD_FQBN[boardId] || 'arduino:avr:uno'})
+                                                        });
+                                                        const data = await r.json();
+                                                        if (!data.success) throw new Error(data.error || 'Compile failed');
+                                                        setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] ' + (data.compileOutput || '').split('\n')[0]));
+                                                        setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Flashing directly over Web Serial (no agent)...'));
+                                                        await flashAtmega328p(webSerialPort, data.hex, (info) => {
+                                                            setHwLogLines(prev => {
+                                                                const line = '[' + new Date().toLocaleTimeString() + '] ' + info.stage + '... ' + info.progress + '%';
+                                                                const last = prev[prev.length - 1] || '';
+                                                                // Overwrite the previous progress line instead of spamming the log.
+                                                                return (last.indexOf('%') !== -1) ? prev.slice(0, -1).concat(line) : prev.concat(line);
+                                                            });
+                                                        });
+                                                        setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Upload successful! (flashed directly from the browser)'));
+                                                        hwFlashBusyRef.current = false;
+                                                        return;
+                                                    } catch (e) {
+                                                        setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Browser flash failed (' + e.message + ') - falling back to the agent...'));
+                                                        // fall through to the existing agent-based path below
+                                                    }
+                                                }
+
                                                 // Capture port BEFORE releasing Web Serial (disconnect clears it).
                                                 var port2 = window.__hardwareConnection && window.__hardwareConnection.port;
                                                 try {

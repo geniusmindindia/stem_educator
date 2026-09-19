@@ -444,6 +444,29 @@ function setupAPIRoutes(app, managers) {
     }
   });
 
+  // Compile only - returns the hex bytes so the browser can flash it directly
+  // over Web Serial (Phase 2 agent-free upload), instead of this server
+  // flashing it itself. No port/lock handling needed here since nothing
+  // touches the serial port server-side.
+  app.post('/api/compiler/compile-only', async (req, res) => {
+    try {
+      if (!arduinoCompiler || !arduinoCompiler.isAvailable()) {
+        return res.status(500).json({ error: 'arduino-cli not available' });
+      }
+      const { cppCode, board } = req.body;
+      if (!cppCode) return res.status(400).json({ error: 'No C++ code provided' });
+      const fqbn = board || 'arduino:avr:uno';
+
+      const compileResult = arduinoCompiler.compile(cppCode, fqbn);
+      const hexContent = require('fs').readFileSync(compileResult.hexPath, 'utf8');
+      arduinoCompiler.cleanup(compileResult.sketchPath);
+
+      res.json({ success: true, hex: hexContent, compileOutput: compileResult.output });
+    } catch (err) {
+      res.status(500).json({ error: err.message });
+    }
+  });
+
   app.get('/api/compiler/boards', (req, res) => {
     if (!arduinoCompiler || !arduinoCompiler.isAvailable()) {
       return res.json({ boards: [] });
