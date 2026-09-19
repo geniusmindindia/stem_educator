@@ -47139,23 +47139,34 @@ function parseIntelHex(hexText) {
   return flat;
 }
 
-/** Matches wiring.c's wiring_open() reset sequence exactly. */
+/**
+ * Reset-into-bootloader timing. wiring.c's own sequence uses a 100
+ * MICROSECOND reset pulse and only a 100ms settle before syncing - too
+ * tight to hit reliably with JS setTimeout (which can't do sub-millisecond
+ * delays, and isn't a real-time scheduler even at 1ms), and the first
+ * real-hardware test timed out waiting for the bootloader using those
+ * numbers. Using the longer hold/settle times already proven to work for
+ * the Uno/Nano flasher instead (same DTR-through-capacitor auto-reset
+ * circuit design on both boards) - a longer wait doesn't hurt correctness,
+ * it just gives the bootloader more margin to be ready before the first
+ * sync attempt.
+ */
 async function resetIntoBootloader(port) {
   await port.setSignals({
     dataTerminalReady: false,
     requestToSend: false
   });
-  await delay(50);
+  await delay(100);
   await port.setSignals({
     dataTerminalReady: true,
     requestToSend: true
   });
-  await delay(1); // wiring.c: max 100us - we can't sleep sub-millisecond, 1ms is close enough
+  await delay(100);
   await port.setSignals({
     dataTerminalReady: false,
     requestToSend: false
   });
-  await delay(100);
+  await delay(1500);
 }
 class Stk500v2Session {
   constructor(reader, writer) {
@@ -47213,15 +47224,17 @@ class Stk500v2Session {
     return body;
   }
   async signOn() {
-    // A few retries - matches avrdude's RETRIES behavior for getsync.
+    // More retries and a longer per-attempt timeout than avrdude's own
+    // default - the first real-hardware test timed out with a tighter
+    // budget, and a longer window here costs nothing but time on failure.
     let lastErr;
-    for (let attempt = 0; attempt < 10; attempt++) {
+    for (let attempt = 0; attempt < 20; attempt++) {
       try {
-        await this.command([CMD_SIGN_ON], 300);
+        await this.command([CMD_SIGN_ON], 400);
         return;
       } catch (e) {
         lastErr = e;
-        await delay(100);
+        await delay(150);
       }
     }
     throw new Error('Could not sync with bootloader (' + (lastErr ? lastErr.message : 'unknown') + ') - check the board is a Mega and the port is correct');
