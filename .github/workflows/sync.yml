@@ -1,16 +1,25 @@
 name: Sync Upstream
 
 on:
-  workflow_dispatch: # इससे आपको वेबसाइट पर 'Run' का बटन मिल जाएगा
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Sync with Chetan Nanda Repo
         run: |
