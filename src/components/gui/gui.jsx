@@ -44,6 +44,7 @@ import {STAGE_SIZE_MODES, FIXED_WIDTH, UNCONSTRAINED_NON_STAGE_WIDTH} from '../.
 import {resolveStageSize} from '../../lib/screen-utils';
 import {getHwApiBase} from '../../lib/tw-hardware-agent';
 import {flashAtmega328p} from '../../lib/stk500-flasher';
+import {openWebSerialConnection, activateGlobalWebSerialConnection} from '../../lib/web-serial-connection';
 import {Theme} from '../../lib/themes';
 
 import {isRendererSupported, isBrowserSupported} from '../../lib/tw-environment-support-prober';
@@ -887,6 +888,49 @@ const GUIComponent = props => {
                                                 hwFlashBusyRef.current = true;
                                                 setHwLogLines(prev => prev.concat('[' + ts + '] Starting firmware upload...'));
                                                 setHwBottomTab(0);
+
+                                                // Phase 2: flash the prebuilt stage_firmware .hex directly from
+                                                // the browser over Web Serial - simpler than Upload Code since
+                                                // there's no compile step, just an already-built hex file (plain
+                                                // text data, so even the cloud backend can serve it with zero
+                                                // toolchain). Only Uno/Nano for now. Unlike Upload Code, this
+                                                // needs to reconnect afterward for live control, since
+                                                // stage_firmware IS the live-control interpreter.
+                                                {
+                                                    const boardIdForFlash = hwUploadBoard ? hwUploadBoard.id : 'arduino_uno';
+                                                    const isAtmega328pForFlash = boardIdForFlash === 'arduino_uno' || boardIdForFlash === 'arduino_nano';
+                                                    const webSerialPortForFlash = window.__hardwareConnection && window.__hardwareConnection.webSerialPort;
+                                                    if (isAtmega328pForFlash && webSerialPortForFlash) {
+                                                        try {
+                                                            if (window.__hardwareConnection.disconnect) {
+                                                                await window.__hardwareConnection.disconnect();
+                                                            }
+                                                            const apiBase = await getHwApiBase();
+                                                            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Fetching stage firmware...'));
+                                                            const r = await fetch(apiBase + '/firmware/stage-hex?boardType=' + boardIdForFlash);
+                                                            const data = await r.json();
+                                                            if (!data.success) throw new Error(data.error || 'Could not fetch stage firmware');
+                                                            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Flashing directly over Web Serial (no agent)...'));
+                                                            await flashAtmega328p(webSerialPortForFlash, data.hex, (info) => {
+                                                                setHwLogLines(prev => {
+                                                                    const line = '[' + new Date().toLocaleTimeString() + '] ' + info.stage + '... ' + info.progress + '%';
+                                                                    const last = prev[prev.length - 1] || '';
+                                                                    return (last.indexOf('%') !== -1) ? prev.slice(0, -1).concat(line) : prev.concat(line);
+                                                                });
+                                                            });
+                                                            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Firmware upload successful! Reconnecting for live control...'));
+                                                            const conn = await openWebSerialConnection(webSerialPortForFlash, {baudRate: 115200});
+                                                            activateGlobalWebSerialConnection(conn);
+                                                            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Reconnected.'));
+                                                            hwFlashBusyRef.current = false;
+                                                            return;
+                                                        } catch (e) {
+                                                            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Browser flash failed (' + e.message + ') - falling back to the agent...'));
+                                                            // fall through to the existing agent-based path below
+                                                        }
+                                                    }
+                                                }
+
                                                 // Capture port BEFORE releasing Web Serial (disconnect clears it).
                                                 var port2 = window.__hardwareConnection && window.__hardwareConnection.port;
                                                 try {

@@ -10778,15 +10778,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_screen_utils__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../lib/screen-utils */ "./src/lib/screen-utils.js");
 /* harmony import */ var _lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../lib/tw-hardware-agent */ "./src/lib/tw-hardware-agent.js");
 /* harmony import */ var _lib_stk500_flasher__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../../lib/stk500-flasher */ "./src/lib/stk500-flasher.js");
-/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../lib/themes */ "./src/lib/themes/index.js");
-/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_45__);
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_46__);
-/* harmony import */ var _lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--code.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--code.svg");
-/* harmony import */ var _lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--costumes.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--costumes.svg");
-/* harmony import */ var _lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--sounds.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--sounds.svg");
+/* harmony import */ var _lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../lib/web-serial-connection */ "./src/lib/web-serial-connection.js");
+/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../lib/themes */ "./src/lib/themes/index.js");
+/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_46__);
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_47__);
+/* harmony import */ var _lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--code.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--code.svg");
+/* harmony import */ var _lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--costumes.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--costumes.svg");
+/* harmony import */ var _lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--sounds.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--sounds.svg");
 const _excluded = ["accountNavOpen", "activeTabIndex", "alertsVisible", "authorId", "authorThumbnailUrl", "authorUsername", "basePath", "backdropLibraryVisible", "backpackHost", "backpackVisible", "blocksId", "blocksTabVisible", "cardsVisible", "canChangeLanguage", "canChangeTheme", "canCreateNew", "canEditTitle", "canManageFiles", "canRemix", "canSave", "canCreateCopy", "canShare", "canUseCloud", "children", "connectionModalVisible", "costumeLibraryVisible", "onRequestCloseAuthModal", "authModalVisible", "costumesTabVisible", "customStageSize", "enableCommunity", "intl", "isCreating", "isEmbedded", "isFullScreen", "isPlayerOnly", "isRtl", "isShared", "isWindowFullScreen", "isTelemetryEnabled", "isTotallyNormal", "loading", "logo", "renderLogin", "onClickAbout", "onClickAccountNav", "onCloseAccountNav", "onClickAddonSettings", "onClickDesktopSettings", "onClickNewWindow", "onClickPackager", "onLogOut", "onOpenRegistration", "onToggleLoginOpen", "onActivateCostumesTab", "onActivateSoundsTab", "onActivateTab", "onClickLogo", "onExtensionButtonClick", "onOpenCustomExtensionModal", "onProjectTelemetryEvent", "onRequestCloseBackdropLibrary", "onRequestCloseCostumeLibrary", "onRequestCloseTelemetryModal", "onSeeCommunity", "onShare", "onShowPrivacyPolicy", "onStartSelectingFileUpload", "onTelemetryModalCancel", "onTelemetryModalOptIn", "onTelemetryModalOptOut", "securityManager", "showComingSoon", "showOpenFilePicker", "showSaveFilePicker", "soundsTabVisible", "stageSizeMode", "targetIsStage", "telemetryModalVisible", "theme", "tipsLibraryVisible", "usernameModalVisible", "settingsModalVisible", "customExtensionModalVisible", "fontsModalVisible", "unknownPlatformModalVisible", "invalidProjectModalVisible", "vm"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
@@ -10797,6 +10798,7 @@ function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) 
 function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
 function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+
 
 
 
@@ -11357,12 +11359,12 @@ const GUIComponent = props => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], componentProps, children);
   }
   const tabClassNames = {
-    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.tabs,
-    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.tab),
-    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.tabList),
-    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.tabPanel),
-    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.isSelected),
-    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.isSelected)
+    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabs,
+    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tab),
+    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabList),
+    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabPanel),
+    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.isSelected),
+    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.isSelected)
   };
   const unconstrainedWidth = _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["UNCONSTRAINED_NON_STAGE_WIDTH"] + _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["FIXED_WIDTH"] + Math.max(0, customStageSize.width - _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["FIXED_WIDTH"]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_responsive__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -11375,22 +11377,22 @@ const GUIComponent = props => {
       isEmbedded: isEmbedded
     }), usernameModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_30__["default"], null), settingsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], null), authModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_auth_modal_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], null), customExtensionModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null), fontsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_35__["default"], null), unknownPlatformModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_unknown_platform_modal_jsx__WEBPACK_IMPORTED_MODULE_36__["default"], null), invalidProjectModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_invalid_project_modal_jsx__WEBPACK_IMPORTED_MODULE_37__["default"], null));
     return isPlayerOnly ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, isWindowFullScreen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.fullscreenBackground,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.fullscreenBackground,
       style: {
         backgroundColor: fullscreenBackgroundColor
       }
     }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
       isFullScreen: isFullScreen,
       isEmbedded: isEmbedded,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_44__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__["isRendererSupported"])(),
       isRtl: isRtl,
       loading: loading,
       stageSize: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["STAGE_SIZE_MODES"].full,
       vm: vm
     }, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.alertsContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.alertsContainer
     }) : null), alwaysEnabledModals) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], _extends({
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.pageWrapper,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.pageWrapper,
       dir: isRtl ? 'rtl' : 'ltr',
       style: {
         minWidth: (hwUploadMode ? 1524 : 1024) + Math.max(0, customStageSize.width - 480),
@@ -11409,11 +11411,11 @@ const GUIComponent = props => {
     }) : null, isCreating ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
       isFullScreen: true,
       messageId: "gui.loader.creating"
-    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_44__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
+    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
       isRtl: isRtl,
       onClickDesktopSettings: onClickDesktopSettings
     }), tipsLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], null) : null, cardsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_cards_jsx__WEBPACK_IMPORTED_MODULE_24__["default"], null) : null, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.alertsContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.alertsContainer
     }) : null, connectionModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_28__["default"], {
       vm: vm
     }) : null, costumeLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
@@ -11436,7 +11438,7 @@ const GUIComponent = props => {
       canRemix: canRemix,
       canSave: canSave,
       canShare: canShare,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.menuBarPosition,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.menuBarPosition,
       enableCommunity: enableCommunity,
       isShared: isShared,
       isTotallyNormal: isTotallyNormal,
@@ -11461,11 +11463,11 @@ const GUIComponent = props => {
       onStartSelectingFileUpload: onStartSelectingFileUpload,
       onToggleLoginOpen: onToggleLoginOpen
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.bodyWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.bodyWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.flexWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.flexWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.editorWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.editorWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tabs"], {
       forceRenderTabPanel: true,
       className: tabClassNames.tabs,
@@ -11479,7 +11481,7 @@ const GUIComponent = props => {
       className: tabClassNames.tab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_47__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_48__["default"])()
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Blocks",
       id: "gui.gui.blocksTab"
@@ -11488,7 +11490,7 @@ const GUIComponent = props => {
       onClick: onActivateCostumesTab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_48__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_49__["default"])()
     }), targetIsStage ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Backdrops",
       id: "gui.gui.backdropsTab"
@@ -11500,14 +11502,14 @@ const GUIComponent = props => {
       onClick: onActivateSoundsTab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_49__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_50__["default"])()
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Sounds",
       id: "gui.gui.soundsTab"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.blocksWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.blocksWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
       key: "".concat(blocksId, "/").concat(theme.id),
       canUseCloud: canUseCloud,
@@ -11521,17 +11523,17 @@ const GUIComponent = props => {
       theme: theme,
       vm: vm
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.extensionButtonContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.extensionButtonContainer
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.extensionButton,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.extensionButton,
       title: intl.formatMessage(messages.addExtension),
       onClick: onExtensionButtonClick
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.extensionButtonIcon,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.extensionButtonIcon,
       draggable: false,
-      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_46___default.a
+      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_47___default.a
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.watermark
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.watermark
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
     }, costumesTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -11543,21 +11545,21 @@ const GUIComponent = props => {
     }) : null)), backpackVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
       host: backpackHost
     }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.stageAndTargetWrapper, hwUploadMode ? null : _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a[stageSize]),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.stageAndTargetWrapper, hwUploadMode ? null : _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a[stageSize]),
       style: hwUploadMode ? {
         flex: '0 0 520px',
         paddingLeft: 0,
         paddingRight: 0
       } : null
     }, hwUploadMode ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodePanel
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodePanel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodePanelHeader
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodePanelHeader
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeIconBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeIconBtn,
       title: "Code view"
     }, '</>'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeIconBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeIconBtn,
       title: "Back to Stage"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -11567,17 +11569,17 @@ const GUIComponent = props => {
         }
       }))
     }, '×'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeIconBtn, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeLockActive : null),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeIconBtn, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeLockActive : null),
       title: hwCodeLocked ? 'Unlock code (allow editing)' : 'Lock code (read only)'
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onClick: () => setHwCodeLocked(!hwCodeLocked)
     }, hwCodeLocked ? '🔒' : '🔓'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodePanelSpacer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodePanelSpacer
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodePanelDivider
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodePanelDivider
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwClearBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwClearBtn,
       title: "Clear Log"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -11606,7 +11608,7 @@ const GUIComponent = props => {
       x2: "14",
       y2: "17"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwClearBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwClearBtn,
       title: "Clear Code"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -11635,7 +11637,7 @@ const GUIComponent = props => {
       x2: "14",
       y2: "17"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwUploadCodeBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwUploadCodeBtn,
       title: "Upload Firmware: Flash stage firmware for live serial block control"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -11648,6 +11650,51 @@ const GUIComponent = props => {
         hwFlashBusyRef.current = true;
         setHwLogLines(prev => prev.concat('[' + ts + '] Starting firmware upload...'));
         setHwBottomTab(0);
+
+        // Phase 2: flash the prebuilt stage_firmware .hex directly from
+        // the browser over Web Serial - simpler than Upload Code since
+        // there's no compile step, just an already-built hex file (plain
+        // text data, so even the cloud backend can serve it with zero
+        // toolchain). Only Uno/Nano for now. Unlike Upload Code, this
+        // needs to reconnect afterward for live control, since
+        // stage_firmware IS the live-control interpreter.
+        {
+          const boardIdForFlash = hwUploadBoard ? hwUploadBoard.id : 'arduino_uno';
+          const isAtmega328pForFlash = boardIdForFlash === 'arduino_uno' || boardIdForFlash === 'arduino_nano';
+          const webSerialPortForFlash = window.__hardwareConnection && window.__hardwareConnection.webSerialPort;
+          if (isAtmega328pForFlash && webSerialPortForFlash) {
+            try {
+              if (window.__hardwareConnection.disconnect) {
+                await window.__hardwareConnection.disconnect();
+              }
+              const apiBase = await Object(_lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_41__["getHwApiBase"])();
+              setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Fetching stage firmware...'));
+              const r = await fetch(apiBase + '/firmware/stage-hex?boardType=' + boardIdForFlash);
+              const data = await r.json();
+              if (!data.success) throw new Error(data.error || 'Could not fetch stage firmware');
+              setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Flashing directly over Web Serial (no agent)...'));
+              await Object(_lib_stk500_flasher__WEBPACK_IMPORTED_MODULE_42__["flashAtmega328p"])(webSerialPortForFlash, data.hex, info => {
+                setHwLogLines(prev => {
+                  const line = '[' + new Date().toLocaleTimeString() + '] ' + info.stage + '... ' + info.progress + '%';
+                  const last = prev[prev.length - 1] || '';
+                  return last.indexOf('%') !== -1 ? prev.slice(0, -1).concat(line) : prev.concat(line);
+                });
+              });
+              setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Firmware upload successful! Reconnecting for live control...'));
+              const conn = await Object(_lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_43__["openWebSerialConnection"])(webSerialPortForFlash, {
+                baudRate: 115200
+              });
+              Object(_lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_43__["activateGlobalWebSerialConnection"])(conn);
+              setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Reconnected.'));
+              hwFlashBusyRef.current = false;
+              return;
+            } catch (e) {
+              setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Browser flash failed (' + e.message + ') - falling back to the agent...'));
+              // fall through to the existing agent-based path below
+            }
+          }
+        }
+
         // Capture port BEFORE releasing Web Serial (disconnect clears it).
         var port2 = window.__hardwareConnection && window.__hardwareConnection.port;
         try {
@@ -11703,7 +11750,7 @@ const GUIComponent = props => {
         }
       }
     }, '⚡ Firmware'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwUploadCodeBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwUploadCodeBtn,
       title: "Upload Code: Compile and upload the current sketch to the board"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -11882,17 +11929,17 @@ const GUIComponent = props => {
         }
       }
     }, '⬆ Upload Code'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeLangLabel
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeLangLabel
     }, 'C++')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeEditorArea
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeEditorArea
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       ref: hwLineNumRef,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwLineNumbers
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwLineNumbers
     }, hwUploadCode.split('\n').map((_, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       key: i,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwLineNum
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwLineNum
     }, i + 1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("textarea", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeTextarea, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeTextareaLocked : null),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeTextarea, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeTextareaLocked : null),
       spellCheck: false,
       readOnly: hwCodeLocked,
       value: hwUploadCode
@@ -11909,34 +11956,34 @@ const GUIComponent = props => {
         }
       }
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeBottomPanel
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomPanel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeBottomTabs
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomTabs
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: hwBottomTab === 0 ? _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeBottomTab
+      className: hwBottomTab === 0 ? _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomTab
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onClick: () => setHwBottomTab(0)
     }, '>> Log'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: hwBottomTab === 1 ? _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeBottomTab
+      className: hwBottomTab === 1 ? _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomTab
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onClick: () => setHwBottomTab(1)
     }, '⇄ Serial Monitor')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwCodeBottomContent
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomContent
     }, hwBottomTab === 0 ? hwLogLines.length === 0 ? null : hwLogLines.map((line, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       key: i,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwLogLine
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwLogLine
     }, line)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.hwSerialPlaceholder
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwSerialPlaceholder
     }, 'Serial Monitor — connect via Serial to use')))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
       isFullScreen: isFullScreen,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_44__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__["isRendererSupported"])(),
       isRtl: isRtl,
       stageSize: stageSize,
       vm: vm
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_45___default.a.targetWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.targetWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
       stageSize: stageSize,
       vm: vm
@@ -12022,7 +12069,7 @@ GUIComponent.propTypes = {
   stageSizeMode: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(Object.keys(_lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["STAGE_SIZE_MODES"])),
   targetIsStage: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   telemetryModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  theme: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_43__["Theme"]),
+  theme: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_44__["Theme"]),
   tipsLibraryVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   usernameModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   settingsModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
@@ -14391,34 +14438,13 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
   activateWebSerialConnection(conn, board, skipLoad) {
     var self = this;
     var boardObj = board || this.state.hwSelectedBoard;
-    window.STEMWebSerial = {
-      available: true,
-      writeCmd: conn.writeCmd,
-      writeCmdWait: conn.writeCmdWait
-    };
-    window.__hardwareConnection = {
-      // Web Serial deliberately doesn't expose the OS-level COM path
-      // (privacy) - 'USB' is a display-only placeholder. It gets
-      // upgraded to a real path below if the agent/backend can resolve
-      // one, since firmware upload for boards Phase 2's browser
-      // flasher doesn't cover yet (Mega, ESP32) still shells out to
-      // avrdude/arduino-cli via the agent and needs a real port.
-      port: 'USB',
-      id: null,
-      webSerial: true,
-      // The raw SerialPort - closing it (via disconnect()) and
-      // reopening it (e.g. in stk500-flasher.js) needs no new
-      // permission prompt, since Web Serial grants persist for the
-      // port object's lifetime in this page.
-      webSerialPort: conn.port,
-      sendCommand: function sendCommand(str) {
-        return conn.writeRaw(str);
-      },
-      disconnect: function disconnect() {
-        window.STEMWebSerial = null;
-        return conn.close().catch(function () {});
-      }
-    };
+    // Web Serial deliberately doesn't expose the OS-level COM path
+    // (privacy) - the 'USB' placeholder this sets gets upgraded to a
+    // real path below if the agent/backend can resolve one, since
+    // firmware upload for boards Phase 2's browser flasher doesn't cover
+    // yet (Mega, ESP32) still shells out to avrdude/arduino-cli via the
+    // agent and needs a real port.
+    Object(_lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_28__["activateGlobalWebSerialConnection"])(conn);
     this.setState({
       hwConnectedPort: 'USB (direct)',
       hwPortPickerOpen: false,
@@ -51864,12 +51890,13 @@ const vmManagerHOC = function vmManagerHOC(WrappedComponent) {
 /*!******************************************!*\
   !*** ./src/lib/web-serial-connection.js ***!
   \******************************************/
-/*! exports provided: openWebSerialConnection */
+/*! exports provided: openWebSerialConnection, activateGlobalWebSerialConnection */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openWebSerialConnection", function() { return openWebSerialConnection; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "activateGlobalWebSerialConnection", function() { return activateGlobalWebSerialConnection; });
 /**
  * Thin Web Serial wrapper for talking directly to a board already running
  * the interpreter firmware (agent/firmware/stage_firmware/stage_firmware.ino) -
@@ -52009,6 +52036,33 @@ async function openWebSerialConnection(port) {
     writeCmdWait,
     writeRaw,
     close
+  };
+}
+
+/**
+ * Sets the global bridge objects (window.STEMWebSerial, window.__hardwareConnection)
+ * from an already-open connection - shared by menu-bar.jsx (first connect)
+ * and gui.jsx (reconnecting after flashing new firmware over Web Serial),
+ * so both stay consistent instead of duplicating this wiring.
+ */
+function activateGlobalWebSerialConnection(conn) {
+  window.STEMWebSerial = {
+    available: true,
+    writeCmd: conn.writeCmd,
+    writeCmdWait: conn.writeCmdWait
+  };
+  window.__hardwareConnection = {
+    port: 'USB',
+    id: null,
+    webSerial: true,
+    webSerialPort: conn.port,
+    sendCommand: function sendCommand(str) {
+      return conn.writeRaw(str);
+    },
+    disconnect: function disconnect() {
+      window.STEMWebSerial = null;
+      return conn.close().catch(function () {});
+    }
   };
 }
 

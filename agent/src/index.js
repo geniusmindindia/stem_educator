@@ -169,6 +169,26 @@ app.get('/api/firmware/boards', (req, res) => {
   res.json({boards: firmwareUploader.getSupportedBoards()});
 });
 
+// Returns the prebuilt stage_firmware .hex for a board, so the browser can
+// flash it directly over Web Serial (Phase 2) instead of this agent
+// running avrdude. No compile step - it's already built.
+app.get('/api/firmware/stage-hex', (req, res) => {
+  try {
+    const boardType = req.query.boardType;
+    const prebuiltHex = {
+      arduino_uno: 'stage_firmware_uno.hex',
+      arduino_nano: 'stage_firmware_nano.hex',
+    }[boardType];
+    if (!prebuiltHex) return res.status(400).json({error: 'No prebuilt hex for board type: ' + boardType});
+    const hexPath = path.join(__dirname, '..', 'firmware', 'stage_firmware', prebuiltHex);
+    if (!fs.existsSync(hexPath)) return res.status(404).json({error: 'Prebuilt hex not found: ' + prebuiltHex});
+    const hex = fs.readFileSync(hexPath, 'utf8');
+    res.json({success: true, hex});
+  } catch (err) {
+    res.status(500).json({error: err.message});
+  }
+});
+
 // "Firmware" button (blank/reset sketch) - prefers a prebuilt .hex bundled in
 // firmware/stage_firmware/ (fast, no compile step); falls back to compiling
 // the .ino from source if the prebuilt hex isn't present for that board.

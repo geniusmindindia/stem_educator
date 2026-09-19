@@ -28,7 +28,7 @@ import TurboMode from '../../containers/turbo-mode.jsx';
 import MenuBarHOC from '../../containers/menu-bar-hoc.jsx';
 import SettingsMenu from './settings-menu.jsx';
 import {getHwApiBase, isLocalhost} from '../../lib/tw-hardware-agent';
-import {openWebSerialConnection} from '../../lib/web-serial-connection';
+import {openWebSerialConnection, activateGlobalWebSerialConnection} from '../../lib/web-serial-connection';
 
 import FramerateChanger from '../../containers/tw-framerate-changer.jsx';
 import ChangeUsername from '../../containers/tw-change-username.jsx';
@@ -532,32 +532,13 @@ class MenuBar extends React.Component {
     activateWebSerialConnection(conn, board, skipLoad) {
         var self = this;
         var boardObj = board || this.state.hwSelectedBoard;
-        window.STEMWebSerial = {
-            available: true,
-            writeCmd: conn.writeCmd,
-            writeCmdWait: conn.writeCmdWait
-        };
-        window.__hardwareConnection = {
-            // Web Serial deliberately doesn't expose the OS-level COM path
-            // (privacy) - 'USB' is a display-only placeholder. It gets
-            // upgraded to a real path below if the agent/backend can resolve
-            // one, since firmware upload for boards Phase 2's browser
-            // flasher doesn't cover yet (Mega, ESP32) still shells out to
-            // avrdude/arduino-cli via the agent and needs a real port.
-            port: 'USB',
-            id: null,
-            webSerial: true,
-            // The raw SerialPort - closing it (via disconnect()) and
-            // reopening it (e.g. in stk500-flasher.js) needs no new
-            // permission prompt, since Web Serial grants persist for the
-            // port object's lifetime in this page.
-            webSerialPort: conn.port,
-            sendCommand: function (str) { return conn.writeRaw(str); },
-            disconnect: function () {
-                window.STEMWebSerial = null;
-                return conn.close().catch(function(){});
-            }
-        };
+        // Web Serial deliberately doesn't expose the OS-level COM path
+        // (privacy) - the 'USB' placeholder this sets gets upgraded to a
+        // real path below if the agent/backend can resolve one, since
+        // firmware upload for boards Phase 2's browser flasher doesn't cover
+        // yet (Mega, ESP32) still shells out to avrdude/arduino-cli via the
+        // agent and needs a real port.
+        activateGlobalWebSerialConnection(conn);
         this.setState({
             hwConnectedPort: 'USB (direct)',
             hwPortPickerOpen: false,

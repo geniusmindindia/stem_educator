@@ -106,3 +106,28 @@ export async function openWebSerialConnection (port, {baudRate = 115200} = {}) {
 
     return {port, writeCmd, writeCmdWait, writeRaw, close};
 }
+
+/**
+ * Sets the global bridge objects (window.STEMWebSerial, window.__hardwareConnection)
+ * from an already-open connection - shared by menu-bar.jsx (first connect)
+ * and gui.jsx (reconnecting after flashing new firmware over Web Serial),
+ * so both stay consistent instead of duplicating this wiring.
+ */
+export function activateGlobalWebSerialConnection (conn) {
+    window.STEMWebSerial = {
+        available: true,
+        writeCmd: conn.writeCmd,
+        writeCmdWait: conn.writeCmdWait
+    };
+    window.__hardwareConnection = {
+        port: 'USB',
+        id: null,
+        webSerial: true,
+        webSerialPort: conn.port,
+        sendCommand: function (str) { return conn.writeRaw(str); },
+        disconnect: function () {
+            window.STEMWebSerial = null;
+            return conn.close().catch(function(){});
+        }
+    };
+}
