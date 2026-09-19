@@ -165,6 +165,54 @@ app.post('/api/compiler/compile-upload-cpp', async (req, res) => {
   }
 });
 
+// Compile only - returns the hex bytes so the browser can flash it directly
+// over Web Serial (Phase 2 agent-free upload), instead of this agent
+// flashing it itself. No port/lock handling needed - nothing touches the
+// serial port here.
+app.post('/api/compiler/compile-only', async (req, res) => {
+  try {
+    if (!arduinoCompiler.isAvailable()) {
+      return res.status(500).json({error: 'arduino-cli not available on this machine. Install it in tools/arduino-cli/'});
+    }
+    const {cppCode, board} = req.body || {};
+    if (!cppCode) return res.status(400).json({error: 'No C++ code provided'});
+    const fqbn = board || 'arduino:avr:uno';
+
+    const compileResult = arduinoCompiler.compile(cppCode, fqbn);
+    const hexContent = fs.readFileSync(compileResult.hexPath, 'utf8');
+    arduinoCompiler.cleanup(compileResult.sketchPath);
+
+    res.json({success: true, hex: hexContent, compileOutput: compileResult.output});
+  } catch (err) {
+    res.status(500).json({error: err.message});
+  }
+});
+
+// ESP32 compile-only - returns its multi-file flash image (bootloader,
+// partitions, app) as base64 so the browser can flash it directly via
+// esptool-js over Web Serial, instead of this agent flashing it itself.
+app.post('/api/compiler/compile-only-esp32', async (req, res) => {
+  try {
+    if (!arduinoCompiler.isAvailable()) {
+      return res.status(500).json({error: 'arduino-cli not available on this machine. Install it in tools/arduino-cli/'});
+    }
+    const {cppCode, board} = req.body || {};
+    if (!cppCode) return res.status(400).json({error: 'No C++ code provided'});
+    const fqbn = board || 'esp32:esp32:esp32';
+
+    const compileResult = arduinoCompiler.compileEsp32(cppCode, fqbn);
+    const files = compileResult.files.map(f => ({
+      address: f.address,
+      data: fs.readFileSync(f.path).toString('base64')
+    }));
+    arduinoCompiler.cleanup(compileResult.sketchPath);
+
+    res.json({success: true, files, compileOutput: compileResult.output});
+  } catch (err) {
+    res.status(500).json({error: err.message});
+  }
+});
+
 app.get('/api/firmware/boards', (req, res) => {
   res.json({boards: firmwareUploader.getSupportedBoards()});
 });
@@ -178,6 +226,7 @@ app.get('/api/firmware/stage-hex', (req, res) => {
     const prebuiltHex = {
       arduino_uno: 'stage_firmware_uno.hex',
       arduino_nano: 'stage_firmware_nano.hex',
+      arduino_mega: 'stage_firmware_mega2560.hex',
     }[boardType];
     if (!prebuiltHex) return res.status(400).json({error: 'No prebuilt hex for board type: ' + boardType});
     const hexPath = path.join(__dirname, '..', 'firmware', 'stage_firmware', prebuiltHex);

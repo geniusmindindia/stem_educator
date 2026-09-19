@@ -140,6 +140,66 @@ class ArduinoCompiler {
   }
 
   /**
+   * Compile for ESP32 and return its multi-file flash image (bootloader,
+   * partition table, app) instead of a single .hex - ESP32 Arduino core
+   * builds always produce these as separate binaries at fixed flash
+   * offsets, unlike AVR's single combined hex image. Offsets are the
+   * standard ones for the default (non-S2/S3/C3) ESP32 4MB partition
+   * scheme - board variants with a different partition table would need
+   * different offsets, not handled here.
+   */
+  compileEsp32(cppCode, board = 'esp32:esp32:esp32') {
+    if (!this.cliPath) throw new Error('arduino-cli not found');
+
+    const sketchName = 'user_sketch_' + Date.now();
+    const sketchPath = path.join(this.sketchDir, sketchName);
+    const inoPath = path.join(sketchPath, sketchName + '.ino');
+
+    fs.mkdirSync(sketchPath, { recursive: true });
+    fs.writeFileSync(inoPath, cppCode, 'utf8');
+
+    const buildDir = path.join(sketchPath, 'build');
+    fs.mkdirSync(buildDir, { recursive: true });
+
+    try {
+      const cmd = `"${this.cliPath}" compile -b ${board} --output-dir "${buildDir}" "${sketchPath}"`;
+      this.logger.info(`Compiling (ESP32): ${cmd}`);
+      const output = execSync(cmd, {
+        encoding: 'utf8',
+        timeout: 90000,
+        env: {
+          ...process.env,
+          ARDUINO_DATA_DIR: path.join(process.env.LOCALAPPDATA || '', 'Arduino15'),
+          ARDUINO_SKETCHBOOK_DIR: path.join(process.env.USERPROFILE || '', 'Arduino')
+        }
+      });
+      this.logger.info(`Compile output: ${output}`);
+
+      const files = fs.readdirSync(buildDir);
+      const bootloaderFile = files.find(f => f.endsWith('.bootloader.bin'));
+      const partitionsFile = files.find(f => f.endsWith('.partitions.bin'));
+      const appFile = files.find(f => f.endsWith('.bin') && f !== bootloaderFile && f !== partitionsFile);
+      if (!bootloaderFile || !partitionsFile || !appFile) {
+        throw new Error('Compilation succeeded but expected ESP32 output files not found (bootloader/partitions/app .bin)');
+      }
+
+      return {
+        success: true,
+        sketchPath,
+        output,
+        files: [
+          {address: 0x1000, path: path.join(buildDir, bootloaderFile)},
+          {address: 0x8000, path: path.join(buildDir, partitionsFile)},
+          {address: 0x10000, path: path.join(buildDir, appFile)}
+        ]
+      };
+    } catch (err) {
+      this.cleanup(sketchPath);
+      throw new Error('Compilation failed: ' + (err.stderr || err.message));
+    }
+  }
+
+  /**
    * Upload compiled hex to board
    */
   upload(hexPath, port, board = 'arduino:avr:uno') {

@@ -9605,16 +9605,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_screen_utils__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../lib/screen-utils */ "./src/lib/screen-utils.js");
 /* harmony import */ var _lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../lib/tw-hardware-agent */ "./src/lib/tw-hardware-agent.js");
 /* harmony import */ var _lib_stk500_flasher__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../../lib/stk500-flasher */ "./src/lib/stk500-flasher.js");
-/* harmony import */ var _lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../lib/web-serial-connection */ "./src/lib/web-serial-connection.js");
-/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../lib/themes */ "./src/lib/themes/index.js");
-/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_46__);
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_47__);
-/* harmony import */ var _lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--code.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--code.svg");
-/* harmony import */ var _lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--costumes.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--costumes.svg");
-/* harmony import */ var _lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--sounds.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--sounds.svg");
+/* harmony import */ var _lib_stk500v2_flasher__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../lib/stk500v2-flasher */ "./src/lib/stk500v2-flasher.js");
+/* harmony import */ var _lib_esp32_flasher__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../lib/esp32-flasher */ "./src/lib/esp32-flasher.js");
+/* harmony import */ var _lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../../lib/web-serial-connection */ "./src/lib/web-serial-connection.js");
+/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../../lib/themes */ "./src/lib/themes/index.js");
+/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_48__);
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_49__);
+/* harmony import */ var _lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--code.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--code.svg");
+/* harmony import */ var _lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--costumes.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--costumes.svg");
+/* harmony import */ var _lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--sounds.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--sounds.svg");
 const _excluded = ["accountNavOpen", "activeTabIndex", "alertsVisible", "authorId", "authorThumbnailUrl", "authorUsername", "basePath", "backdropLibraryVisible", "backpackHost", "backpackVisible", "blocksId", "blocksTabVisible", "cardsVisible", "canChangeLanguage", "canChangeTheme", "canCreateNew", "canEditTitle", "canManageFiles", "canRemix", "canSave", "canCreateCopy", "canShare", "canUseCloud", "children", "connectionModalVisible", "costumeLibraryVisible", "onRequestCloseAuthModal", "authModalVisible", "costumesTabVisible", "customStageSize", "enableCommunity", "intl", "isCreating", "isEmbedded", "isFullScreen", "isPlayerOnly", "isRtl", "isShared", "isWindowFullScreen", "isTelemetryEnabled", "isTotallyNormal", "loading", "logo", "renderLogin", "onClickAbout", "onClickAccountNav", "onCloseAccountNav", "onClickAddonSettings", "onClickDesktopSettings", "onClickNewWindow", "onClickPackager", "onLogOut", "onOpenRegistration", "onToggleLoginOpen", "onActivateCostumesTab", "onActivateSoundsTab", "onActivateTab", "onClickLogo", "onExtensionButtonClick", "onOpenCustomExtensionModal", "onProjectTelemetryEvent", "onRequestCloseBackdropLibrary", "onRequestCloseCostumeLibrary", "onRequestCloseTelemetryModal", "onSeeCommunity", "onShare", "onShowPrivacyPolicy", "onStartSelectingFileUpload", "onTelemetryModalCancel", "onTelemetryModalOptIn", "onTelemetryModalOptOut", "securityManager", "showComingSoon", "showOpenFilePicker", "showSaveFilePicker", "soundsTabVisible", "stageSizeMode", "targetIsStage", "telemetryModalVisible", "theme", "tipsLibraryVisible", "usernameModalVisible", "settingsModalVisible", "customExtensionModalVisible", "fontsModalVisible", "unknownPlatformModalVisible", "invalidProjectModalVisible", "vm"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
@@ -9668,6 +9670,18 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+
+
+
+// Which browser flasher (if any) covers a given board - Mega isn't as
+// hardware-verified as Uno/Nano (see stk500v2-flasher.js's header), but both
+// fall back to the agent automatically on any failure. ESP32 isn't covered
+// yet (needs esptool-js, a different protocol entirely).
+const BROWSER_FLASHERS = {
+  arduino_uno: _lib_stk500_flasher__WEBPACK_IMPORTED_MODULE_42__["flashAtmega328p"],
+  arduino_nano: _lib_stk500_flasher__WEBPACK_IMPORTED_MODULE_42__["flashAtmega328p"],
+  arduino_mega: _lib_stk500v2_flasher__WEBPACK_IMPORTED_MODULE_43__["flashAtmega2560"]
+};
 
 
 
@@ -10186,12 +10200,12 @@ const GUIComponent = props => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], componentProps, children);
   }
   const tabClassNames = {
-    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabs,
-    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tab),
-    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabList),
-    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabPanel),
-    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.isSelected),
-    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.isSelected)
+    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.tabs,
+    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.tab),
+    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.tabList),
+    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.tabPanel),
+    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.isSelected),
+    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.isSelected)
   };
   const unconstrainedWidth = _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["UNCONSTRAINED_NON_STAGE_WIDTH"] + _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["FIXED_WIDTH"] + Math.max(0, customStageSize.width - _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["FIXED_WIDTH"]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_responsive__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -10204,22 +10218,22 @@ const GUIComponent = props => {
       isEmbedded: isEmbedded
     }), usernameModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_30__["default"], null), settingsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], null), authModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_auth_modal_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], null), customExtensionModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null), fontsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_35__["default"], null), unknownPlatformModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_unknown_platform_modal_jsx__WEBPACK_IMPORTED_MODULE_36__["default"], null), invalidProjectModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_invalid_project_modal_jsx__WEBPACK_IMPORTED_MODULE_37__["default"], null));
     return isPlayerOnly ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, isWindowFullScreen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.fullscreenBackground,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.fullscreenBackground,
       style: {
         backgroundColor: fullscreenBackgroundColor
       }
     }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
       isFullScreen: isFullScreen,
       isEmbedded: isEmbedded,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_47__["isRendererSupported"])(),
       isRtl: isRtl,
       loading: loading,
       stageSize: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["STAGE_SIZE_MODES"].full,
       vm: vm
     }, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.alertsContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.alertsContainer
     }) : null), alwaysEnabledModals) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], _extends({
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.pageWrapper,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.pageWrapper,
       dir: isRtl ? 'rtl' : 'ltr',
       style: {
         minWidth: (hwUploadMode ? 1524 : 1024) + Math.max(0, customStageSize.width - 480),
@@ -10238,11 +10252,11 @@ const GUIComponent = props => {
     }) : null, isCreating ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
       isFullScreen: true,
       messageId: "gui.loader.creating"
-    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
+    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_47__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
       isRtl: isRtl,
       onClickDesktopSettings: onClickDesktopSettings
     }), tipsLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], null) : null, cardsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_cards_jsx__WEBPACK_IMPORTED_MODULE_24__["default"], null) : null, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.alertsContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.alertsContainer
     }) : null, connectionModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_28__["default"], {
       vm: vm
     }) : null, costumeLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
@@ -10265,7 +10279,7 @@ const GUIComponent = props => {
       canRemix: canRemix,
       canSave: canSave,
       canShare: canShare,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.menuBarPosition,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.menuBarPosition,
       enableCommunity: enableCommunity,
       isShared: isShared,
       isTotallyNormal: isTotallyNormal,
@@ -10290,11 +10304,11 @@ const GUIComponent = props => {
       onStartSelectingFileUpload: onStartSelectingFileUpload,
       onToggleLoginOpen: onToggleLoginOpen
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.bodyWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.bodyWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.flexWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.flexWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.editorWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.editorWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tabs"], {
       forceRenderTabPanel: true,
       className: tabClassNames.tabs,
@@ -10308,7 +10322,7 @@ const GUIComponent = props => {
       className: tabClassNames.tab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_48__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_50__["default"])()
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Blocks",
       id: "gui.gui.blocksTab"
@@ -10317,7 +10331,7 @@ const GUIComponent = props => {
       onClick: onActivateCostumesTab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_49__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_51__["default"])()
     }), targetIsStage ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Backdrops",
       id: "gui.gui.backdropsTab"
@@ -10329,14 +10343,14 @@ const GUIComponent = props => {
       onClick: onActivateSoundsTab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_50__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_52__["default"])()
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Sounds",
       id: "gui.gui.soundsTab"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.blocksWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.blocksWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
       key: "".concat(blocksId, "/").concat(theme.id),
       canUseCloud: canUseCloud,
@@ -10350,17 +10364,17 @@ const GUIComponent = props => {
       theme: theme,
       vm: vm
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.extensionButtonContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.extensionButtonContainer
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.extensionButton,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.extensionButton,
       title: intl.formatMessage(messages.addExtension),
       onClick: onExtensionButtonClick
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.extensionButtonIcon,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.extensionButtonIcon,
       draggable: false,
-      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_47___default.a
+      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_49___default.a
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.watermark
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.watermark
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
     }, costumesTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -10372,21 +10386,21 @@ const GUIComponent = props => {
     }) : null)), backpackVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
       host: backpackHost
     }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.stageAndTargetWrapper, hwUploadMode ? null : _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a[stageSize]),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.stageAndTargetWrapper, hwUploadMode ? null : _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a[stageSize]),
       style: hwUploadMode ? {
         flex: '0 0 520px',
         paddingLeft: 0,
         paddingRight: 0
       } : null
     }, hwUploadMode ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodePanel
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodePanel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodePanelHeader
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodePanelHeader
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeIconBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeIconBtn,
       title: "Code view"
     }, '</>'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeIconBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeIconBtn,
       title: "Back to Stage"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -10396,17 +10410,17 @@ const GUIComponent = props => {
         }
       }))
     }, '×'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeIconBtn, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeLockActive : null),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeIconBtn, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeLockActive : null),
       title: hwCodeLocked ? 'Unlock code (allow editing)' : 'Lock code (read only)'
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onClick: () => setHwCodeLocked(!hwCodeLocked)
     }, hwCodeLocked ? '🔒' : '🔓'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodePanelSpacer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodePanelSpacer
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodePanelDivider
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodePanelDivider
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwClearBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwClearBtn,
       title: "Clear Log"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -10435,7 +10449,7 @@ const GUIComponent = props => {
       x2: "14",
       y2: "17"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwClearBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwClearBtn,
       title: "Clear Code"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -10464,7 +10478,7 @@ const GUIComponent = props => {
       x2: "14",
       y2: "17"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwUploadCodeBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwUploadCodeBtn,
       title: "Upload Firmware: Flash stage firmware for live serial block control"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -10487,9 +10501,9 @@ const GUIComponent = props => {
         // stage_firmware IS the live-control interpreter.
         {
           const boardIdForFlash = hwUploadBoard ? hwUploadBoard.id : 'arduino_uno';
-          const isAtmega328pForFlash = boardIdForFlash === 'arduino_uno' || boardIdForFlash === 'arduino_nano';
+          const flashFnForFlash = BROWSER_FLASHERS[boardIdForFlash];
           const webSerialPortForFlash = window.__hardwareConnection && window.__hardwareConnection.webSerialPort;
-          if (isAtmega328pForFlash && webSerialPortForFlash) {
+          if (flashFnForFlash && webSerialPortForFlash) {
             try {
               if (window.__hardwareConnection.disconnect) {
                 await window.__hardwareConnection.disconnect();
@@ -10500,7 +10514,7 @@ const GUIComponent = props => {
               const data = await r.json();
               if (!data.success) throw new Error(data.error || 'Could not fetch stage firmware');
               setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Flashing directly over Web Serial (no agent)...'));
-              await Object(_lib_stk500_flasher__WEBPACK_IMPORTED_MODULE_42__["flashAtmega328p"])(webSerialPortForFlash, data.hex, info => {
+              await flashFnForFlash(webSerialPortForFlash, data.hex, info => {
                 setHwLogLines(prev => {
                   const line = '[' + new Date().toLocaleTimeString() + '] ' + info.stage + '... ' + info.progress + '%';
                   const last = prev[prev.length - 1] || '';
@@ -10508,10 +10522,10 @@ const GUIComponent = props => {
                 });
               });
               setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Firmware upload successful! Reconnecting for live control...'));
-              const conn = await Object(_lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_43__["openWebSerialConnection"])(webSerialPortForFlash, {
+              const conn = await Object(_lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_45__["openWebSerialConnection"])(webSerialPortForFlash, {
                 baudRate: 115200
               });
-              Object(_lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_43__["activateGlobalWebSerialConnection"])(conn);
+              Object(_lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_45__["activateGlobalWebSerialConnection"])(conn);
               setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Reconnected.'));
               hwFlashBusyRef.current = false;
               return;
@@ -10577,7 +10591,7 @@ const GUIComponent = props => {
         }
       }
     }, '⚡ Firmware'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwUploadCodeBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwUploadCodeBtn,
       title: "Upload Code: Compile and upload the current sketch to the board"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -10594,13 +10608,13 @@ const GUIComponent = props => {
         // Phase 2: flash directly from the browser over Web Serial - no
         // agent needed for the flashing step itself (compiling still
         // needs a reachable arduino-cli, via the agent or local backend,
-        // through getHwApiBase()). Only covers Uno/Nano (STK500v1/
-        // Optiboot) for now - Mega (STK500v2) and ESP32 (its own ROM
-        // loader protocol) fall through to the existing agent-based path.
+        // through getHwApiBase()). Covers Uno/Nano (STK500v1/Optiboot)
+        // and Mega (STK500v2/"wiring") - ESP32 (its own ROM loader
+        // protocol) falls through to the existing agent-based path.
         const boardId = hwUploadBoard ? hwUploadBoard.id : 'arduino_uno';
-        const isAtmega328p = boardId === 'arduino_uno' || boardId === 'arduino_nano';
+        const flashFn = BROWSER_FLASHERS[boardId];
         const webSerialPort = window.__hardwareConnection && window.__hardwareConnection.webSerialPort;
-        if (isAtmega328p && webSerialPort) {
+        if (flashFn && webSerialPort) {
           try {
             if (window.__hardwareConnection.disconnect) {
               await window.__hardwareConnection.disconnect();
@@ -10621,11 +10635,52 @@ const GUIComponent = props => {
             if (!data.success) throw new Error(data.error || 'Compile failed');
             setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] ' + (data.compileOutput || '').split('\n')[0]));
             setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Flashing directly over Web Serial (no agent)...'));
-            await Object(_lib_stk500_flasher__WEBPACK_IMPORTED_MODULE_42__["flashAtmega328p"])(webSerialPort, data.hex, info => {
+            await flashFn(webSerialPort, data.hex, info => {
               setHwLogLines(prev => {
                 const line = '[' + new Date().toLocaleTimeString() + '] ' + info.stage + '... ' + info.progress + '%';
                 const last = prev[prev.length - 1] || '';
                 // Overwrite the previous progress line instead of spamming the log.
+                return last.indexOf('%') !== -1 ? prev.slice(0, -1).concat(line) : prev.concat(line);
+              });
+            });
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Upload successful! (flashed directly from the browser)'));
+            hwFlashBusyRef.current = false;
+            return;
+          } catch (e) {
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Browser flash failed (' + e.message + ') - falling back to the agent...'));
+            // fall through to the existing agent-based path below
+          }
+        }
+
+        // ESP32 - different chip architecture entirely, own compile output
+        // (multi-file: bootloader/partitions/app, not a single hex) and own
+        // flashing protocol, handled via esptool-js (see esp32-flasher.js)
+        // rather than sharing the AVR flasher machinery above.
+        if (boardId === 'esp32' && webSerialPort) {
+          try {
+            if (window.__hardwareConnection.disconnect) {
+              await window.__hardwareConnection.disconnect();
+            }
+            const apiBase = await Object(_lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_41__["getHwApiBase"])();
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Compiling...'));
+            const r = await fetch(apiBase + '/compiler/compile-only-esp32', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                cppCode: hwUploadCode,
+                board: BOARD_FQBN[boardId] || 'esp32:esp32:esp32'
+              })
+            });
+            const data = await r.json();
+            if (!data.success) throw new Error(data.error || 'Compile failed');
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] ' + (data.compileOutput || '').split('\n')[0]));
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Flashing directly over Web Serial (no agent)...'));
+            await Object(_lib_esp32_flasher__WEBPACK_IMPORTED_MODULE_44__["flashEsp32"])(webSerialPort, data.files, info => {
+              setHwLogLines(prev => {
+                const line = '[' + new Date().toLocaleTimeString() + '] ' + info.stage + (info.progress !== undefined ? '... ' + info.progress + '%' : '');
+                const last = prev[prev.length - 1] || '';
                 return last.indexOf('%') !== -1 ? prev.slice(0, -1).concat(line) : prev.concat(line);
               });
             });
@@ -10756,17 +10811,17 @@ const GUIComponent = props => {
         }
       }
     }, '⬆ Upload Code'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeLangLabel
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeLangLabel
     }, 'C++')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeEditorArea
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeEditorArea
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       ref: hwLineNumRef,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwLineNumbers
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwLineNumbers
     }, hwUploadCode.split('\n').map((_, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       key: i,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwLineNum
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwLineNum
     }, i + 1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("textarea", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeTextarea, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeTextareaLocked : null),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeTextarea, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeTextareaLocked : null),
       spellCheck: false,
       readOnly: hwCodeLocked,
       value: hwUploadCode
@@ -10783,34 +10838,34 @@ const GUIComponent = props => {
         }
       }
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomPanel
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomPanel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomTabs
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomTabs
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: hwBottomTab === 0 ? _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomTab
+      className: hwBottomTab === 0 ? _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomTab
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onClick: () => setHwBottomTab(0)
     }, '>> Log'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: hwBottomTab === 1 ? _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomTab
+      className: hwBottomTab === 1 ? _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomTab
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onClick: () => setHwBottomTab(1)
     }, '⇄ Serial Monitor')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwCodeBottomContent
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomContent
     }, hwBottomTab === 0 ? hwLogLines.length === 0 ? null : hwLogLines.map((line, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       key: i,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwLogLine
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwLogLine
     }, line)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.hwSerialPlaceholder
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwSerialPlaceholder
     }, 'Serial Monitor — connect via Serial to use')))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
       isFullScreen: isFullScreen,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_47__["isRendererSupported"])(),
       isRtl: isRtl,
       stageSize: stageSize,
       vm: vm
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.targetWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.targetWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
       stageSize: stageSize,
       vm: vm
@@ -10896,7 +10951,7 @@ GUIComponent.propTypes = {
   stageSizeMode: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(Object.keys(_lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["STAGE_SIZE_MODES"])),
   targetIsStage: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   telemetryModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  theme: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_44__["Theme"]),
+  theme: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_46__["Theme"]),
   tipsLibraryVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   usernameModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   settingsModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
@@ -40207,6 +40262,94 @@ const ErrorBoundaryHOC = function ErrorBoundaryHOC(action) {
 
 /***/ }),
 
+/***/ "./src/lib/esp32-flasher.js":
+/*!**********************************!*\
+  !*** ./src/lib/esp32-flasher.js ***!
+  \**********************************/
+/*! exports provided: flashEsp32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "flashEsp32", function() { return flashEsp32; });
+/* harmony import */ var esptool_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! esptool-js */ "./node_modules/esptool-js/lib/index.js");
+/**
+ * ESP32 flashing over Web Serial - thin wrapper around Espressif's own
+ * esptool-js (https://github.com/espressif/esptool-js), rather than
+ * reimplementing their ROM bootloader protocol from scratch. Much lower
+ * risk than the hand-rolled AVR flashers in this directory, since it's an
+ * official, actively-maintained library.
+ */
+
+
+
+/**
+ * Flashes a multi-file ESP32 image (bootloader/partitions/app, each with
+ * its own flash address) via Web Serial.
+ * @param {SerialPort} port - an already-permission-granted (but not yet
+ *   open) Web Serial port.
+ * @param {Array<{address: number, data: string}>} files - base64-encoded
+ *   file data with flash addresses, from the compile-only-esp32 backend endpoint.
+ * @param {(info: {stage: string, progress: number}) => void} [onProgress]
+ */
+async function flashEsp32(port, files, onProgress) {
+  const report = (stage, progress) => {
+    if (onProgress) onProgress({
+      stage,
+      progress
+    });
+  };
+  const transport = new esptool_js__WEBPACK_IMPORTED_MODULE_0__["Transport"](port, true);
+  const terminal = {
+    clean() {},
+    writeLine(data) {
+      report('log: ' + data, undefined);
+    },
+    write(data) {/* ignore partial writes, only report full lines */}
+  };
+  report('opening', 0);
+  const esploader = new esptool_js__WEBPACK_IMPORTED_MODULE_0__["ESPLoader"]({
+    transport,
+    baudrate: 115200,
+    terminal,
+    debugLogging: false
+  });
+  try {
+    report('connecting', 5);
+    await esploader.main(); // connects, resets into the ROM bootloader, detects the chip
+
+    const fileArray = files.map(f => ({
+      address: f.address,
+      data: Uint8Array.from(atob(f.data), c => c.charCodeAt(0))
+    }));
+    report('flashing', 10);
+    await esploader.writeFlash({
+      fileArray,
+      flashMode: 'keep',
+      flashFreq: 'keep',
+      flashSize: 'keep',
+      eraseAll: false,
+      compress: true,
+      reportProgress: (fileIndex, written, total) => {
+        // Weight each file's contribution roughly by its share of the
+        // total across all 3 files, just for a smoother-looking bar.
+        const perFile = 85 / files.length;
+        const withinFile = total > 0 ? written / total : 1;
+        report('writing', 10 + Math.round(fileIndex * perFile + withinFile * perFile));
+      }
+    });
+    report('resetting', 98);
+    await esploader.after('hard_reset');
+    report('done', 100);
+  } finally {
+    try {
+      await transport.disconnect();
+    } catch (e) {/* ignore */}
+  }
+}
+
+/***/ }),
+
 /***/ "./src/lib/file-uploader.js":
 /*!**********************************!*\
   !*** ./src/lib/file-uploader.js ***!
@@ -44511,6 +44654,276 @@ async function flashAtmega328p(port, hexText, onProgress) {
         })();
         await session.loadAddress(byteOffset / 2); // STK500 addresses flash in words
         await session.programPage(paddedPage);
+        report('writing', 20 + Math.round(pageIndex / totalPages * 75));
+      }
+      report('finishing', 98);
+      await session.leaveProgMode();
+    } finally {
+      try {
+        await reader.cancel();
+      } catch (e) {/* ignore */}
+      try {
+        reader.releaseLock();
+      } catch (e) {/* ignore */}
+      try {
+        await writer.close();
+      } catch (e) {/* ignore */}
+    }
+    report('done', 100);
+  } finally {
+    try {
+      await port.close();
+    } catch (e) {/* ignore */}
+  }
+}
+
+
+/***/ }),
+
+/***/ "./src/lib/stk500v2-flasher.js":
+/*!*************************************!*\
+  !*** ./src/lib/stk500v2-flasher.js ***!
+  \*************************************/
+/*! exports provided: flashAtmega2560, parseIntelHex */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "flashAtmega2560", function() { return flashAtmega2560; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parseIntelHex", function() { return parseIntelHex; });
+/**
+ * Pure-JS STK500v2 bootloader client over Web Serial - flashes ATmega2560
+ * boards (Arduino Mega) directly from the browser, no local agent, no
+ * avrdude. This is avrdude's "wiring" programmer: per its own source
+ * comment, "The Wiring bootloader uses a near-complete STK500v2 protocol
+ * (only ISP specific programming commands are not implemented e.g. chip
+ * erase)". Protocol constants and command sequence verified directly
+ * against avrdude's src/wiring.c, src/stk500v2.c, src/stk500v2_private.h
+ * and src/avrdude.conf.in (m2560/.classic part definitions).
+ *
+ * NOTE: more uncertainty here than stk500-flasher.js (STK500v1/Optiboot for
+ * Uno/Nano) - a few AVRMEM fields (exact "mode" flag combination, readback
+ * poll bytes) aren't set explicitly anywhere in the m2560 part-inheritance
+ * chain in avrdude.conf, meaning they come from avrdude's compiled-in
+ * struct defaults that weren't practical to track down from source alone.
+ * This implementation sidesteps that by using STK500v2's "timed delay"
+ * completion mode instead of value/ready-busy polling, which doesn't need
+ * those values. Falls back to the agent automatically on any failure.
+ */
+
+const MESSAGE_START = 0x1B;
+const TOKEN = 0x0E;
+const CMD_SIGN_ON = 0x01;
+const CMD_LOAD_ADDRESS = 0x06;
+const CMD_ENTER_PROGMODE_ISP = 0x10;
+const CMD_LEAVE_PROGMODE_ISP = 0x11;
+const CMD_PROGRAM_FLASH_ISP = 0x13;
+const STATUS_CMD_OK = 0x00;
+
+// Standard AVR serial programming instruction opcode bytes (identical across
+// the whole classic ATmega family - from the datasheet's SPI programming
+// instruction table, not part-specific).
+const AVR_PGM_ENABLE = [0xAC, 0x53, 0x00, 0x00];
+const OPCODE_LOADPAGE_LO = 0x40;
+const OPCODE_LOADPAGE_HI = 0x48;
+const OPCODE_WRITEPAGE = 0x4C;
+const OPCODE_READ_LO = 0x20;
+
+// From avrdude.conf's m2560 part (inherits from m640 -> .classic):
+const PAGE_SIZE = 256; // bytes (flash 0x40000 / num_pages 1024)
+// Standard ISP timing params used by virtually the whole classic AVR family
+// when not overridden per-part (confirmed present verbatim across multiple
+// unrelated parts in avrdude.conf.in).
+const ISP_TIMEOUT = 200;
+const ISP_STABDELAY = 100;
+const ISP_CMDEXEDELAY = 25;
+const ISP_SYNCHLOOPS = 32;
+const ISP_BYTEDELAY = 0;
+const ISP_POLLVALUE = 0x53;
+const ISP_POLLINDEX = 3;
+const PAGE_WRITE_DELAY_MS = 10; // ATmega2560 flash page write is <=4.5ms per datasheet; generous margin
+
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+function parseIntelHex(hexText) {
+  const bytes = [];
+  let highAddress = 0;
+  for (const rawLine of hexText.split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line.startsWith(':')) continue;
+    const byteCount = parseInt(line.substr(1, 2), 16);
+    const address = parseInt(line.substr(3, 4), 16);
+    const recordType = parseInt(line.substr(7, 2), 16);
+    if (recordType === 0x00) {
+      const fullAddress = highAddress + address;
+      for (let i = 0; i < byteCount; i++) {
+        bytes[fullAddress + i] = parseInt(line.substr(9 + i * 2, 2), 16);
+      }
+    } else if (recordType === 0x02) {
+      highAddress = parseInt(line.substr(9, 4), 16) * 16;
+    } else if (recordType === 0x04) {
+      highAddress = parseInt(line.substr(9, 4), 16) << 16;
+    } else if (recordType === 0x01) {
+      break;
+    }
+  }
+  const flat = new Uint8Array(bytes.length);
+  for (let i = 0; i < bytes.length; i++) flat[i] = bytes[i] === undefined ? 0xFF : bytes[i];
+  return flat;
+}
+
+/** Matches wiring.c's wiring_open() reset sequence exactly. */
+async function resetIntoBootloader(port) {
+  await port.setSignals({
+    dataTerminalReady: false,
+    requestToSend: false
+  });
+  await delay(50);
+  await port.setSignals({
+    dataTerminalReady: true,
+    requestToSend: true
+  });
+  await delay(1); // wiring.c: max 100us - we can't sleep sub-millisecond, 1ms is close enough
+  await port.setSignals({
+    dataTerminalReady: false,
+    requestToSend: false
+  });
+  await delay(100);
+}
+class Stk500v2Session {
+  constructor(reader, writer) {
+    this.reader = reader;
+    this.writer = writer;
+    this.seq = 0;
+  }
+  async readBytes(count, timeoutMs) {
+    const result = new Uint8Array(count);
+    let filled = 0;
+    const deadline = Date.now() + timeoutMs;
+    while (filled < count) {
+      const remaining = deadline - Date.now();
+      if (remaining <= 0) throw new Error('Timed out waiting for board response');
+      const _await$Promise$race = await Promise.race([this.reader.read(), delay(remaining).then(() => ({
+          value: undefined,
+          done: false
+        }))]),
+        value = _await$Promise$race.value,
+        done = _await$Promise$race.done;
+      if (done) throw new Error('Serial port closed unexpectedly');
+      if (!value) continue;
+      for (let i = 0; i < value.length && filled < count; i++) result[filled++] = value[i];
+    }
+    return result;
+  }
+
+  /** Sends a framed STK500v2 packet and returns the response body (without the CMD echo byte stripped). */
+  async command(bodyBytes) {
+    let timeoutMs = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2000;
+    const seq = this.seq & 0xFF;
+    this.seq++;
+    const len = bodyBytes.length;
+    const packet = new Uint8Array(6 + len);
+    packet[0] = MESSAGE_START;
+    packet[1] = seq;
+    packet[2] = len >> 8 & 0xFF;
+    packet[3] = len & 0xFF;
+    packet[4] = TOKEN;
+    packet.set(bodyBytes, 5);
+    let checksum = 0;
+    for (let i = 0; i < 5 + len; i++) checksum ^= packet[i];
+    packet[5 + len] = checksum;
+    await this.writer.write(packet);
+
+    // Parse the framed response: MESSAGE_START, seq, sizeHi, sizeLo, TOKEN, body[size], checksum.
+    const header = await this.readBytes(5, timeoutMs);
+    if (header[0] !== MESSAGE_START) throw new Error('Bad response framing (no MESSAGE_START)');
+    if (header[4] !== TOKEN) throw new Error('Bad response framing (no TOKEN)');
+    const bodySize = header[2] << 8 | header[3];
+    const rest = await this.readBytes(bodySize + 1, timeoutMs); // body + checksum
+    const body = rest.slice(0, bodySize);
+    if (body[0] !== bodyBytes[0]) throw new Error('Response command byte mismatch');
+    if (body[1] !== STATUS_CMD_OK) throw new Error('Board rejected command (status 0x' + body[1].toString(16) + ')');
+    return body;
+  }
+  async signOn() {
+    // A few retries - matches avrdude's RETRIES behavior for getsync.
+    let lastErr;
+    for (let attempt = 0; attempt < 10; attempt++) {
+      try {
+        await this.command([CMD_SIGN_ON], 300);
+        return;
+      } catch (e) {
+        lastErr = e;
+        await delay(100);
+      }
+    }
+    throw new Error('Could not sync with bootloader (' + (lastErr ? lastErr.message : 'unknown') + ') - check the board is a Mega and the port is correct');
+  }
+  async enterProgMode() {
+    await this.command([CMD_ENTER_PROGMODE_ISP, ISP_TIMEOUT, ISP_STABDELAY, ISP_CMDEXEDELAY, ISP_SYNCHLOOPS, ISP_BYTEDELAY, ISP_POLLVALUE, ISP_POLLINDEX, ...AVR_PGM_ENABLE], 2000);
+  }
+  async leaveProgMode() {
+    await this.command([CMD_LEAVE_PROGMODE_ISP, 1, 1], 2000);
+  }
+  async loadAddress(wordAddress, useExtAddr) {
+    // Bit 31 set signals "this part needs extended (>64K word) addressing" -
+    // per stk500v2.c's paged_write comment, matching flash > 128KB (Mega has 256KB).
+    const addr = (useExtAddr ? 0x80000000 : 0) | wordAddress;
+    await this.command([CMD_LOAD_ADDRESS, addr >>> 24 & 0xFF, addr >>> 16 & 0xFF, addr >>> 8 & 0xFF, addr & 0xFF], 1000);
+  }
+  async programFlashPage(pageBytes) {
+    const size = pageBytes.length;
+    // mode: 0x01 (paged) | 0x04 (timed-delay completion, not value/RDY-BSY
+    // polling - see file header) | 0x80 (commit the page after loading it)
+    const mode = 0x01 | 0x04 | 0x80;
+    await this.command([CMD_PROGRAM_FLASH_ISP, size >> 8 & 0xFF, size & 0xFF, mode, PAGE_WRITE_DELAY_MS, OPCODE_LOADPAGE_LO, OPCODE_WRITEPAGE, OPCODE_READ_LO, 0xFF, 0xFF,
+    // readback poll bytes - unused in timed-delay mode
+    ...pageBytes], 3000);
+  }
+}
+
+/**
+ * Flashes a compiled .hex onto an ATmega2560 board (Arduino Mega) via Web Serial.
+ * @param {SerialPort} port
+ * @param {string} hexText
+ * @param {(info: {stage: string, progress: number}) => void} [onProgress]
+ */
+async function flashAtmega2560(port, hexText, onProgress) {
+  const report = (stage, progress) => {
+    if (onProgress) onProgress({
+      stage,
+      progress
+    });
+  };
+  const flashImage = parseIntelHex(hexText);
+  report('opening', 0);
+  await port.open({
+    baudRate: 115200
+  });
+  try {
+    report('resetting', 5);
+    await resetIntoBootloader(port);
+    const reader = port.readable.getReader();
+    const writer = port.writable.getWriter();
+    const session = new Stk500v2Session(reader, writer);
+    try {
+      report('syncing', 10);
+      await session.signOn();
+      report('entering-progmode', 15);
+      await session.enterProgMode();
+      const totalPages = Math.ceil(flashImage.length / PAGE_SIZE);
+      const useExtAddr = flashImage.length > 0x10000; // >64K bytes needs extended addressing
+      for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
+        const byteOffset = pageIndex * PAGE_SIZE;
+        const page = flashImage.slice(byteOffset, byteOffset + PAGE_SIZE);
+        const paddedPage = page.length === PAGE_SIZE ? page : (() => {
+          const p = new Uint8Array(PAGE_SIZE).fill(0xFF);
+          p.set(page);
+          return p;
+        })();
+        await session.loadAddress(byteOffset / 2, useExtAddr);
+        await session.programFlashPage(paddedPage);
         report('writing', 20 + Math.round(pageIndex / totalPages * 75));
       }
       report('finishing', 98);
