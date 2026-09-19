@@ -27,7 +27,8 @@ import DeletionRestorer from '../../containers/deletion-restorer.jsx';
 import TurboMode from '../../containers/turbo-mode.jsx';
 import MenuBarHOC from '../../containers/menu-bar-hoc.jsx';
 import SettingsMenu from './settings-menu.jsx';
-import {getHwApiBase} from '../../lib/tw-hardware-agent';
+import {getHwApiBase, isLocalhost} from '../../lib/tw-hardware-agent';
+import {openWebSerialConnection, activateGlobalWebSerialConnection} from '../../lib/web-serial-connection';
 
 import FramerateChanger from '../../containers/tw-framerate-changer.jsx';
 import ChangeUsername from '../../containers/tw-change-username.jsx';
@@ -269,6 +270,8 @@ class MenuBar extends React.Component {
             'handleRefreshPorts',
             'fetchAndShowPorts',
             'tryAutoConnect',
+            'activateWebSerialConnection',
+            'autoConnectViaAgent',
             'handleShowPortPicker',
             'handleAuthChanged',
             'handleAuthMenuToggle',
@@ -511,6 +514,61 @@ class MenuBar extends React.Component {
     }
     tryAutoConnect(webSerialPort, board, title, skipLoad) {
         var self = this;
+        // Try talking to the board directly over Web Serial first - if the
+        // browser can open it, no local agent is needed at all for live
+        // control. Only fall back to the agent-dependent flow (which needs
+        // the agent running to list/open the OS-level COM port) if that fails.
+        openWebSerialConnection(webSerialPort, {baudRate: 115200}).then(function(conn) {
+            self.activateWebSerialConnection(conn, board, skipLoad);
+        }).catch(function() {
+            // Defense in depth: openWebSerialConnection() already closes the
+            // port on its own internal failures, but if it's still open here
+            // for any other reason, release it now so the agent fallback
+            // below doesn't hit "Access denied" trying to open the same port.
+            try { if (webSerialPort.readable) { webSerialPort.close().catch(function(){}); } } catch (e) {}
+            self.autoConnectViaAgent(webSerialPort, board, title, skipLoad);
+        });
+    }
+    activateWebSerialConnection(conn, board, skipLoad) {
+        var self = this;
+        var boardObj = board || this.state.hwSelectedBoard;
+        // Web Serial deliberately doesn't expose the OS-level COM path
+        // (privacy) - the 'USB' placeholder this sets gets upgraded to a
+        // real path below if the agent/backend can resolve one, since
+        // firmware upload for boards Phase 2's browser flasher doesn't cover
+        // yet (Mega, ESP32) still shells out to avrdude/arduino-cli via the
+        // agent and needs a real port.
+        activateGlobalWebSerialConnection(conn);
+        this.setState({
+            hwConnectedPort: 'USB (direct)',
+            hwPortPickerOpen: false,
+            hwPortPickerSuffix: '',
+            hwSerialPort: conn.port
+        });
+        if (!skipLoad && boardObj && boardObj.file) {
+            const url = `${window.location.origin}/${boardObj.file}.js`;
+            this.props.vm.extensionManager.loadExtensionURL(url)
+                .catch(function(e){alert('Extension load error: '+e.message);});
+        }
+        var info = conn.port.getInfo ? conn.port.getInfo() : {};
+        var vid = info && info.usbVendorId ? info.usbVendorId.toString(16).toUpperCase() : null;
+        var pid = info && info.usbProductId ? info.usbProductId.toString(16).toUpperCase() : null;
+        if (vid) {
+            self.hwFetch('/serial/ports').then(function(r){return r.json();}).then(function(data){
+                var ports = (data && data.ports) || [];
+                var match = ports.find(function(p) {
+                    return p.vendorId && p.vendorId.toUpperCase() === vid &&
+                        (!pid || (p.productId && p.productId.toUpperCase() === pid));
+                });
+                if (match && window.__hardwareConnection && window.__hardwareConnection.webSerial) {
+                    window.__hardwareConnection.port = match.path;
+                    self.setState({hwConnectedPort: match.path + ' (direct)'});
+                }
+            }).catch(function(){ /* agent/backend unreachable - firmware upload stays unavailable until Phase 2; live control is unaffected */ });
+        }
+    }
+    autoConnectViaAgent(webSerialPort, board, title, skipLoad) {
+        var self = this;
         var info = webSerialPort.getInfo ? webSerialPort.getInfo() : {};
         var vid = info && info.usbVendorId ? info.usbVendorId.toString(16).toUpperCase() : null;
         var pid = info && info.usbProductId ? info.usbProductId.toString(16).toUpperCase() : null;
@@ -533,9 +591,9 @@ class MenuBar extends React.Component {
                     hwPortPickerBoard: board
                 });
             } else {
-                alert('No serial ports found. Make sure your Arduino is connected.');
+                alert('No serial ports found. Make sure your Arduino is connected, or install the Hardware Agent for full support.');
             }
-        }).catch(function(){alert('Failed to fetch serial ports.');});
+        }).catch(function(){alert('Failed to fetch serial ports. If you\'re not running the Hardware Agent, make sure your browser supports Web Serial (Chrome/Edge) and try connecting again.');});
     }
     fetchAndShowPorts (board, title, suffix) {
         var self = this;
@@ -778,13 +836,19 @@ class MenuBar extends React.Component {
             }));
     }
     handleDisconnect () {
-        if (this.state.hwSerialPort) {
+        if (window.__hardwareConnection && window.__hardwareConnection.disconnect) {
+            // Properly releases the Web Serial reader/writer locks before
+            // closing the port - closing it directly (as below) would throw
+            // since the streams are still piped through TextEncoder/DecoderStream.
+            window.__hardwareConnection.disconnect().catch(function(){});
+        } else if (this.state.hwSerialPort) {
             this.state.hwSerialPort.close()
                 .catch(() => {});
         }
         if (window.__hardwareConnection && window.__hardwareConnection.id) {
             this.hwFetch('/serial/disconnect/' + window.__hardwareConnection.id, {method: 'POST'}).catch(function(){});
         }
+        window.STEMWebSerial = null;
         window.__hardwareConnection = null;
         this.setState({hwConnectedPort: null, hwSerialPort: null});
     }
@@ -1373,24 +1437,36 @@ class MenuBar extends React.Component {
                                             />
                                             {'Bluetooth'}
                                         </div>
-                                        <a
-                                            className={styles.hwConnectItem}
-                                            // Bump ?v=N every time downloads/hardware-agent.zip is
-                                            // rebuilt - a browser that cached an old download won't
-                                            // otherwise notice the file changed (no-store header on
-                                            // the route helps, but this guarantees a fresh fetch).
-                                            href="/downloads/hardware-agent.zip?v=2"
-                                            title="On the cloud-hosted app? The server has no USB access - download this small local helper to connect your Arduino."
-                                            style={{display: 'block', textDecoration: 'none', borderTop: '1px solid rgba(0,0,0,0.08)'}}
-                                        >
-                                            <img
-                                                src={usbIcon}
-                                                draggable={false}
-                                                width={16}
-                                                height={16}
-                                            />
-                                            {'Get Hardware Agent'}
-                                        </a>
+                                        {/*
+                                            Web Serial only ever helps with LIVE control (Phase 1) - it
+                                            has no bearing on compiling/flashing code, which the cloud
+                                            backend (Render etc.) can never do at all (wrong OS/arch for
+                                            the bundled Windows avrdude/arduino-cli - not just "missing").
+                                            So the agent is still required on the cloud-hosted site
+                                            regardless of browser; only hide this when BOTH Web Serial is
+                                            supported AND the page's own backend can already do everything
+                                            itself (i.e. we're running locally).
+                                        */}
+                                        {!(typeof navigator !== 'undefined' && navigator.serial && isLocalhost()) && (
+                                            <a
+                                                className={styles.hwConnectItem}
+                                                // Bump ?v=N every time downloads/StemHardwareAgent-Setup.exe
+                                                // is rebuilt - a browser that cached an old download won't
+                                                // otherwise notice the file changed (no-store header on
+                                                // the route helps, but this guarantees a fresh fetch).
+                                                href="/downloads/StemHardwareAgent-Setup.exe?v=1"
+                                                title="On the cloud-hosted app? The server has no USB access - install this small local helper to connect your Arduino. No prerequisites needed - just run it."
+                                                style={{display: 'block', textDecoration: 'none', borderTop: '1px solid rgba(0,0,0,0.08)'}}
+                                            >
+                                                <img
+                                                    src={usbIcon}
+                                                    draggable={false}
+                                                    width={16}
+                                                    height={16}
+                                                />
+                                                {'Install Hardware Agent'}
+                                            </a>
+                                        )}
                                     </div>
                                 </React.Fragment>
                             )}

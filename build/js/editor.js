@@ -10777,15 +10777,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../lib/layout-constants */ "./src/lib/layout-constants.js");
 /* harmony import */ var _lib_screen_utils__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../lib/screen-utils */ "./src/lib/screen-utils.js");
 /* harmony import */ var _lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../lib/tw-hardware-agent */ "./src/lib/tw-hardware-agent.js");
-/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../../lib/themes */ "./src/lib/themes/index.js");
-/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_44__);
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_45__);
-/* harmony import */ var _lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--code.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--code.svg");
-/* harmony import */ var _lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--costumes.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--costumes.svg");
-/* harmony import */ var _lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--sounds.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--sounds.svg");
+/* harmony import */ var _lib_stk500_flasher__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../../lib/stk500-flasher */ "./src/lib/stk500-flasher.js");
+/* harmony import */ var _lib_stk500v2_flasher__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../lib/stk500v2-flasher */ "./src/lib/stk500v2-flasher.js");
+/* harmony import */ var _lib_esp32_flasher__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../lib/esp32-flasher */ "./src/lib/esp32-flasher.js");
+/* harmony import */ var _lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../../lib/web-serial-connection */ "./src/lib/web-serial-connection.js");
+/* harmony import */ var _lib_themes__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ../../lib/themes */ "./src/lib/themes/index.js");
+/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_48__);
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_49__);
+/* harmony import */ var _lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--code.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--code.svg");
+/* harmony import */ var _lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--costumes.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--costumes.svg");
+/* harmony import */ var _lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ../../lib/tw-recolor/build!./icon--sounds.svg */ "./src/lib/tw-recolor/build.js!./src/components/gui/icon--sounds.svg");
 const _excluded = ["accountNavOpen", "activeTabIndex", "alertsVisible", "authorId", "authorThumbnailUrl", "authorUsername", "basePath", "backdropLibraryVisible", "backpackHost", "backpackVisible", "blocksId", "blocksTabVisible", "cardsVisible", "canChangeLanguage", "canChangeTheme", "canCreateNew", "canEditTitle", "canManageFiles", "canRemix", "canSave", "canCreateCopy", "canShare", "canUseCloud", "children", "connectionModalVisible", "costumeLibraryVisible", "onRequestCloseAuthModal", "authModalVisible", "costumesTabVisible", "customStageSize", "enableCommunity", "intl", "isCreating", "isEmbedded", "isFullScreen", "isPlayerOnly", "isRtl", "isShared", "isWindowFullScreen", "isTelemetryEnabled", "isTotallyNormal", "loading", "logo", "renderLogin", "onClickAbout", "onClickAccountNav", "onCloseAccountNav", "onClickAddonSettings", "onClickDesktopSettings", "onClickNewWindow", "onClickPackager", "onLogOut", "onOpenRegistration", "onToggleLoginOpen", "onActivateCostumesTab", "onActivateSoundsTab", "onActivateTab", "onClickLogo", "onExtensionButtonClick", "onOpenCustomExtensionModal", "onProjectTelemetryEvent", "onRequestCloseBackdropLibrary", "onRequestCloseCostumeLibrary", "onRequestCloseTelemetryModal", "onSeeCommunity", "onShare", "onShowPrivacyPolicy", "onStartSelectingFileUpload", "onTelemetryModalCancel", "onTelemetryModalOptIn", "onTelemetryModalOptOut", "securityManager", "showComingSoon", "showOpenFilePicker", "showSaveFilePicker", "soundsTabVisible", "stageSizeMode", "targetIsStage", "telemetryModalVisible", "theme", "tipsLibraryVisible", "usernameModalVisible", "settingsModalVisible", "customExtensionModalVisible", "fontsModalVisible", "unknownPlatformModalVisible", "invalidProjectModalVisible", "vm"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }
@@ -10837,6 +10841,20 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+
+
+
+
+
+// Which browser flasher (if any) covers a given board - Mega isn't as
+// hardware-verified as Uno/Nano (see stk500v2-flasher.js's header), but both
+// fall back to the agent automatically on any failure. ESP32 isn't covered
+// yet (needs esptool-js, a different protocol entirely).
+const BROWSER_FLASHERS = {
+  arduino_uno: _lib_stk500_flasher__WEBPACK_IMPORTED_MODULE_42__["flashAtmega328p"],
+  arduino_nano: _lib_stk500_flasher__WEBPACK_IMPORTED_MODULE_42__["flashAtmega328p"],
+  arduino_mega: _lib_stk500v2_flasher__WEBPACK_IMPORTED_MODULE_43__["flashAtmega2560"]
+};
 
 
 
@@ -11355,12 +11373,12 @@ const GUIComponent = props => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], componentProps, children);
   }
   const tabClassNames = {
-    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.tabs,
-    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.tab),
-    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.tabList),
-    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.tabPanel),
-    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.isSelected),
-    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.isSelected)
+    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.tabs,
+    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.tab),
+    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.tabList),
+    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.tabPanel),
+    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.isSelected),
+    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.isSelected)
   };
   const unconstrainedWidth = _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["UNCONSTRAINED_NON_STAGE_WIDTH"] + _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["FIXED_WIDTH"] + Math.max(0, customStageSize.width - _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["FIXED_WIDTH"]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_responsive__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -11373,22 +11391,22 @@ const GUIComponent = props => {
       isEmbedded: isEmbedded
     }), usernameModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_30__["default"], null), settingsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], null), authModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_auth_modal_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], null), customExtensionModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null), fontsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_35__["default"], null), unknownPlatformModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_unknown_platform_modal_jsx__WEBPACK_IMPORTED_MODULE_36__["default"], null), invalidProjectModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_invalid_project_modal_jsx__WEBPACK_IMPORTED_MODULE_37__["default"], null));
     return isPlayerOnly ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, isWindowFullScreen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.fullscreenBackground,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.fullscreenBackground,
       style: {
         backgroundColor: fullscreenBackgroundColor
       }
     }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
       isFullScreen: isFullScreen,
       isEmbedded: isEmbedded,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_43__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_47__["isRendererSupported"])(),
       isRtl: isRtl,
       loading: loading,
       stageSize: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["STAGE_SIZE_MODES"].full,
       vm: vm
     }, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.alertsContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.alertsContainer
     }) : null), alwaysEnabledModals) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], _extends({
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.pageWrapper,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.pageWrapper,
       dir: isRtl ? 'rtl' : 'ltr',
       style: {
         minWidth: (hwUploadMode ? 1524 : 1024) + Math.max(0, customStageSize.width - 480),
@@ -11407,11 +11425,11 @@ const GUIComponent = props => {
     }) : null, isCreating ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
       isFullScreen: true,
       messageId: "gui.loader.creating"
-    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_43__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
+    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_47__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
       isRtl: isRtl,
       onClickDesktopSettings: onClickDesktopSettings
     }), tipsLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], null) : null, cardsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_cards_jsx__WEBPACK_IMPORTED_MODULE_24__["default"], null) : null, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.alertsContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.alertsContainer
     }) : null, connectionModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_28__["default"], {
       vm: vm
     }) : null, costumeLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
@@ -11434,7 +11452,7 @@ const GUIComponent = props => {
       canRemix: canRemix,
       canSave: canSave,
       canShare: canShare,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.menuBarPosition,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.menuBarPosition,
       enableCommunity: enableCommunity,
       isShared: isShared,
       isTotallyNormal: isTotallyNormal,
@@ -11459,11 +11477,11 @@ const GUIComponent = props => {
       onStartSelectingFileUpload: onStartSelectingFileUpload,
       onToggleLoginOpen: onToggleLoginOpen
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.bodyWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.bodyWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.flexWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.flexWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.editorWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.editorWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tabs"], {
       forceRenderTabPanel: true,
       className: tabClassNames.tabs,
@@ -11477,7 +11495,7 @@ const GUIComponent = props => {
       className: tabClassNames.tab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_46__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_code_svg__WEBPACK_IMPORTED_MODULE_50__["default"])()
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Blocks",
       id: "gui.gui.blocksTab"
@@ -11486,7 +11504,7 @@ const GUIComponent = props => {
       onClick: onActivateCostumesTab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_47__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_51__["default"])()
     }), targetIsStage ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Backdrops",
       id: "gui.gui.backdropsTab"
@@ -11498,14 +11516,14 @@ const GUIComponent = props => {
       onClick: onActivateSoundsTab
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: Object(_lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_48__["default"])()
+      src: Object(_lib_tw_recolor_build_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_52__["default"])()
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
       defaultMessage: "Sounds",
       id: "gui.gui.soundsTab"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.blocksWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.blocksWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
       key: "".concat(blocksId, "/").concat(theme.id),
       canUseCloud: canUseCloud,
@@ -11519,17 +11537,17 @@ const GUIComponent = props => {
       theme: theme,
       vm: vm
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.extensionButtonContainer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.extensionButtonContainer
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.extensionButton,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.extensionButton,
       title: intl.formatMessage(messages.addExtension),
       onClick: onExtensionButtonClick
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.extensionButtonIcon,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.extensionButtonIcon,
       draggable: false,
-      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_45___default.a
+      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_49___default.a
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.watermark
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.watermark
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
       className: tabClassNames.tabPanel
     }, costumesTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -11541,21 +11559,21 @@ const GUIComponent = props => {
     }) : null)), backpackVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
       host: backpackHost
     }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.stageAndTargetWrapper, hwUploadMode ? null : _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a[stageSize]),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.stageAndTargetWrapper, hwUploadMode ? null : _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a[stageSize]),
       style: hwUploadMode ? {
         flex: '0 0 520px',
         paddingLeft: 0,
         paddingRight: 0
       } : null
     }, hwUploadMode ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodePanel
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodePanel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodePanelHeader
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodePanelHeader
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeIconBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeIconBtn,
       title: "Code view"
     }, '</>'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeIconBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeIconBtn,
       title: "Back to Stage"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -11565,17 +11583,17 @@ const GUIComponent = props => {
         }
       }))
     }, '×'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeIconBtn, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeLockActive : null),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeIconBtn, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeLockActive : null),
       title: hwCodeLocked ? 'Unlock code (allow editing)' : 'Lock code (read only)'
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onClick: () => setHwCodeLocked(!hwCodeLocked)
     }, hwCodeLocked ? '🔒' : '🔓'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodePanelSpacer
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodePanelSpacer
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodePanelDivider
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodePanelDivider
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwClearBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwClearBtn,
       title: "Clear Log"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -11604,7 +11622,7 @@ const GUIComponent = props => {
       x2: "14",
       y2: "17"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwClearBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwClearBtn,
       title: "Clear Code"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -11633,7 +11651,7 @@ const GUIComponent = props => {
       x2: "14",
       y2: "17"
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwUploadCodeBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwUploadCodeBtn,
       title: "Upload Firmware: Flash stage firmware for live serial block control"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -11646,6 +11664,51 @@ const GUIComponent = props => {
         hwFlashBusyRef.current = true;
         setHwLogLines(prev => prev.concat('[' + ts + '] Starting firmware upload...'));
         setHwBottomTab(0);
+
+        // Phase 2: flash the prebuilt stage_firmware .hex directly from
+        // the browser over Web Serial - simpler than Upload Code since
+        // there's no compile step, just an already-built hex file (plain
+        // text data, so even the cloud backend can serve it with zero
+        // toolchain). Only Uno/Nano for now. Unlike Upload Code, this
+        // needs to reconnect afterward for live control, since
+        // stage_firmware IS the live-control interpreter.
+        {
+          const boardIdForFlash = hwUploadBoard ? hwUploadBoard.id : 'arduino_uno';
+          const flashFnForFlash = BROWSER_FLASHERS[boardIdForFlash];
+          const webSerialPortForFlash = window.__hardwareConnection && window.__hardwareConnection.webSerialPort;
+          if (flashFnForFlash && webSerialPortForFlash) {
+            try {
+              if (window.__hardwareConnection.disconnect) {
+                await window.__hardwareConnection.disconnect();
+              }
+              const apiBase = await Object(_lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_41__["getHwApiBase"])();
+              setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Fetching stage firmware...'));
+              const r = await fetch(apiBase + '/firmware/stage-hex?boardType=' + boardIdForFlash);
+              const data = await r.json();
+              if (!data.success) throw new Error(data.error || 'Could not fetch stage firmware');
+              setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Flashing directly over Web Serial (no agent)...'));
+              await flashFnForFlash(webSerialPortForFlash, data.hex, info => {
+                setHwLogLines(prev => {
+                  const line = '[' + new Date().toLocaleTimeString() + '] ' + info.stage + '... ' + info.progress + '%';
+                  const last = prev[prev.length - 1] || '';
+                  return last.indexOf('%') !== -1 ? prev.slice(0, -1).concat(line) : prev.concat(line);
+                });
+              });
+              setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Firmware upload successful! Reconnecting for live control...'));
+              const conn = await Object(_lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_45__["openWebSerialConnection"])(webSerialPortForFlash, {
+                baudRate: 115200
+              });
+              Object(_lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_45__["activateGlobalWebSerialConnection"])(conn);
+              setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Reconnected.'));
+              hwFlashBusyRef.current = false;
+              return;
+            } catch (e) {
+              setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Browser flash failed (' + e.message + ') - falling back to the agent...'));
+              // fall through to the existing agent-based path below
+            }
+          }
+        }
+
         // Capture port BEFORE releasing Web Serial (disconnect clears it).
         var port2 = window.__hardwareConnection && window.__hardwareConnection.port;
         try {
@@ -11701,7 +11764,7 @@ const GUIComponent = props => {
         }
       }
     }, '⚡ Firmware'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwUploadCodeBtn,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwUploadCodeBtn,
       title: "Upload Code: Compile and upload the current sketch to the board"
       // eslint-disable-next-line react/jsx-no-bind
       ,
@@ -11714,6 +11777,95 @@ const GUIComponent = props => {
         hwFlashBusyRef.current = true;
         setHwLogLines(prev => prev.concat('[' + ts + '] Starting upload...'));
         setHwBottomTab(0);
+
+        // Phase 2: flash directly from the browser over Web Serial - no
+        // agent needed for the flashing step itself (compiling still
+        // needs a reachable arduino-cli, via the agent or local backend,
+        // through getHwApiBase()). Covers Uno/Nano (STK500v1/Optiboot)
+        // and Mega (STK500v2/"wiring") - ESP32 (its own ROM loader
+        // protocol) falls through to the existing agent-based path.
+        const boardId = hwUploadBoard ? hwUploadBoard.id : 'arduino_uno';
+        const flashFn = BROWSER_FLASHERS[boardId];
+        const webSerialPort = window.__hardwareConnection && window.__hardwareConnection.webSerialPort;
+        if (flashFn && webSerialPort) {
+          try {
+            if (window.__hardwareConnection.disconnect) {
+              await window.__hardwareConnection.disconnect();
+            }
+            const apiBase = await Object(_lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_41__["getHwApiBase"])();
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Compiling...'));
+            const r = await fetch(apiBase + '/compiler/compile-only', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                cppCode: hwUploadCode,
+                board: BOARD_FQBN[boardId] || 'arduino:avr:uno'
+              })
+            });
+            const data = await r.json();
+            if (!data.success) throw new Error(data.error || 'Compile failed');
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] ' + (data.compileOutput || '').split('\n')[0]));
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Flashing directly over Web Serial (no agent)...'));
+            await flashFn(webSerialPort, data.hex, info => {
+              setHwLogLines(prev => {
+                const line = '[' + new Date().toLocaleTimeString() + '] ' + info.stage + '... ' + info.progress + '%';
+                const last = prev[prev.length - 1] || '';
+                // Overwrite the previous progress line instead of spamming the log.
+                return last.indexOf('%') !== -1 ? prev.slice(0, -1).concat(line) : prev.concat(line);
+              });
+            });
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Upload successful! (flashed directly from the browser)'));
+            hwFlashBusyRef.current = false;
+            return;
+          } catch (e) {
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Browser flash failed (' + e.message + ') - falling back to the agent...'));
+            // fall through to the existing agent-based path below
+          }
+        }
+
+        // ESP32 - different chip architecture entirely, own compile output
+        // (multi-file: bootloader/partitions/app, not a single hex) and own
+        // flashing protocol, handled via esptool-js (see esp32-flasher.js)
+        // rather than sharing the AVR flasher machinery above.
+        if (boardId === 'esp32' && webSerialPort) {
+          try {
+            if (window.__hardwareConnection.disconnect) {
+              await window.__hardwareConnection.disconnect();
+            }
+            const apiBase = await Object(_lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_41__["getHwApiBase"])();
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Compiling...'));
+            const r = await fetch(apiBase + '/compiler/compile-only-esp32', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                cppCode: hwUploadCode,
+                board: BOARD_FQBN[boardId] || 'esp32:esp32:esp32'
+              })
+            });
+            const data = await r.json();
+            if (!data.success) throw new Error(data.error || 'Compile failed');
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] ' + (data.compileOutput || '').split('\n')[0]));
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Flashing directly over Web Serial (no agent)...'));
+            await Object(_lib_esp32_flasher__WEBPACK_IMPORTED_MODULE_44__["flashEsp32"])(webSerialPort, data.files, info => {
+              setHwLogLines(prev => {
+                const line = '[' + new Date().toLocaleTimeString() + '] ' + info.stage + (info.progress !== undefined ? '... ' + info.progress + '%' : '');
+                const last = prev[prev.length - 1] || '';
+                return last.indexOf('%') !== -1 ? prev.slice(0, -1).concat(line) : prev.concat(line);
+              });
+            });
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Upload successful! (flashed directly from the browser)'));
+            hwFlashBusyRef.current = false;
+            return;
+          } catch (e) {
+            setHwLogLines(prev => prev.concat('[' + new Date().toLocaleTimeString() + '] Browser flash failed (' + e.message + ') - falling back to the agent...'));
+            // fall through to the existing agent-based path below
+          }
+        }
+
         // Capture port BEFORE releasing Web Serial (disconnect clears it).
         var port2 = window.__hardwareConnection && window.__hardwareConnection.port;
         try {
@@ -11832,17 +11984,17 @@ const GUIComponent = props => {
         }
       }
     }, '⬆ Upload Code'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeLangLabel
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeLangLabel
     }, 'C++')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeEditorArea
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeEditorArea
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       ref: hwLineNumRef,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwLineNumbers
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwLineNumbers
     }, hwUploadCode.split('\n').map((_, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       key: i,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwLineNum
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwLineNum
     }, i + 1))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("textarea", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeTextarea, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeTextareaLocked : null),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeTextarea, hwCodeLocked ? _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeTextareaLocked : null),
       spellCheck: false,
       readOnly: hwCodeLocked,
       value: hwUploadCode
@@ -11859,34 +12011,34 @@ const GUIComponent = props => {
         }
       }
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeBottomPanel
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomPanel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeBottomTabs
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomTabs
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: hwBottomTab === 0 ? _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeBottomTab
+      className: hwBottomTab === 0 ? _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomTab
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onClick: () => setHwBottomTab(0)
     }, '>> Log'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: hwBottomTab === 1 ? _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeBottomTab
+      className: hwBottomTab === 1 ? _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomTabActive : _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomTab
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onClick: () => setHwBottomTab(1)
     }, '⇄ Serial Monitor')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwCodeBottomContent
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwCodeBottomContent
     }, hwBottomTab === 0 ? hwLogLines.length === 0 ? null : hwLogLines.map((line, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
       key: i,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwLogLine
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwLogLine
     }, line)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.hwSerialPlaceholder
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.hwSerialPlaceholder
     }, 'Serial Monitor — connect via Serial to use')))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
       isFullScreen: isFullScreen,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_43__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_47__["isRendererSupported"])(),
       isRtl: isRtl,
       stageSize: stageSize,
       vm: vm
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_44___default.a.targetWrapper
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_48___default.a.targetWrapper
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
       stageSize: stageSize,
       vm: vm
@@ -11972,7 +12124,7 @@ GUIComponent.propTypes = {
   stageSizeMode: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(Object.keys(_lib_layout_constants__WEBPACK_IMPORTED_MODULE_39__["STAGE_SIZE_MODES"])),
   targetIsStage: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   telemetryModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  theme: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_42__["Theme"]),
+  theme: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(_lib_themes__WEBPACK_IMPORTED_MODULE_46__["Theme"]),
   tipsLibraryVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   usernameModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   settingsModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
@@ -13840,64 +13992,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_menu_bar_hoc_jsx__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../containers/menu-bar-hoc.jsx */ "./src/containers/menu-bar-hoc.jsx");
 /* harmony import */ var _settings_menu_jsx__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./settings-menu.jsx */ "./src/components/menu-bar/settings-menu.jsx");
 /* harmony import */ var _lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../../lib/tw-hardware-agent */ "./src/lib/tw-hardware-agent.js");
-/* harmony import */ var _containers_tw_framerate_changer_jsx__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../../containers/tw-framerate-changer.jsx */ "./src/containers/tw-framerate-changer.jsx");
-/* harmony import */ var _containers_tw_change_username_jsx__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../../containers/tw-change-username.jsx */ "./src/containers/tw-change-username.jsx");
-/* harmony import */ var _containers_tw_cloud_toggler_jsx__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../../containers/tw-cloud-toggler.jsx */ "./src/containers/tw-cloud-toggler.jsx");
-/* harmony import */ var _tw_save_status_jsx__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./tw-save-status.jsx */ "./src/components/menu-bar/tw-save-status.jsx");
-/* harmony import */ var _tw_news_jsx__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./tw-news.jsx */ "./src/components/menu-bar/tw-news.jsx");
-/* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../../reducers/modals */ "./src/reducers/modals.js");
-/* harmony import */ var _lib_auth_api__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../../lib/auth-api */ "./src/lib/auth-api.js");
-/* harmony import */ var _reducers_mode__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../reducers/mode */ "./src/reducers/mode.js");
-/* harmony import */ var _reducers_time_travel__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../reducers/time-travel */ "./src/reducers/time-travel.js");
-/* harmony import */ var _reducers_project_state__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../reducers/project-state */ "./src/reducers/project-state.js");
-/* harmony import */ var _reducers_menus__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../reducers/menus */ "./src/reducers/menus.js");
-/* harmony import */ var _reducers_tw_js__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../reducers/tw.js */ "./src/reducers/tw.js");
-/* harmony import */ var _lib_collect_metadata__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../lib/collect-metadata */ "./src/lib/collect-metadata.js");
-/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./menu-bar.css */ "./src/components/menu-bar/menu-bar.css");
-/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41__);
-/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../../lib/assets/icon--tutorials.svg */ "./src/lib/assets/icon--tutorials.svg");
-/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_42__);
-/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./icon--mystuff.png */ "./src/components/menu-bar/icon--mystuff.png");
-/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_icon_mystuff_png__WEBPACK_IMPORTED_MODULE_43__);
-/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./icon--profile.png */ "./src/components/menu-bar/icon--profile.png");
-/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_icon_profile_png__WEBPACK_IMPORTED_MODULE_44__);
-/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./icon--remix.svg */ "./src/components/menu-bar/icon--remix.svg");
-/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_icon_remix_svg__WEBPACK_IMPORTED_MODULE_45__);
-/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./dropdown-caret.svg */ "./src/components/menu-bar/dropdown-caret.svg");
-/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46__);
-/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./icon--about.svg */ "./src/components/menu-bar/icon--about.svg");
-/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_icon_about_svg__WEBPACK_IMPORTED_MODULE_47__);
-/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./icon--file.svg */ "./src/components/menu-bar/icon--file.svg");
-/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_icon_file_svg__WEBPACK_IMPORTED_MODULE_48__);
-/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./icon--edit.svg */ "./src/components/menu-bar/icon--edit.svg");
-/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_icon_edit_svg__WEBPACK_IMPORTED_MODULE_49__);
-/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./addons.svg */ "./src/components/menu-bar/addons.svg");
-/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_addons_svg__WEBPACK_IMPORTED_MODULE_50__);
-/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./tw-error.svg */ "./src/components/menu-bar/tw-error.svg");
-/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_tw_error_svg__WEBPACK_IMPORTED_MODULE_51__);
-/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./tw-advanced.svg */ "./src/components/menu-bar/tw-advanced.svg");
-/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_tw_advanced_svg__WEBPACK_IMPORTED_MODULE_52__);
-/* harmony import */ var _icon_connect_svg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./icon--connect.svg */ "./src/components/menu-bar/icon--connect.svg");
-/* harmony import */ var _icon_connect_svg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_icon_connect_svg__WEBPACK_IMPORTED_MODULE_53__);
-/* harmony import */ var _icon_bluetooth_svg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./icon--bluetooth.svg */ "./src/components/menu-bar/icon--bluetooth.svg");
-/* harmony import */ var _icon_bluetooth_svg__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_icon_bluetooth_svg__WEBPACK_IMPORTED_MODULE_54__);
-/* harmony import */ var _icon_usb_svg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./icon--usb.svg */ "./src/components/menu-bar/icon--usb.svg");
-/* harmony import */ var _icon_usb_svg__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_icon_usb_svg__WEBPACK_IMPORTED_MODULE_55__);
-/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./nineties_logo.svg */ "./src/components/menu-bar/nineties_logo.svg");
-/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(_nineties_logo_svg__WEBPACK_IMPORTED_MODULE_56__);
-/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./cat_logo.svg */ "./src/components/menu-bar/cat_logo.svg");
-/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_57___default = /*#__PURE__*/__webpack_require__.n(_cat_logo_svg__WEBPACK_IMPORTED_MODULE_57__);
-/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./prehistoric-logo.svg */ "./src/components/menu-bar/prehistoric-logo.svg");
-/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_58___default = /*#__PURE__*/__webpack_require__.n(_prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_58__);
-/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./oldtimey-logo.svg */ "./src/components/menu-bar/oldtimey-logo.svg");
-/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_59___default = /*#__PURE__*/__webpack_require__.n(_oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_59__);
-/* harmony import */ var _logo_logo_png__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./logo/logo.png */ "./src/components/menu-bar/logo/logo.png");
-/* harmony import */ var _logo_logo_png__WEBPACK_IMPORTED_MODULE_60___default = /*#__PURE__*/__webpack_require__.n(_logo_logo_png__WEBPACK_IMPORTED_MODULE_60__);
-/* harmony import */ var _lib_shared_messages__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ../../lib/shared-messages */ "./src/lib/shared-messages.js");
-/* harmony import */ var _tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./tw-see-inside.jsx */ "./src/components/menu-bar/tw-see-inside.jsx");
-/* harmony import */ var _lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ../../lib/isScratchDesktop.js */ "./src/lib/isScratchDesktop.js");
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
-/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_64___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_64__);
+/* harmony import */ var _lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../../lib/web-serial-connection */ "./src/lib/web-serial-connection.js");
+/* harmony import */ var _containers_tw_framerate_changer_jsx__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../../containers/tw-framerate-changer.jsx */ "./src/containers/tw-framerate-changer.jsx");
+/* harmony import */ var _containers_tw_change_username_jsx__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../../containers/tw-change-username.jsx */ "./src/containers/tw-change-username.jsx");
+/* harmony import */ var _containers_tw_cloud_toggler_jsx__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../../containers/tw-cloud-toggler.jsx */ "./src/containers/tw-cloud-toggler.jsx");
+/* harmony import */ var _tw_save_status_jsx__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./tw-save-status.jsx */ "./src/components/menu-bar/tw-save-status.jsx");
+/* harmony import */ var _tw_news_jsx__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./tw-news.jsx */ "./src/components/menu-bar/tw-news.jsx");
+/* harmony import */ var _reducers_modals__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../../reducers/modals */ "./src/reducers/modals.js");
+/* harmony import */ var _lib_auth_api__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../lib/auth-api */ "./src/lib/auth-api.js");
+/* harmony import */ var _reducers_mode__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../reducers/mode */ "./src/reducers/mode.js");
+/* harmony import */ var _reducers_time_travel__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../reducers/time-travel */ "./src/reducers/time-travel.js");
+/* harmony import */ var _reducers_project_state__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../reducers/project-state */ "./src/reducers/project-state.js");
+/* harmony import */ var _reducers_menus__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../reducers/menus */ "./src/reducers/menus.js");
+/* harmony import */ var _reducers_tw_js__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../reducers/tw.js */ "./src/reducers/tw.js");
+/* harmony import */ var _lib_collect_metadata__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../lib/collect-metadata */ "./src/lib/collect-metadata.js");
+/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./menu-bar.css */ "./src/components/menu-bar/menu-bar.css");
+/* harmony import */ var _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42__);
+/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../lib/assets/icon--tutorials.svg */ "./src/lib/assets/icon--tutorials.svg");
+/* harmony import */ var _lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_lib_assets_icon_tutorials_svg__WEBPACK_IMPORTED_MODULE_43__);
+/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./icon--mystuff.png */ "./src/components/menu-bar/icon--mystuff.png");
+/* harmony import */ var _icon_mystuff_png__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_icon_mystuff_png__WEBPACK_IMPORTED_MODULE_44__);
+/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./icon--profile.png */ "./src/components/menu-bar/icon--profile.png");
+/* harmony import */ var _icon_profile_png__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_icon_profile_png__WEBPACK_IMPORTED_MODULE_45__);
+/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./icon--remix.svg */ "./src/components/menu-bar/icon--remix.svg");
+/* harmony import */ var _icon_remix_svg__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_icon_remix_svg__WEBPACK_IMPORTED_MODULE_46__);
+/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./dropdown-caret.svg */ "./src/components/menu-bar/dropdown-caret.svg");
+/* harmony import */ var _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_47__);
+/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./icon--about.svg */ "./src/components/menu-bar/icon--about.svg");
+/* harmony import */ var _icon_about_svg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_icon_about_svg__WEBPACK_IMPORTED_MODULE_48__);
+/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./icon--file.svg */ "./src/components/menu-bar/icon--file.svg");
+/* harmony import */ var _icon_file_svg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_icon_file_svg__WEBPACK_IMPORTED_MODULE_49__);
+/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./icon--edit.svg */ "./src/components/menu-bar/icon--edit.svg");
+/* harmony import */ var _icon_edit_svg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_icon_edit_svg__WEBPACK_IMPORTED_MODULE_50__);
+/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./addons.svg */ "./src/components/menu-bar/addons.svg");
+/* harmony import */ var _addons_svg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_addons_svg__WEBPACK_IMPORTED_MODULE_51__);
+/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./tw-error.svg */ "./src/components/menu-bar/tw-error.svg");
+/* harmony import */ var _tw_error_svg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_tw_error_svg__WEBPACK_IMPORTED_MODULE_52__);
+/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./tw-advanced.svg */ "./src/components/menu-bar/tw-advanced.svg");
+/* harmony import */ var _tw_advanced_svg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_tw_advanced_svg__WEBPACK_IMPORTED_MODULE_53__);
+/* harmony import */ var _icon_connect_svg__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./icon--connect.svg */ "./src/components/menu-bar/icon--connect.svg");
+/* harmony import */ var _icon_connect_svg__WEBPACK_IMPORTED_MODULE_54___default = /*#__PURE__*/__webpack_require__.n(_icon_connect_svg__WEBPACK_IMPORTED_MODULE_54__);
+/* harmony import */ var _icon_bluetooth_svg__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./icon--bluetooth.svg */ "./src/components/menu-bar/icon--bluetooth.svg");
+/* harmony import */ var _icon_bluetooth_svg__WEBPACK_IMPORTED_MODULE_55___default = /*#__PURE__*/__webpack_require__.n(_icon_bluetooth_svg__WEBPACK_IMPORTED_MODULE_55__);
+/* harmony import */ var _icon_usb_svg__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./icon--usb.svg */ "./src/components/menu-bar/icon--usb.svg");
+/* harmony import */ var _icon_usb_svg__WEBPACK_IMPORTED_MODULE_56___default = /*#__PURE__*/__webpack_require__.n(_icon_usb_svg__WEBPACK_IMPORTED_MODULE_56__);
+/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./nineties_logo.svg */ "./src/components/menu-bar/nineties_logo.svg");
+/* harmony import */ var _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_57___default = /*#__PURE__*/__webpack_require__.n(_nineties_logo_svg__WEBPACK_IMPORTED_MODULE_57__);
+/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./cat_logo.svg */ "./src/components/menu-bar/cat_logo.svg");
+/* harmony import */ var _cat_logo_svg__WEBPACK_IMPORTED_MODULE_58___default = /*#__PURE__*/__webpack_require__.n(_cat_logo_svg__WEBPACK_IMPORTED_MODULE_58__);
+/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./prehistoric-logo.svg */ "./src/components/menu-bar/prehistoric-logo.svg");
+/* harmony import */ var _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_59___default = /*#__PURE__*/__webpack_require__.n(_prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_59__);
+/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./oldtimey-logo.svg */ "./src/components/menu-bar/oldtimey-logo.svg");
+/* harmony import */ var _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_60___default = /*#__PURE__*/__webpack_require__.n(_oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_60__);
+/* harmony import */ var _logo_logo_png__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./logo/logo.png */ "./src/components/menu-bar/logo/logo.png");
+/* harmony import */ var _logo_logo_png__WEBPACK_IMPORTED_MODULE_61___default = /*#__PURE__*/__webpack_require__.n(_logo_logo_png__WEBPACK_IMPORTED_MODULE_61__);
+/* harmony import */ var _lib_shared_messages__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ../../lib/shared-messages */ "./src/lib/shared-messages.js");
+/* harmony import */ var _tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./tw-see-inside.jsx */ "./src/components/menu-bar/tw-see-inside.jsx");
+/* harmony import */ var _lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ../../lib/isScratchDesktop.js */ "./src/lib/isScratchDesktop.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! ../../lib/brand.js */ "./src/lib/brand.js");
+/* harmony import */ var _lib_brand_js__WEBPACK_IMPORTED_MODULE_65___default = /*#__PURE__*/__webpack_require__.n(_lib_brand_js__WEBPACK_IMPORTED_MODULE_65__);
+
 
 
 
@@ -14003,9 +14157,9 @@ const MenuBarItemTooltip = _ref => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, children);
   }
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_coming_soon_coming_soon_jsx__WEBPACK_IMPORTED_MODULE_13__["ComingSoonTooltip"], {
-    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.comingSoon, className),
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.comingSoon, className),
     place: place,
-    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.comingSoonTooltip,
+    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.comingSoonTooltip,
     tooltipId: id
   }, children);
 };
@@ -14022,10 +14176,10 @@ const MenuItemTooltip = _ref2 => {
     children = _ref2.children,
     className = _ref2.className;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_coming_soon_coming_soon_jsx__WEBPACK_IMPORTED_MODULE_13__["ComingSoonTooltip"], {
-    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.comingSoon, className),
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.comingSoon, className),
     isRtl: isRtl,
     place: isRtl ? 'left' : 'right',
-    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.comingSoonTooltip,
+    tooltipClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.comingSoonTooltip,
     tooltipId: id
   }, children);
 };
@@ -14036,9 +14190,9 @@ MenuItemTooltip.propTypes = {
   isRtl: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool
 };
 const AboutButton = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
-  className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hoverable),
-  iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.aboutIcon,
-  iconSrc: _icon_about_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
+  className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hoverable),
+  iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.aboutIcon,
+  iconSrc: _icon_about_svg__WEBPACK_IMPORTED_MODULE_48___default.a,
   onClick: props.onClick
 });
 AboutButton.propTypes = {
@@ -14050,7 +14204,7 @@ const MenuItemLink = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___de
   href: props.href,
   rel: "noreferrer",
   target: "_blank",
-  className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuItemLink
+  className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuItemLink
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], null, props.children));
 MenuItemLink.propTypes = {
   children: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.node.isRequired,
@@ -14059,9 +14213,9 @@ MenuItemLink.propTypes = {
 class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleBoardOpen', 'handleBoardClose', 'handleBoardSelect', 'handleConnectOpen', 'handleConnectClose', 'handleSerialClick', 'handleBluetoothClick', 'handleWiFiClick', 'handleSerialClose', 'handleBluetoothClose', 'handleFetchPorts', 'handleConnectPort', 'handleDisconnect', 'handleBoardWarningClose', 'handleBoardWarningSelect', 'handleConnWarningClose', 'handleStageModeClick', 'handleUploadModeClick', 'handleFeedbackOpen', 'handleFeedbackClose', 'handleFeedbackSubmit', 'handleFeedbackMessageChange', 'handleFeedbackEmailChange', 'handlePortPickerClose', 'handlePortPickerSelect', 'handleRefreshPorts', 'fetchAndShowPorts', 'tryAutoConnect', 'handleShowPortPicker', 'handleAuthChanged', 'handleAuthMenuToggle', 'handleAuthMenuClose', 'goToDashboard']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ['handleClickSeeInside', 'handleClickNew', 'handleClickNewWindow', 'handleClickRemix', 'handleClickSave', 'handleClickSaveAsCopy', 'handleClickPackager', 'handleClickDesktopSettings', 'handleClickRestorePoints', 'handleClickSeeCommunity', 'handleClickShare', 'handleSetMode', 'handleKeyPress', 'handleRestoreOption', 'getSaveToComputerHandler', 'restoreOptionMessage', 'handleBoardOpen', 'handleBoardClose', 'handleBoardSelect', 'handleConnectOpen', 'handleConnectClose', 'handleSerialClick', 'handleBluetoothClick', 'handleWiFiClick', 'handleSerialClose', 'handleBluetoothClose', 'handleFetchPorts', 'handleConnectPort', 'handleDisconnect', 'handleBoardWarningClose', 'handleBoardWarningSelect', 'handleConnWarningClose', 'handleStageModeClick', 'handleUploadModeClick', 'handleFeedbackOpen', 'handleFeedbackClose', 'handleFeedbackSubmit', 'handleFeedbackMessageChange', 'handleFeedbackEmailChange', 'handlePortPickerClose', 'handlePortPickerSelect', 'handleRefreshPorts', 'fetchAndShowPorts', 'tryAutoConnect', 'activateWebSerialConnection', 'autoConnectViaAgent', 'handleShowPortPicker', 'handleAuthChanged', 'handleAuthMenuToggle', 'handleAuthMenuClose', 'goToDashboard']);
     this.state = {
-      authUser: Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_34__["isLoggedIn"])() ? Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_34__["getUser"])() : null,
+      authUser: Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_35__["isLoggedIn"])() ? Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_35__["getUser"])() : null,
       authMenuOpen: false,
       hwBoardOpen: false,
       hwConnectOpen: false,
@@ -14105,7 +14259,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
   }
   handleAuthChanged() {
     this.setState({
-      authUser: Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_34__["isLoggedIn"])() ? Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_34__["getUser"])() : null,
+      authUser: Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_35__["isLoggedIn"])() ? Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_35__["getUser"])() : null,
       authMenuOpen: false
     });
   }
@@ -14131,7 +14285,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     // downloading or logging in first.
     // Note that if user is logged in and editing someone else's project,
     // they'll lose their work.
-    const readyToReplaceProject = this.props.confirmReadyToReplaceProject(this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_61__["default"].replaceProjectWarning));
+    const readyToReplaceProject = this.props.confirmReadyToReplaceProject(this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_62__["default"].replaceProjectWarning));
     this.props.onRequestCloseFile();
     if (readyToReplaceProject) {
       this.props.onClickNew(this.props.canSave && this.props.canCreateNew);
@@ -14205,13 +14359,13 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
 
       // Change logo for modes
       if (mode === '1990') {
-        document.getElementById('logo_img').src = _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_56___default.a;
+        document.getElementById('logo_img').src = _nineties_logo_svg__WEBPACK_IMPORTED_MODULE_57___default.a;
       } else if (mode === '2020') {
-        document.getElementById('logo_img').src = _cat_logo_svg__WEBPACK_IMPORTED_MODULE_57___default.a;
+        document.getElementById('logo_img').src = _cat_logo_svg__WEBPACK_IMPORTED_MODULE_58___default.a;
       } else if (mode === '1920') {
-        document.getElementById('logo_img').src = _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_59___default.a;
+        document.getElementById('logo_img').src = _oldtimey_logo_svg__WEBPACK_IMPORTED_MODULE_60___default.a;
       } else if (mode === '220022BC') {
-        document.getElementById('logo_img').src = _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_58___default.a;
+        document.getElementById('logo_img').src = _prehistoric_logo_svg__WEBPACK_IMPORTED_MODULE_59___default.a;
       } else {
         document.getElementById('logo_img').src = this.props.logo;
       }
@@ -14241,7 +14395,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       this.props.onRequestCloseFile();
       downloadProjectCallback();
       if (this.props.onProjectTelemetryEvent) {
-        const metadata = Object(_lib_collect_metadata__WEBPACK_IMPORTED_MODULE_40__["default"])(this.props.vm, this.props.projectTitle, this.props.locale);
+        const metadata = Object(_lib_collect_metadata__WEBPACK_IMPORTED_MODULE_41__["default"])(this.props.vm, this.props.projectTitle, this.props.locale);
         this.props.onProjectTelemetryEvent('projectDidSave', metadata);
       }
     };
@@ -14289,7 +14443,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
   }
   handleBoardSelect(board) {
     var _window$__hardwareCon;
-    if (!Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_34__["isLoggedIn"])()) {
+    if (!Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_35__["isLoggedIn"])()) {
       window.location.href = '/login';
       return;
     }
@@ -14315,6 +14469,71 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
   }
   tryAutoConnect(webSerialPort, board, title, skipLoad) {
     var self = this;
+    // Try talking to the board directly over Web Serial first - if the
+    // browser can open it, no local agent is needed at all for live
+    // control. Only fall back to the agent-dependent flow (which needs
+    // the agent running to list/open the OS-level COM port) if that fails.
+    Object(_lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_28__["openWebSerialConnection"])(webSerialPort, {
+      baudRate: 115200
+    }).then(function (conn) {
+      self.activateWebSerialConnection(conn, board, skipLoad);
+    }).catch(function () {
+      // Defense in depth: openWebSerialConnection() already closes the
+      // port on its own internal failures, but if it's still open here
+      // for any other reason, release it now so the agent fallback
+      // below doesn't hit "Access denied" trying to open the same port.
+      try {
+        if (webSerialPort.readable) {
+          webSerialPort.close().catch(function () {});
+        }
+      } catch (e) {}
+      self.autoConnectViaAgent(webSerialPort, board, title, skipLoad);
+    });
+  }
+  activateWebSerialConnection(conn, board, skipLoad) {
+    var self = this;
+    var boardObj = board || this.state.hwSelectedBoard;
+    // Web Serial deliberately doesn't expose the OS-level COM path
+    // (privacy) - the 'USB' placeholder this sets gets upgraded to a
+    // real path below if the agent/backend can resolve one, since
+    // firmware upload for boards Phase 2's browser flasher doesn't cover
+    // yet (Mega, ESP32) still shells out to avrdude/arduino-cli via the
+    // agent and needs a real port.
+    Object(_lib_web_serial_connection__WEBPACK_IMPORTED_MODULE_28__["activateGlobalWebSerialConnection"])(conn);
+    this.setState({
+      hwConnectedPort: 'USB (direct)',
+      hwPortPickerOpen: false,
+      hwPortPickerSuffix: '',
+      hwSerialPort: conn.port
+    });
+    if (!skipLoad && boardObj && boardObj.file) {
+      const url = "".concat(window.location.origin, "/").concat(boardObj.file, ".js");
+      this.props.vm.extensionManager.loadExtensionURL(url).catch(function (e) {
+        alert('Extension load error: ' + e.message);
+      });
+    }
+    var info = conn.port.getInfo ? conn.port.getInfo() : {};
+    var vid = info && info.usbVendorId ? info.usbVendorId.toString(16).toUpperCase() : null;
+    var pid = info && info.usbProductId ? info.usbProductId.toString(16).toUpperCase() : null;
+    if (vid) {
+      self.hwFetch('/serial/ports').then(function (r) {
+        return r.json();
+      }).then(function (data) {
+        var ports = data && data.ports || [];
+        var match = ports.find(function (p) {
+          return p.vendorId && p.vendorId.toUpperCase() === vid && (!pid || p.productId && p.productId.toUpperCase() === pid);
+        });
+        if (match && window.__hardwareConnection && window.__hardwareConnection.webSerial) {
+          window.__hardwareConnection.port = match.path;
+          self.setState({
+            hwConnectedPort: match.path + ' (direct)'
+          });
+        }
+      }).catch(function () {/* agent/backend unreachable - firmware upload stays unavailable until Phase 2; live control is unaffected */});
+    }
+  }
+  autoConnectViaAgent(webSerialPort, board, title, skipLoad) {
+    var self = this;
     var info = webSerialPort.getInfo ? webSerialPort.getInfo() : {};
     var vid = info && info.usbVendorId ? info.usbVendorId.toString(16).toUpperCase() : null;
     var pid = info && info.usbProductId ? info.usbProductId.toString(16).toUpperCase() : null;
@@ -14338,10 +14557,10 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
           hwPortPickerBoard: board
         });
       } else {
-        alert('No serial ports found. Make sure your Arduino is connected.');
+        alert('No serial ports found. Make sure your Arduino is connected, or install the Hardware Agent for full support.');
       }
     }).catch(function () {
-      alert('Failed to fetch serial ports.');
+      alert('Failed to fetch serial ports. If you\'re not running the Hardware Agent, make sure your browser supports Web Serial (Chrome/Edge) and try connecting again.');
     });
   }
   fetchAndShowPorts(board, title, suffix) {
@@ -14366,7 +14585,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     });
   }
   handleShowPortPicker(e) {
-    if (!Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_34__["isLoggedIn"])()) {
+    if (!Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_35__["isLoggedIn"])()) {
       window.location.href = '/login';
       return;
     }
@@ -14400,7 +14619,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     });
   }
   handleSerialClick() {
-    if (!Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_34__["isLoggedIn"])()) {
+    if (!Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_35__["isLoggedIn"])()) {
       window.location.href = '/login';
       return;
     }
@@ -14425,7 +14644,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }
   }
   handleBluetoothClick() {
-    if (!Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_34__["isLoggedIn"])()) {
+    if (!Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_35__["isLoggedIn"])()) {
       window.location.href = '/login';
       return;
     }
@@ -14453,7 +14672,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }
   }
   handleWiFiClick() {
-    if (!Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_34__["isLoggedIn"])()) {
+    if (!Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_35__["isLoggedIn"])()) {
       window.location.href = '/login';
       return;
     }
@@ -14711,7 +14930,12 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     }));
   }
   handleDisconnect() {
-    if (this.state.hwSerialPort) {
+    if (window.__hardwareConnection && window.__hardwareConnection.disconnect) {
+      // Properly releases the Web Serial reader/writer locks before
+      // closing the port - closing it directly (as below) would throw
+      // since the streams are still piped through TextEncoder/DecoderStream.
+      window.__hardwareConnection.disconnect().catch(function () {});
+    } else if (this.state.hwSerialPort) {
       this.state.hwSerialPort.close().catch(() => {});
     }
     if (window.__hardwareConnection && window.__hardwareConnection.id) {
@@ -14719,6 +14943,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         method: 'POST'
       }).catch(function () {});
     }
+    window.STEMWebSerial = null;
     window.__hardwareConnection = null;
     this.setState({
       hwConnectedPort: null,
@@ -14744,11 +14969,11 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onOpen: this.props.onRequestOpenAbout,
       onClose: this.props.onRequestCloseAbout
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.aboutIcon,
-      src: _icon_about_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.aboutIcon,
+      src: _icon_about_svg__WEBPACK_IMPORTED_MODULE_48___default.a,
       draggable: false
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarMenu),
       open: this.props.aboutMenuOpen,
       place: this.props.isRtl ? 'right' : 'left'
     }, onClickAbout.map(itemProps => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
@@ -14781,44 +15006,44 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       id: "gui.menuBar.new"
     });
     const remixButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_button_button_jsx__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarButton, _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.remixButton),
-      iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.remixButtonIcon,
-      iconSrc: _icon_remix_svg__WEBPACK_IMPORTED_MODULE_45___default.a,
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarButton, _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.remixButton),
+      iconClassName: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.remixButtonIcon,
+      iconSrc: _icon_remix_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
       onClick: this.handleClickRemix
     }, remixMessage);
     // Show the About button only if we have a handler for it (like in the desktop app)
     const aboutButton = this.buildAboutMenu(this.props.onClickAbout);
     const menuBar = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_9__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(this.props.className, _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBar)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(this.props.className, _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBar)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.mainMenu
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.mainMenu
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
       id: "logo_img",
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.scratchLogo,
-      src: this.props.logo || _logo_logo_png__WEBPACK_IMPORTED_MODULE_60___default.a,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.scratchLogo,
+      src: this.props.logo || _logo_logo_png__WEBPACK_IMPORTED_MODULE_61___default.a,
       draggable: false,
       style: this.props.onClickLogo ? {
         cursor: 'pointer'
       } : null,
       onClick: this.props.onClickLogo
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.fileGroup
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.fileGroup
     }, this.props.errors.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_menu_label_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
       open: this.props.errorsMenuOpen,
       onOpen: this.props.onClickErrors,
       onClose: this.props.onRequestCloseErrors
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _tw_error_svg__WEBPACK_IMPORTED_MODULE_51___default.a,
+      src: _tw_error_svg__WEBPACK_IMPORTED_MODULE_52___default.a,
       draggable: false,
       width: 20,
       height: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
       draggable: false,
       width: 8,
       height: 5
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarMenu),
       open: this.props.errorsMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuItemLink, {
@@ -14846,22 +15071,22 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onOpen: this.props.onClickFile,
       onClose: this.props.onRequestCloseFile
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _icon_file_svg__WEBPACK_IMPORTED_MODULE_48___default.a,
+      src: _icon_file_svg__WEBPACK_IMPORTED_MODULE_49___default.a,
       draggable: false,
       width: 20,
       height: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.collapsibleLabel
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.collapsibleLabel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "File",
       id: "gui.menuBar.file"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
       draggable: false,
       width: 8,
       height: 5
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarMenu),
       open: this.props.fileMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
@@ -14884,7 +15109,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onClick: this.handleClickRemix
     }, remixMessage)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
       onClick: this.props.onStartSelectingFileUpload
-    }, this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_61__["default"].loadFromComputerTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_sb3_downloader_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
+    }, this.props.intl.formatMessage(_lib_shared_messages__WEBPACK_IMPORTED_MODULE_62__["default"].loadFromComputerTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_sb3_downloader_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
       showSaveFilePicker: this.props.showSaveFilePicker
     }, (_className, downloadProject, extended) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, extended.available && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, extended.name !== null &&
     /*#__PURE__*/
@@ -14908,7 +15133,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       ,
 
       id: "tw.saveAs"
-    }))), Object(_lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_63__["notScratchDesktop"])() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
+    }))), Object(_lib_isScratchDesktop_js__WEBPACK_IMPORTED_MODULE_64__["notScratchDesktop"])() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
       onClick: this.getSaveToComputerHandler(downloadProject)
     }, extended.available ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Save to separate file..."
@@ -14938,22 +15163,22 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onOpen: this.props.onClickEdit,
       onClose: this.props.onRequestCloseEdit
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _icon_edit_svg__WEBPACK_IMPORTED_MODULE_49___default.a,
+      src: _icon_edit_svg__WEBPACK_IMPORTED_MODULE_50___default.a,
       draggable: false,
       width: 20,
       height: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.collapsibleLabel
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.collapsibleLabel
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Edit",
       id: "gui.menuBar.edit"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
       draggable: false,
       width: 8,
       height: 5
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarMenu),
       open: this.props.editMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, this.props.isPlayerOnly ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_deletion_restorer_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], null, (handleRestore, _ref4) => {
@@ -14961,7 +15186,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         deletedItem = _ref4.deletedItem;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
         className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.disabled]: !restorable
+          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.disabled]: !restorable
         }),
         onClick: this.handleRestoreOption(handleRestore)
       }, this.restoreOptionMessage(deletedItem));
@@ -14976,7 +15201,7 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         defaultMessage: "Turn on Turbo Mode",
         id: "gui.menuBar.turboModeOn"
       }));
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_framerate_changer_jsx__WEBPACK_IMPORTED_MODULE_28__["default"], null, (changeFramerate, _ref6) => {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_framerate_changer_jsx__WEBPACK_IMPORTED_MODULE_29__["default"], null, (changeFramerate, _ref6) => {
       let framerate = _ref6.framerate;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
         onClick: changeFramerate
@@ -14987,17 +15212,17 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         defaultMessage: "Turn on 60 FPS Mode",
         id: "tw.menuBar.60on"
       }));
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_change_username_jsx__WEBPACK_IMPORTED_MODULE_29__["default"], null, changeUsername => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_change_username_jsx__WEBPACK_IMPORTED_MODULE_30__["default"], null, changeUsername => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
       onClick: changeUsername
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Change Username",
       id: "tw.menuBar.changeUsername"
-    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_cloud_toggler_jsx__WEBPACK_IMPORTED_MODULE_30__["default"], null, (toggleCloudVariables, _ref7) => {
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_tw_cloud_toggler_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], null, (toggleCloudVariables, _ref7) => {
       let enabled = _ref7.enabled,
         canUseCloudVariables = _ref7.canUseCloudVariables;
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
         className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.disabled]: !canUseCloudVariables
+          [_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.disabled]: !canUseCloudVariables
         }),
         onClick: toggleCloudVariables
       }, canUseCloudVariables ? enabled ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
@@ -15030,53 +15255,53 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onRequestOpen: this.props.onClickSettings,
       settingsMenuOpen: this.props.settingsMenuOpen
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hoverable, _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwBoardMenu)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hoverable, _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwBoardMenu)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwMenuTrigger,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwMenuTrigger,
       onClick: this.handleBoardOpen
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.collapsibleLabel
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.collapsibleLabel
     }, 'Board'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
       draggable: false,
       width: 8,
       height: 5
     })), this.state.hwBoardOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModalBackdrop,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModalBackdrop,
       onClick: this.handleBoardClose
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwBoardModal
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwBoardModal
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwBoardModalHeader
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwBoardModalHeader
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, 'Select Board'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModalCloseBtn,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModalCloseBtn,
       onClick: this.handleBoardClose
     }, '✕')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwBoardGrid
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwBoardGrid
     }, HW_BOARDS.map(board => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       key: board.id,
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwBoardTile
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwBoardTile
       // eslint-disable-next-line react/jsx-no-bind
       ,
       onClick: () => this.handleBoardSelect(board)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
       src: "/static/extensions/".concat(board.id, "/").concat(board.id, "-small.svg"),
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwBoardImg,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwBoardImg,
       draggable: false
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwBoardName
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwBoardName
     }, board.name))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hoverable, _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwConnectMenu)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hoverable, _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectMenu)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwMenuTrigger,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwMenuTrigger,
       onClick: this.handleConnectOpen
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _icon_connect_svg__WEBPACK_IMPORTED_MODULE_53___default.a,
+      src: _icon_connect_svg__WEBPACK_IMPORTED_MODULE_54___default.a,
       draggable: false,
       width: 20,
       height: 20
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwStatusDot,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwStatusDot,
       style: {
         display: 'inline-block',
         width: 12,
@@ -15088,19 +15313,19 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         flexShrink: 0
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.collapsibleLabel
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.collapsibleLabel
     }, 'Connect'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_46___default.a,
+      src: _dropdown_caret_svg__WEBPACK_IMPORTED_MODULE_47___default.a,
       draggable: false,
       width: 8,
       height: 5
     })), this.state.hwConnectOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwBackdrop,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwBackdrop,
       onClick: this.handleConnectClose
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwConnectDropdown
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectDropdown
     }, this.state.hwConnectedPort && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwConnectStatus
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectStatus
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
       style: {
         display: 'inline-block',
@@ -15113,57 +15338,57 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         flexShrink: 0
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, typeof this.state.hwConnectedPort === 'string' ? this.state.hwConnectedPort : String(this.state.hwConnectedPort)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwDisconnectBtn,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwDisconnectBtn,
       onClick: this.handleDisconnect
     }, 'Disconnect')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwConnectItem,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectItem,
       onClick: this.handleSerialClick
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _icon_usb_svg__WEBPACK_IMPORTED_MODULE_55___default.a,
+      src: _icon_usb_svg__WEBPACK_IMPORTED_MODULE_56___default.a,
       draggable: false,
       width: 16,
       height: 16
     }), 'Serial'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwConnectItem,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectItem,
       onClick: this.handleBluetoothClick
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _icon_bluetooth_svg__WEBPACK_IMPORTED_MODULE_54___default.a,
+      src: _icon_bluetooth_svg__WEBPACK_IMPORTED_MODULE_55___default.a,
       draggable: false,
       width: 16,
       height: 16
-    }), 'Bluetooth'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwConnectItem
-      // Bump ?v=N every time downloads/hardware-agent.zip is
-      // rebuilt - a browser that cached an old download won't
+    }), 'Bluetooth'), !(typeof navigator !== 'undefined' && navigator.serial && Object(_lib_tw_hardware_agent__WEBPACK_IMPORTED_MODULE_27__["isLocalhost"])()) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectItem
+      // Bump ?v=N every time downloads/StemHardwareAgent-Setup.exe
+      // is rebuilt - a browser that cached an old download won't
       // otherwise notice the file changed (no-store header on
       // the route helps, but this guarantees a fresh fetch).
       ,
-      href: "/downloads/hardware-agent.zip?v=2",
-      title: "On the cloud-hosted app? The server has no USB access - download this small local helper to connect your Arduino.",
+      href: "/downloads/StemHardwareAgent-Setup.exe?v=1",
+      title: "On the cloud-hosted app? The server has no USB access - install this small local helper to connect your Arduino. No prerequisites needed - just run it.",
       style: {
         display: 'block',
         textDecoration: 'none',
         borderTop: '1px solid rgba(0,0,0,0.08)'
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-      src: _icon_usb_svg__WEBPACK_IMPORTED_MODULE_55___default.a,
+      src: _icon_usb_svg__WEBPACK_IMPORTED_MODULE_56___default.a,
       draggable: false,
       width: 16,
       height: 16
-    }), 'Get Hardware Agent')))), this.state.hwBoardWarningOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModalBackdrop,
+    }), 'Install Hardware Agent')))), this.state.hwBoardWarningOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModalBackdrop,
       onClick: this.handleBoardWarningClose
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningModal
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningModal
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningHeader
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningHeader
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, 'Warning!'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningCloseBtn,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningCloseBtn,
       onClick: this.handleBoardWarningClose
     }, '✕')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningBody
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningBody
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("svg", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningIcon,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningIcon,
       viewBox: "0 0 80 80",
       xmlns: "http://www.w3.org/2000/svg"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("rect", {
@@ -15235,67 +15460,67 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       stroke: "#999",
       strokeWidth: "2.5"
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningText
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningText
     }, 'Please select the board first.')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningFooter
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningFooter
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwSelectBoardBtn,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwSelectBoardBtn,
       onClick: this.handleBoardWarningSelect
     }, 'Select a board')))), this.state.hwConnWarningOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModalBackdrop,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModalBackdrop,
       onClick: this.handleConnWarningClose
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningModal
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningModal
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningHeader
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningHeader
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, 'Connect Your Board'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningCloseBtn,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningCloseBtn,
       onClick: this.handleConnWarningClose
     }, '✕')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningBody
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningBody
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningText
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningText
     }, 'Please connect your Arduino board first. Click the Connect menu and select Serial or Bluetooth.')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwWarningFooter
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwWarningFooter
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwSelectBoardBtn,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwSelectBoardBtn,
       onClick: this.handleConnWarningClose
     }, 'OK')))), this.state.hwPortPickerOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModalBackdrop,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModalBackdrop,
       onClick: this.handlePortPickerClose
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwPortModal
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwPortModal
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwPortModalHeader
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwPortModalHeader
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, this.state.hwPortPickerTitle || 'Select Port'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModalCloseBtn,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModalCloseBtn,
       onClick: this.handlePortPickerClose
     }, '✕')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwPortModalBody
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwPortModalBody
     }, this.state.hwPortPickerPorts.length === 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwNoPortsMsg
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwNoPortsMsg
     }, 'No serial ports found. Make sure your Arduino is connected.') : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwPortList
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwPortList
     }, this.state.hwPortPickerPorts.map(function (p) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         key: p.path,
-        className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwPortRow
+        className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwPortRow
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwPortInfo
+        className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwPortInfo
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-        className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwPortName
+        className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwPortName
       }, p.path), p.manufacturer ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-        className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwPortMfr
+        className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwPortMfr
       }, p.manufacturer) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-        className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwPortConnectBtn,
+        className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwPortConnectBtn,
         onClick: function () {
           this.handlePortPickerSelect(p.path);
         }.bind(this)
       }, 'Connect'));
     }.bind(this)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwPortModalFooter
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwPortModalFooter
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwRefreshBtn,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwRefreshBtn,
       onClick: this.handleRefreshPorts
     }, 'Refresh')))), this.state.feedbackOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
       style: {
@@ -15466,14 +15691,14 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       defaultMessage: "Mode",
       id: "gui.menuBar.modeMenu"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_bar_menu_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarMenu),
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarMenu),
       open: this.props.modeMenuOpen,
       place: this.props.isRtl ? 'left' : 'right'
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuSection"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_19__["MenuItem"], {
       onClick: this.handleSetMode('NOW')
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.inactive]: !this.props.modeNow
+        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.inactive]: !this.props.modeNow
       })
     }, '✓'), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Normal mode",
@@ -15482,33 +15707,33 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       onClick: this.handleSetMode('2020')
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
       className: classnames__WEBPACK_IMPORTED_MODULE_0___default()({
-        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.inactive]: !this.props.mode2020
+        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.inactive]: !this.props.mode2020
       })
     }, '✓'), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_3__["FormattedMessage"], {
       defaultMessage: "Caturday mode",
       id: "gui.menuBar.caturdayMode"
     })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_divider_divider_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.divider
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.divider
     }), this.props.canEditTitle ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.growable)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.growable)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuBarItemTooltip, {
       enable: true,
       id: "title-field"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_project_title_input_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.titleFieldGrowable)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.titleFieldGrowable)
     }))) : this.props.authorUsername && this.props.authorUsername !== this.props.username ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_author_info_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.authorInfo,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.authorInfo,
       imageUrl: this.props.authorThumbnailUrl,
       projectId: this.props.projectId,
       projectTitle: this.props.projectTitle,
       userId: this.props.authorId,
       username: this.props.authorUsername
     }) : null, this.props.canShare ? (this.props.isShowingProject || this.props.isUpdating) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarItem)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarItem)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_project_watcher_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
       onDoneUpdating: this.props.onSeeCommunity
     }, waitForUpdate => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_share_button_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarButton,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarButton,
       isShared: this.props.isShared
       /* eslint-disable react/jsx-no-bind */,
       onClick: () => {
@@ -15516,19 +15741,19 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
       }
       /* eslint-enable react/jsx-no-bind */
     }))) : this.props.showComingSoon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarItem)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarItem)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuBarItemTooltip, {
       id: "share-button"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_share_button_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarButton
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarButton
     }))) : null, this.props.canRemix && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarItem)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarItem)
     }, remixButton), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.communityButtonWrapper)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.communityButtonWrapper)
     }, this.props.enableCommunity ? (this.props.isShowingProject || this.props.isUpdating) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_project_watcher_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
       onDoneUpdating: this.props.onSeeCommunity
     }, waitForUpdate => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_community_button_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarButton
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarButton
       /* eslint-disable react/jsx-no-bind */,
       onClick: () => {
         this.handleClickSeeCommunity(waitForUpdate);
@@ -15537,28 +15762,28 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
     })) : this.props.showComingSoon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(MenuBarItemTooltip, {
       id: "community-button"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_community_button_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarButton
-    })) : this.props.enableSeeInside ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_62__["default"], {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarButton,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarButton
+    })) : this.props.enableSeeInside ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_see_inside_jsx__WEBPACK_IMPORTED_MODULE_63__["default"], {
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarButton,
       onClick: this.handleClickSeeInside
     }) : []), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModeSwitcher
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModeSwitcher
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModeLabel
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModeLabel
     }, 'Mode'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModeSwitchBtn, {
-        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModeSwitchBtnActive]: this.state.hwActiveMode === 'stage'
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModeSwitchBtn, {
+        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModeSwitchBtnActive]: this.state.hwActiveMode === 'stage'
       }),
       onClick: this.handleStageModeClick
     }, 'Stage'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModeSwitchBtn, {
-        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModeSwitchBtnActive]: this.state.hwActiveMode === 'upload'
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModeSwitchBtn, {
+        [_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModeSwitchBtnActive]: this.state.hwActiveMode === 'upload'
       }),
       onClick: this.handleUploadModeClick
     }, 'Upload')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarItem
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarItem
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.feedbackButton,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.feedbackButton,
       onClick: this.handleFeedbackOpen,
       style: {
         background: 'none',
@@ -15571,11 +15796,11 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         whiteSpace: 'nowrap'
       }
     }, 'Feedback'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.accountInfoGroup
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.accountInfoGroup
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hoverable, _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwBoardMenu)
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.menuBarItem, _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hoverable, _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwBoardMenu)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.feedbackButton,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.feedbackButton,
       onClick: () => {
         if (this.state.authUser) {
           this.handleAuthMenuToggle();
@@ -15594,30 +15819,30 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
         whiteSpace: 'nowrap'
       }
     }, this.state.authUser ? this.state.authUser.username : 'Sign In'), this.state.authUser && this.state.authMenuOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwModalBackdrop,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwModalBackdrop,
       onClick: this.handleAuthMenuClose
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwConnectDropdown,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectDropdown,
       style: {
         right: 0,
         left: 'auto'
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwConnectItem,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectItem,
       onClick: this.goToDashboard
     }, 'Dashboard'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_41___default.a.hwConnectItem,
+      className: _menu_bar_css__WEBPACK_IMPORTED_MODULE_42___default.a.hwConnectItem,
       onClick: () => {
-        Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_34__["logout"])();
+        Object(_lib_auth_api__WEBPACK_IMPORTED_MODULE_35__["logout"])();
         this.setState({
           authUser: null,
           authMenuOpen: false
         });
       }
-    }, 'Logout')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_save_status_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], {
+    }, 'Logout')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_save_status_jsx__WEBPACK_IMPORTED_MODULE_32__["default"], {
       showSaveFilePicker: this.props.showSaveFilePicker
     })), aboutButton);
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, menuBar, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_news_jsx__WEBPACK_IMPORTED_MODULE_32__["default"], null));
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, menuBar, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_tw_news_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null));
   }
 }
 MenuBar.propTypes = {
@@ -15732,67 +15957,67 @@ const mapStateToProps = (state, ownProps) => {
     authorUsername: state.scratchGui.tw.author.username,
     authorThumbnailUrl: state.scratchGui.tw.author.thumbnail,
     projectId: state.scratchGui.projectState.projectId,
-    aboutMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["aboutMenuOpen"])(state),
-    accountMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["accountMenuOpen"])(state),
+    aboutMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["aboutMenuOpen"])(state),
+    accountMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["accountMenuOpen"])(state),
     currentLocale: state.locales.locale,
-    fileMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["fileMenuOpen"])(state),
-    editMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["editMenuOpen"])(state),
+    fileMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["fileMenuOpen"])(state),
+    editMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["editMenuOpen"])(state),
     errors: state.scratchGui.tw.compileErrors,
-    errorsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["errorsMenuOpen"])(state),
+    errorsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["errorsMenuOpen"])(state),
     isPlayerOnly: state.scratchGui.mode.isPlayerOnly,
     isRtl: state.locales.isRtl,
-    isUpdating: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_37__["getIsUpdating"])(loadingState),
-    isShowingProject: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_37__["getIsShowingProject"])(loadingState),
+    isUpdating: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_38__["getIsUpdating"])(loadingState),
+    isShowingProject: Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_38__["getIsShowingProject"])(loadingState),
     locale: state.locales.locale,
-    loginMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["loginMenuOpen"])(state),
-    modeMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["modeMenuOpen"])(state),
+    loginMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["loginMenuOpen"])(state),
+    modeMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["modeMenuOpen"])(state),
     projectTitle: state.scratchGui.projectTitle,
     sessionExists: state.session && typeof state.session.session !== 'undefined',
-    settingsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["settingsMenuOpen"])(state),
+    settingsMenuOpen: Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["settingsMenuOpen"])(state),
     username: user ? user.username : null,
     userOwnsProject: ownProps.authorUsername && user && ownProps.authorUsername === user.username,
     vm: state.scratchGui.vm,
-    mode220022BC: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_36__["isTimeTravel220022BC"])(state),
-    mode1920: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_36__["isTimeTravel1920"])(state),
-    mode1990: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_36__["isTimeTravel1990"])(state),
-    mode2020: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_36__["isTimeTravel2020"])(state),
-    modeNow: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_36__["isTimeTravelNow"])(state)
+    mode220022BC: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_37__["isTimeTravel220022BC"])(state),
+    mode1920: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_37__["isTimeTravel1920"])(state),
+    mode1990: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_37__["isTimeTravel1990"])(state),
+    mode2020: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_37__["isTimeTravel2020"])(state),
+    modeNow: Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_37__["isTimeTravelNow"])(state)
   };
 };
 const mapDispatchToProps = dispatch => ({
-  onClickSeeInside: () => dispatch(Object(_reducers_mode__WEBPACK_IMPORTED_MODULE_35__["setPlayer"])(false)),
-  autoUpdateProject: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_37__["autoUpdateProject"])()),
-  onOpenTipLibrary: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_33__["openTipsLibrary"])()),
-  onClickAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["openAccountMenu"])()),
-  onRequestCloseAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["closeAccountMenu"])()),
-  onClickFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["openFileMenu"])()),
-  onRequestCloseFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["closeFileMenu"])()),
-  onClickEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["openEditMenu"])()),
-  onRequestCloseEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["closeEditMenu"])()),
-  onClickErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["openErrorsMenu"])()),
-  onRequestCloseErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["closeErrorsMenu"])()),
-  onClickLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["openLoginMenu"])()),
-  onRequestCloseLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["closeLoginMenu"])()),
-  onClickMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["openModeMenu"])()),
-  onRequestCloseMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["closeModeMenu"])()),
-  onRequestOpenAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["openAboutMenu"])()),
-  onRequestCloseAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["closeAboutMenu"])()),
-  onClickRestorePoints: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_33__["openRestorePointModal"])()),
-  onClickSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["openSettingsMenu"])()),
+  onClickSeeInside: () => dispatch(Object(_reducers_mode__WEBPACK_IMPORTED_MODULE_36__["setPlayer"])(false)),
+  autoUpdateProject: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_38__["autoUpdateProject"])()),
+  onOpenTipLibrary: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_34__["openTipsLibrary"])()),
+  onClickAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["openAccountMenu"])()),
+  onRequestCloseAccount: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["closeAccountMenu"])()),
+  onClickFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["openFileMenu"])()),
+  onRequestCloseFile: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["closeFileMenu"])()),
+  onClickEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["openEditMenu"])()),
+  onRequestCloseEdit: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["closeEditMenu"])()),
+  onClickErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["openErrorsMenu"])()),
+  onRequestCloseErrors: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["closeErrorsMenu"])()),
+  onClickLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["openLoginMenu"])()),
+  onRequestCloseLogin: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["closeLoginMenu"])()),
+  onClickMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["openModeMenu"])()),
+  onRequestCloseMode: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["closeModeMenu"])()),
+  onRequestOpenAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["openAboutMenu"])()),
+  onRequestCloseAbout: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["closeAboutMenu"])()),
+  onClickRestorePoints: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_34__["openRestorePointModal"])()),
+  onClickSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["openSettingsMenu"])()),
   onClickSettingsModal: () => {
-    dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["closeEditMenu"])());
-    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_33__["openSettingsModal"])());
+    dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["closeEditMenu"])());
+    dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_34__["openSettingsModal"])());
   },
-  onRequestCloseSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_38__["closeSettingsMenu"])()),
+  onRequestCloseSettings: () => dispatch(Object(_reducers_menus__WEBPACK_IMPORTED_MODULE_39__["closeSettingsMenu"])()),
   onClickNew: needSave => {
-    dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_37__["requestNewProject"])(needSave));
-    dispatch(Object(_reducers_tw_js__WEBPACK_IMPORTED_MODULE_39__["setFileHandle"])(null));
+    dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_38__["requestNewProject"])(needSave));
+    dispatch(Object(_reducers_tw_js__WEBPACK_IMPORTED_MODULE_40__["setFileHandle"])(null));
   },
-  onClickRemix: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_37__["remixProject"])()),
-  onClickSave: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_37__["manualUpdateProject"])()),
-  onClickSaveAsCopy: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_37__["saveProjectAsCopy"])()),
-  onSeeCommunity: () => dispatch(Object(_reducers_mode__WEBPACK_IMPORTED_MODULE_35__["setPlayer"])(true)),
-  onSetTimeTravelMode: mode => dispatch(Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_36__["setTimeTravel"])(mode))
+  onClickRemix: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_38__["remixProject"])()),
+  onClickSave: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_38__["manualUpdateProject"])()),
+  onClickSaveAsCopy: () => dispatch(Object(_reducers_project_state__WEBPACK_IMPORTED_MODULE_38__["saveProjectAsCopy"])()),
+  onSeeCommunity: () => dispatch(Object(_reducers_mode__WEBPACK_IMPORTED_MODULE_36__["setPlayer"])(true)),
+  onSetTimeTravelMode: mode => dispatch(Object(_reducers_time_travel__WEBPACK_IMPORTED_MODULE_37__["setTimeTravel"])(mode))
 });
 /* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_2__["compose"])(react_intl__WEBPACK_IMPORTED_MODULE_3__["injectIntl"], _containers_menu_bar_hoc_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, mapDispatchToProps))(MenuBar));
 
@@ -40716,6 +40941,18 @@ __webpack_require__.r(__webpack_exports__);
  */
 /* harmony default export */ __webpack_exports__["default"] = (function (vm) {
   const ScratchBlocks = _tw_lazy_scratch_blocks__WEBPACK_IMPORTED_MODULE_0__["default"].get();
+
+  // The default 12px bottom margin (Blockly.Flyout.prototype.MARGIN) isn't
+  // enough room for the last block in a long category - it reads as
+  // "cut off" against the flyout's bottom edge. Only override the vertical
+  // flyout (used for the block palette), not the shared base class other
+  // flyout types might still rely on the original value for.
+  ScratchBlocks.VerticalFlyout.prototype.MARGIN = 48;
+
+  // The flyout's width is a fixed constant (not auto-sized to content), so
+  // wide blocks/labels (e.g. "temperature pin [2] sensor [DHT11]") get
+  // clipped on the right edge. Widen it by 20px.
+  ScratchBlocks.VerticalFlyout.prototype.DEFAULT_WIDTH = 270;
   const jsonForMenuBlock = function jsonForMenuBlock(name, menuOptionsFn, colors, start) {
     return {
       message0: '%1',
@@ -41068,7 +41305,15 @@ function getCached() {
 }
 async function fetchBranding() {
   try {
-    const res = await fetch('/api/tenant/config');
+    let token = null;
+    try {
+      token = localStorage.getItem('auth_token');
+    } catch (e) {/* ignore */}
+    const res = await fetch('/api/tenant/config', {
+      headers: token ? {
+        Authorization: "Bearer ".concat(token)
+      } : {}
+    });
     const data = await res.json();
     cachedConfig = data;
     try {
@@ -42575,6 +42820,94 @@ const ErrorBoundaryHOC = function ErrorBoundaryHOC(action) {
   };
 };
 /* harmony default export */ __webpack_exports__["default"] = (ErrorBoundaryHOC);
+
+/***/ }),
+
+/***/ "./src/lib/esp32-flasher.js":
+/*!**********************************!*\
+  !*** ./src/lib/esp32-flasher.js ***!
+  \**********************************/
+/*! exports provided: flashEsp32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "flashEsp32", function() { return flashEsp32; });
+/* harmony import */ var esptool_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! esptool-js */ "./node_modules/esptool-js/lib/index.js");
+/**
+ * ESP32 flashing over Web Serial - thin wrapper around Espressif's own
+ * esptool-js (https://github.com/espressif/esptool-js), rather than
+ * reimplementing their ROM bootloader protocol from scratch. Much lower
+ * risk than the hand-rolled AVR flashers in this directory, since it's an
+ * official, actively-maintained library.
+ */
+
+
+
+/**
+ * Flashes a multi-file ESP32 image (bootloader/partitions/app, each with
+ * its own flash address) via Web Serial.
+ * @param {SerialPort} port - an already-permission-granted (but not yet
+ *   open) Web Serial port.
+ * @param {Array<{address: number, data: string}>} files - base64-encoded
+ *   file data with flash addresses, from the compile-only-esp32 backend endpoint.
+ * @param {(info: {stage: string, progress: number}) => void} [onProgress]
+ */
+async function flashEsp32(port, files, onProgress) {
+  const report = (stage, progress) => {
+    if (onProgress) onProgress({
+      stage,
+      progress
+    });
+  };
+  const transport = new esptool_js__WEBPACK_IMPORTED_MODULE_0__["Transport"](port, true);
+  const terminal = {
+    clean() {},
+    writeLine(data) {
+      report('log: ' + data, undefined);
+    },
+    write(data) {/* ignore partial writes, only report full lines */}
+  };
+  report('opening', 0);
+  const esploader = new esptool_js__WEBPACK_IMPORTED_MODULE_0__["ESPLoader"]({
+    transport,
+    baudrate: 115200,
+    terminal,
+    debugLogging: false
+  });
+  try {
+    report('connecting', 5);
+    await esploader.main(); // connects, resets into the ROM bootloader, detects the chip
+
+    const fileArray = files.map(f => ({
+      address: f.address,
+      data: Uint8Array.from(atob(f.data), c => c.charCodeAt(0))
+    }));
+    report('flashing', 10);
+    await esploader.writeFlash({
+      fileArray,
+      flashMode: 'keep',
+      flashFreq: 'keep',
+      flashSize: 'keep',
+      eraseAll: false,
+      compress: true,
+      reportProgress: (fileIndex, written, total) => {
+        // Weight each file's contribution roughly by its share of the
+        // total across all 3 files, just for a smoother-looking bar.
+        const perFile = 85 / files.length;
+        const withinFile = total > 0 ? written / total : 1;
+        report('writing', 10 + Math.round(fileIndex * perFile + withinFile * perFile));
+      }
+    });
+    report('resetting', 98);
+    await esploader.after('hard_reset');
+    report('done', 100);
+  } finally {
+    try {
+      await transport.disconnect();
+    } catch (e) {/* ignore */}
+  }
+}
 
 /***/ }),
 
@@ -46637,6 +46970,560 @@ const SortableHOC = function SortableHOC(WrappedComponent) {
 
 /***/ }),
 
+/***/ "./src/lib/stk500-flasher.js":
+/*!***********************************!*\
+  !*** ./src/lib/stk500-flasher.js ***!
+  \***********************************/
+/*! exports provided: flashAtmega328p, parseIntelHex */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "flashAtmega328p", function() { return flashAtmega328p; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parseIntelHex", function() { return parseIntelHex; });
+/**
+ * Pure-JS STK500v1 bootloader client over Web Serial - lets the browser
+ * flash a compiled .hex directly onto an Optiboot-based AVR board (Arduino
+ * Uno, Nano) with no local agent, no avrdude. This is the STK500v1 protocol
+ * (AVR061 app note), the same one avrdude uses with `-c arduino`.
+ *
+ * Scope: ATmega328P boards (Uno/Nano) only. Mega uses STK500v2/"wiring"
+ * (a different, more complex protocol) and ESP32 uses its own ROM loader
+ * protocol entirely - both still need the agent for now.
+ */
+
+// ---- STK500v1 command/response bytes ----
+const STK_GET_SYNC = 0x30;
+const STK_ENTER_PROGMODE = 0x50;
+const STK_LEAVE_PROGMODE = 0x51;
+const STK_SET_DEVICE = 0x42;
+const STK_LOAD_ADDRESS = 0x55;
+const STK_PROG_PAGE = 0x64;
+const CRC_EOP = 0x20;
+const RESP_STK_INSYNC = 0x14;
+const RESP_STK_OK = 0x10;
+
+// avrdude's device descriptor for atmega328p (see avrdude.conf) - the 20
+// bytes STK_SET_DEVICE expects. Values matter for page size / flash size;
+// most of the rest are legacy fields Optiboot ignores but still expects.
+const ATMEGA328P_DEVICE_PARAMS = new Uint8Array([0x86,
+// devicecode (unused by Optiboot, avrdude sends 0x86 for this part)
+0x00,
+// revision
+0x00,
+// progtype (0 = paged)
+0x01,
+// parmode (1 = has paged addressing)
+0x01,
+// polling
+0x01,
+// selftimed
+0x01,
+// lockbytes
+0x03,
+// fusebytes
+0xFF,
+// flashpollval1
+0xFF,
+// flashpollval2
+0xFF,
+// eeprompollval1
+0xFF,
+// eeprompollval2
+0x00, 0x80,
+// pagesize (128, big-endian)
+0x04, 0x00,
+// eepromsize (1024, big-endian)
+0x00, 0x00, 0x80, 0x00 // flashsize (32768, big-endian, as 4 bytes)
+]);
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+/**
+ * Parses Intel HEX text into a flat byte array starting at address 0,
+ * gap-filled with 0xFF (matches flash's erased state) between records.
+ */
+function parseIntelHex(hexText) {
+  const bytes = [];
+  let highAddress = 0;
+  for (const rawLine of hexText.split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line.startsWith(':')) continue;
+    const byteCount = parseInt(line.substr(1, 2), 16);
+    const address = parseInt(line.substr(3, 4), 16);
+    const recordType = parseInt(line.substr(7, 2), 16);
+    if (recordType === 0x00) {
+      // data record
+      const fullAddress = highAddress + address;
+      for (let i = 0; i < byteCount; i++) {
+        const byteHex = line.substr(9 + i * 2, 2);
+        bytes[fullAddress + i] = parseInt(byteHex, 16);
+      }
+    } else if (recordType === 0x02) {
+      // extended segment address
+      highAddress = parseInt(line.substr(9, 4), 16) * 16;
+    } else if (recordType === 0x04) {
+      // extended linear address
+      highAddress = parseInt(line.substr(9, 4), 16) << 16;
+    } else if (recordType === 0x01) {
+      // end of file
+      break;
+    }
+  }
+  const flat = new Uint8Array(bytes.length);
+  for (let i = 0; i < bytes.length; i++) {
+    flat[i] = bytes[i] === undefined ? 0xFF : bytes[i];
+  }
+  return flat;
+}
+
+/**
+ * Toggles DTR to reset the board into its bootloader - the same trick
+ * avrdude/arduino-cli use for auto-reset boards. Mirrors the "DTR + 1.5s"
+ * strategy already proven to work in backend/agent's FirmwareUploader.js.
+ */
+async function resetIntoBootloader(port) {
+  await port.setSignals({
+    dataTerminalReady: false,
+    requestToSend: false
+  });
+  await delay(100);
+  await port.setSignals({
+    dataTerminalReady: true,
+    requestToSend: true
+  });
+  await delay(100);
+  await port.setSignals({
+    dataTerminalReady: false
+  });
+  await delay(1500); // give the bootloader time to start listening
+}
+class Stk500Session {
+  constructor(port, reader, writer) {
+    this.port = port;
+    this.reader = reader;
+    this.writer = writer;
+  }
+  async writeBytes(bytes) {
+    await this.writer.write(new Uint8Array(bytes));
+  }
+
+  /** Reads exactly `count` bytes, buffering across multiple chunk reads. */
+  async readBytes(count) {
+    let timeoutMs = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2000;
+    const result = new Uint8Array(count);
+    let filled = 0;
+    const deadline = Date.now() + timeoutMs;
+    while (filled < count) {
+      if (Date.now() > deadline) throw new Error('Timed out waiting for board response');
+      const remaining = deadline - Date.now();
+      const _await$Promise$race = await Promise.race([this.reader.read(), delay(Math.max(remaining, 0)).then(() => ({
+          value: undefined,
+          done: false,
+          timedOut: true
+        }))]),
+        value = _await$Promise$race.value,
+        done = _await$Promise$race.done;
+      if (done) throw new Error('Serial port closed unexpectedly');
+      if (!value) continue;
+      for (let i = 0; i < value.length && filled < count; i++) {
+        result[filled++] = value[i];
+      }
+    }
+    return result;
+  }
+  async sync() {
+    // A few retries - the bootloader may still be booting or may have a
+    // stray byte buffered from before we attached.
+    for (let attempt = 0; attempt < 10; attempt++) {
+      try {
+        await this.writeBytes([STK_GET_SYNC, CRC_EOP]);
+        const resp = await this.readBytes(2, 500);
+        if (resp[0] === RESP_STK_INSYNC && resp[1] === RESP_STK_OK) return;
+      } catch (e) {/* retry */}
+      await delay(100);
+    }
+    throw new Error('Could not sync with bootloader - check the board is in bootloader mode and the port is correct');
+  }
+  async command(bodyBytes) {
+    let timeoutMs = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2000;
+    await this.writeBytes([...bodyBytes, CRC_EOP]);
+    const resp = await this.readBytes(2, timeoutMs);
+    if (resp[0] !== RESP_STK_INSYNC) throw new Error('Bootloader out of sync (no INSYNC)');
+    if (resp[1] !== RESP_STK_OK) throw new Error('Bootloader rejected command (no OK)');
+  }
+  async enterProgMode() {
+    await this.command([STK_ENTER_PROGMODE]);
+  }
+  async leaveProgMode() {
+    await this.command([STK_LEAVE_PROGMODE]);
+  }
+  async setDevice(params) {
+    await this.command([STK_SET_DEVICE, ...params]);
+  }
+  async loadAddress(wordAddress) {
+    await this.command([STK_LOAD_ADDRESS, wordAddress & 0xFF, wordAddress >> 8 & 0xFF]);
+  }
+  async programPage(pageBytes) {
+    const size = pageBytes.length;
+    await this.command([STK_PROG_PAGE, size >> 8 & 0xFF, size & 0xFF, 0x46 /* 'F' = flash */, ...pageBytes], 3000);
+  }
+}
+
+/**
+ * Flashes a compiled .hex onto an ATmega328P board (Uno/Nano) via Web Serial.
+ * @param {SerialPort} port - an already-permission-granted (but not yet
+ *   open) Web Serial port, or one this function will open itself.
+ * @param {string} hexText - Intel HEX text from the compile-only backend endpoint.
+ * @param {(info: {stage: string, progress: number}) => void} [onProgress]
+ */
+async function flashAtmega328p(port, hexText, onProgress) {
+  const report = (stage, progress) => {
+    if (onProgress) onProgress({
+      stage,
+      progress
+    });
+  };
+  const flashImage = parseIntelHex(hexText);
+  const pageSize = 128;
+  report('opening', 0);
+  await port.open({
+    baudRate: 115200
+  });
+  try {
+    report('resetting', 5);
+    await resetIntoBootloader(port);
+    const reader = port.readable.getReader();
+    const writer = port.writable.getWriter();
+    const session = new Stk500Session(port, reader, writer);
+    try {
+      report('syncing', 10);
+      await session.sync();
+      report('entering-progmode', 15);
+      await session.setDevice(ATMEGA328P_DEVICE_PARAMS);
+      await session.enterProgMode();
+      const totalPages = Math.ceil(flashImage.length / pageSize);
+      for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
+        const byteOffset = pageIndex * pageSize;
+        const page = flashImage.slice(byteOffset, byteOffset + pageSize);
+        // Pad the final partial page with 0xFF (erased-flash value).
+        const paddedPage = page.length === pageSize ? page : (() => {
+          const p = new Uint8Array(pageSize).fill(0xFF);
+          p.set(page);
+          return p;
+        })();
+        await session.loadAddress(byteOffset / 2); // STK500 addresses flash in words
+        await session.programPage(paddedPage);
+        report('writing', 20 + Math.round(pageIndex / totalPages * 75));
+      }
+      report('finishing', 98);
+      await session.leaveProgMode();
+    } finally {
+      try {
+        await reader.cancel();
+      } catch (e) {/* ignore */}
+      try {
+        reader.releaseLock();
+      } catch (e) {/* ignore */}
+      try {
+        await writer.close();
+      } catch (e) {/* ignore */}
+    }
+    report('done', 100);
+  } finally {
+    try {
+      await port.close();
+    } catch (e) {/* ignore */}
+  }
+}
+
+
+/***/ }),
+
+/***/ "./src/lib/stk500v2-flasher.js":
+/*!*************************************!*\
+  !*** ./src/lib/stk500v2-flasher.js ***!
+  \*************************************/
+/*! exports provided: flashAtmega2560, parseIntelHex */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "flashAtmega2560", function() { return flashAtmega2560; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parseIntelHex", function() { return parseIntelHex; });
+/**
+ * Pure-JS STK500v2 bootloader client over Web Serial - flashes ATmega2560
+ * boards (Arduino Mega) directly from the browser, no local agent, no
+ * avrdude. This is avrdude's "wiring" programmer: per its own source
+ * comment, "The Wiring bootloader uses a near-complete STK500v2 protocol
+ * (only ISP specific programming commands are not implemented e.g. chip
+ * erase)". Protocol constants and command sequence verified directly
+ * against avrdude's src/wiring.c, src/stk500v2.c, src/stk500v2_private.h
+ * and src/avrdude.conf.in (m2560/.classic part definitions).
+ *
+ * NOTE: more uncertainty here than stk500-flasher.js (STK500v1/Optiboot for
+ * Uno/Nano) - a few AVRMEM fields (exact "mode" flag combination, readback
+ * poll bytes) aren't set explicitly anywhere in the m2560 part-inheritance
+ * chain in avrdude.conf, meaning they come from avrdude's compiled-in
+ * struct defaults that weren't practical to track down from source alone.
+ * This implementation sidesteps that by using STK500v2's "timed delay"
+ * completion mode instead of value/ready-busy polling, which doesn't need
+ * those values. Falls back to the agent automatically on any failure.
+ */
+
+const MESSAGE_START = 0x1B;
+const TOKEN = 0x0E;
+const CMD_SIGN_ON = 0x01;
+const CMD_LOAD_ADDRESS = 0x06;
+const CMD_ENTER_PROGMODE_ISP = 0x10;
+const CMD_LEAVE_PROGMODE_ISP = 0x11;
+const CMD_PROGRAM_FLASH_ISP = 0x13;
+const STATUS_CMD_OK = 0x00;
+
+// Standard AVR serial programming instruction opcode bytes (identical across
+// the whole classic ATmega family - from the datasheet's SPI programming
+// instruction table, not part-specific).
+const AVR_PGM_ENABLE = [0xAC, 0x53, 0x00, 0x00];
+const OPCODE_LOADPAGE_LO = 0x40;
+const OPCODE_LOADPAGE_HI = 0x48;
+const OPCODE_WRITEPAGE = 0x4C;
+const OPCODE_READ_LO = 0x20;
+
+// From avrdude.conf's m2560 part (inherits from m640 -> .classic):
+const PAGE_SIZE = 256; // bytes (flash 0x40000 / num_pages 1024)
+// Standard ISP timing params used by virtually the whole classic AVR family
+// when not overridden per-part (confirmed present verbatim across multiple
+// unrelated parts in avrdude.conf.in).
+const ISP_TIMEOUT = 200;
+const ISP_STABDELAY = 100;
+const ISP_CMDEXEDELAY = 25;
+const ISP_SYNCHLOOPS = 32;
+const ISP_BYTEDELAY = 0;
+const ISP_POLLVALUE = 0x53;
+const ISP_POLLINDEX = 3;
+const PAGE_WRITE_DELAY_MS = 10; // ATmega2560 flash page write is <=4.5ms per datasheet; generous margin
+
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+function parseIntelHex(hexText) {
+  const bytes = [];
+  let highAddress = 0;
+  for (const rawLine of hexText.split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line.startsWith(':')) continue;
+    const byteCount = parseInt(line.substr(1, 2), 16);
+    const address = parseInt(line.substr(3, 4), 16);
+    const recordType = parseInt(line.substr(7, 2), 16);
+    if (recordType === 0x00) {
+      const fullAddress = highAddress + address;
+      for (let i = 0; i < byteCount; i++) {
+        bytes[fullAddress + i] = parseInt(line.substr(9 + i * 2, 2), 16);
+      }
+    } else if (recordType === 0x02) {
+      highAddress = parseInt(line.substr(9, 4), 16) * 16;
+    } else if (recordType === 0x04) {
+      highAddress = parseInt(line.substr(9, 4), 16) << 16;
+    } else if (recordType === 0x01) {
+      break;
+    }
+  }
+  const flat = new Uint8Array(bytes.length);
+  for (let i = 0; i < bytes.length; i++) flat[i] = bytes[i] === undefined ? 0xFF : bytes[i];
+  return flat;
+}
+
+/**
+ * Reset-into-bootloader timing. wiring.c's own sequence uses a 100
+ * MICROSECOND reset pulse and only a 100ms settle before syncing - too
+ * tight to hit reliably with JS setTimeout (which can't do sub-millisecond
+ * delays, and isn't a real-time scheduler even at 1ms), and the first
+ * real-hardware test timed out waiting for the bootloader using those
+ * numbers. Using the longer hold/settle times already proven to work for
+ * the Uno/Nano flasher instead (same DTR-through-capacitor auto-reset
+ * circuit design on both boards) - a longer wait doesn't hurt correctness,
+ * it just gives the bootloader more margin to be ready before the first
+ * sync attempt.
+ */
+async function resetIntoBootloader(port) {
+  await port.setSignals({
+    dataTerminalReady: false,
+    requestToSend: false
+  });
+  await delay(100);
+  await port.setSignals({
+    dataTerminalReady: true,
+    requestToSend: true
+  });
+  await delay(100);
+  await port.setSignals({
+    dataTerminalReady: false,
+    requestToSend: false
+  });
+  await delay(1500);
+}
+class Stk500v2Session {
+  constructor(reader, writer) {
+    this.reader = reader;
+    this.writer = writer;
+    this.seq = 0;
+  }
+  async readBytes(count, timeoutMs) {
+    const result = new Uint8Array(count);
+    let filled = 0;
+    const deadline = Date.now() + timeoutMs;
+    while (filled < count) {
+      const remaining = deadline - Date.now();
+      if (remaining <= 0) throw new Error('Timed out waiting for board response');
+      const _await$Promise$race = await Promise.race([this.reader.read(), delay(remaining).then(() => ({
+          value: undefined,
+          done: false
+        }))]),
+        value = _await$Promise$race.value,
+        done = _await$Promise$race.done;
+      if (done) throw new Error('Serial port closed unexpectedly');
+      if (!value) continue;
+      for (let i = 0; i < value.length && filled < count; i++) result[filled++] = value[i];
+    }
+    return result;
+  }
+
+  /** Sends a framed STK500v2 packet and returns the response body (without the CMD echo byte stripped). */
+  async command(bodyBytes) {
+    let timeoutMs = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2000;
+    const seq = this.seq & 0xFF;
+    this.seq++;
+    const len = bodyBytes.length;
+    const packet = new Uint8Array(6 + len);
+    packet[0] = MESSAGE_START;
+    packet[1] = seq;
+    packet[2] = len >> 8 & 0xFF;
+    packet[3] = len & 0xFF;
+    packet[4] = TOKEN;
+    packet.set(bodyBytes, 5);
+    let checksum = 0;
+    for (let i = 0; i < 5 + len; i++) checksum ^= packet[i];
+    packet[5 + len] = checksum;
+    await this.writer.write(packet);
+
+    // Parse the framed response: MESSAGE_START, seq, sizeHi, sizeLo, TOKEN, body[size], checksum.
+    const header = await this.readBytes(5, timeoutMs);
+    if (header[0] !== MESSAGE_START) throw new Error('Bad response framing (no MESSAGE_START)');
+    if (header[4] !== TOKEN) throw new Error('Bad response framing (no TOKEN)');
+    const bodySize = header[2] << 8 | header[3];
+    const rest = await this.readBytes(bodySize + 1, timeoutMs); // body + checksum
+    const body = rest.slice(0, bodySize);
+    if (body[0] !== bodyBytes[0]) throw new Error('Response command byte mismatch');
+    if (body[1] !== STATUS_CMD_OK) throw new Error('Board rejected command (status 0x' + body[1].toString(16) + ')');
+    return body;
+  }
+  async signOn() {
+    // More retries and a longer per-attempt timeout than avrdude's own
+    // default - the first real-hardware test timed out with a tighter
+    // budget, and a longer window here costs nothing but time on failure.
+    let lastErr;
+    for (let attempt = 0; attempt < 20; attempt++) {
+      try {
+        await this.command([CMD_SIGN_ON], 400);
+        return;
+      } catch (e) {
+        lastErr = e;
+        await delay(150);
+      }
+    }
+    throw new Error('Could not sync with bootloader (' + (lastErr ? lastErr.message : 'unknown') + ') - check the board is a Mega and the port is correct');
+  }
+  async enterProgMode() {
+    await this.command([CMD_ENTER_PROGMODE_ISP, ISP_TIMEOUT, ISP_STABDELAY, ISP_CMDEXEDELAY, ISP_SYNCHLOOPS, ISP_BYTEDELAY, ISP_POLLVALUE, ISP_POLLINDEX, ...AVR_PGM_ENABLE], 2000);
+  }
+  async leaveProgMode() {
+    await this.command([CMD_LEAVE_PROGMODE_ISP, 1, 1], 2000);
+  }
+  async loadAddress(wordAddress, useExtAddr) {
+    // Bit 31 set signals "this part needs extended (>64K word) addressing" -
+    // per stk500v2.c's paged_write comment, matching flash > 128KB (Mega has 256KB).
+    const addr = (useExtAddr ? 0x80000000 : 0) | wordAddress;
+    await this.command([CMD_LOAD_ADDRESS, addr >>> 24 & 0xFF, addr >>> 16 & 0xFF, addr >>> 8 & 0xFF, addr & 0xFF], 1000);
+  }
+  async programFlashPage(pageBytes) {
+    const size = pageBytes.length;
+    // mode: 0x01 (paged) | 0x04 (timed-delay completion, not value/RDY-BSY
+    // polling - see file header) | 0x80 (commit the page after loading it)
+    const mode = 0x01 | 0x04 | 0x80;
+    await this.command([CMD_PROGRAM_FLASH_ISP, size >> 8 & 0xFF, size & 0xFF, mode, PAGE_WRITE_DELAY_MS, OPCODE_LOADPAGE_LO, OPCODE_WRITEPAGE, OPCODE_READ_LO, 0xFF, 0xFF,
+    // readback poll bytes - unused in timed-delay mode
+    ...pageBytes], 3000);
+  }
+}
+
+/**
+ * Flashes a compiled .hex onto an ATmega2560 board (Arduino Mega) via Web Serial.
+ * @param {SerialPort} port
+ * @param {string} hexText
+ * @param {(info: {stage: string, progress: number}) => void} [onProgress]
+ */
+async function flashAtmega2560(port, hexText, onProgress) {
+  const report = (stage, progress) => {
+    if (onProgress) onProgress({
+      stage,
+      progress
+    });
+  };
+  const flashImage = parseIntelHex(hexText);
+  report('opening', 0);
+  await port.open({
+    baudRate: 115200
+  });
+  try {
+    report('resetting', 5);
+    await resetIntoBootloader(port);
+    const reader = port.readable.getReader();
+    const writer = port.writable.getWriter();
+    const session = new Stk500v2Session(reader, writer);
+    try {
+      report('syncing', 10);
+      await session.signOn();
+      report('entering-progmode', 15);
+      await session.enterProgMode();
+      const totalPages = Math.ceil(flashImage.length / PAGE_SIZE);
+      const useExtAddr = flashImage.length > 0x10000; // >64K bytes needs extended addressing
+      for (let pageIndex = 0; pageIndex < totalPages; pageIndex++) {
+        const byteOffset = pageIndex * PAGE_SIZE;
+        const page = flashImage.slice(byteOffset, byteOffset + PAGE_SIZE);
+        const paddedPage = page.length === PAGE_SIZE ? page : (() => {
+          const p = new Uint8Array(PAGE_SIZE).fill(0xFF);
+          p.set(page);
+          return p;
+        })();
+        await session.loadAddress(byteOffset / 2, useExtAddr);
+        await session.programFlashPage(paddedPage);
+        report('writing', 20 + Math.round(pageIndex / totalPages * 75));
+      }
+      report('finishing', 98);
+      await session.leaveProgMode();
+    } finally {
+      try {
+        await reader.cancel();
+      } catch (e) {/* ignore */}
+      try {
+        reader.releaseLock();
+      } catch (e) {/* ignore */}
+      try {
+        await writer.close();
+      } catch (e) {/* ignore */}
+    }
+    report('done', 100);
+  } finally {
+    try {
+      await port.close();
+    } catch (e) {/* ignore */}
+  }
+}
+
+
+/***/ }),
+
 /***/ "./src/lib/storage.js":
 /*!****************************!*\
   !*** ./src/lib/storage.js ***!
@@ -47429,7 +48316,7 @@ const TWFullScreenResizerHOC = function TWFullScreenResizerHOC(WrappedComponent)
 /*!**************************************!*\
   !*** ./src/lib/tw-hardware-agent.js ***!
   \**************************************/
-/*! exports provided: getHwApiBase, isUsingLocalAgent, LOCAL_AGENT_ORIGIN */
+/*! exports provided: getHwApiBase, isUsingLocalAgent, LOCAL_AGENT_ORIGIN, isLocalhost */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47437,6 +48324,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getHwApiBase", function() { return getHwApiBase; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isUsingLocalAgent", function() { return isUsingLocalAgent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOCAL_AGENT_ORIGIN", function() { return LOCAL_AGENT_ORIGIN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isLocalhost", function() { return isLocalhost; });
 /**
  * Resolves which backend should handle serial/compile/upload requests.
  *
@@ -51421,6 +52309,188 @@ const vmManagerHOC = function vmManagerHOC(WrappedComponent) {
   return Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps, mapDispatchToProps, mergeProps)(VMManager);
 };
 /* harmony default export */ __webpack_exports__["default"] = (vmManagerHOC);
+
+/***/ }),
+
+/***/ "./src/lib/web-serial-connection.js":
+/*!******************************************!*\
+  !*** ./src/lib/web-serial-connection.js ***!
+  \******************************************/
+/*! exports provided: openWebSerialConnection, activateGlobalWebSerialConnection */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openWebSerialConnection", function() { return openWebSerialConnection; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "activateGlobalWebSerialConnection", function() { return activateGlobalWebSerialConnection; });
+/**
+ * Thin Web Serial wrapper for talking directly to a board already running
+ * the interpreter firmware (agent/firmware/stage_firmware/stage_firmware.ino) -
+ * no local hardware agent needed once that firmware is flashed. Speaks the
+ * same newline-delimited JSON protocol the agent's SerialManager already
+ * uses (`{"cmd":"digital_write","pin":13,"value":1}` -> `{"ack":...}`), so
+ * board extension files (static/arduino_*.js, static/esp32.js) can send the
+ * exact same command objects through here instead of over HTTP to the agent.
+ */
+
+async function openWebSerialConnection(port) {
+  let _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+    _ref$baudRate = _ref.baudRate,
+    baudRate = _ref$baudRate === void 0 ? 115200 : _ref$baudRate;
+  await port.open({
+    baudRate
+  });
+
+  // From here on the OS-level port is claimed by this tab - if anything
+  // below throws, we MUST close it before rethrowing. Otherwise the
+  // caller's fallback to the agent (or a retry) finds the port stuck
+  // "Access denied", since Chrome is still holding it with nothing to
+  // show for it.
+  let textEncoder, writableClosed, writer, textDecoder, readableClosed, reader;
+  try {
+    textEncoder = new TextEncoderStream();
+    writableClosed = textEncoder.readable.pipeTo(port.writable).catch(() => {});
+    writer = textEncoder.writable.getWriter();
+    textDecoder = new TextDecoderStream();
+    readableClosed = port.readable.pipeTo(textDecoder.writable).catch(() => {});
+    reader = textDecoder.readable.getReader();
+  } catch (e) {
+    try {
+      await port.close();
+    } catch (e2) {/* ignore */}
+    throw e;
+  }
+  let lineBuffer = '';
+  let pending = null; // {resolve, timer} - the one in-flight ack/response we're waiting on
+  let closed = false;
+  // Serializes writeCmd/writeCmdWait calls so only one command is ever
+  // awaiting its reply at a time - the firmware reads and replies to one
+  // line per loop() iteration, so out-of-order writes would desync replies.
+  let queue = Promise.resolve();
+  (async function readLoop() {
+    try {
+      while (!closed) {
+        const _await$reader$read = await reader.read(),
+          value = _await$reader$read.value,
+          done = _await$reader$read.done;
+        if (done) break;
+        lineBuffer += value;
+        let idx;
+        while ((idx = lineBuffer.indexOf('\n')) >= 0) {
+          const line = lineBuffer.slice(0, idx).trim();
+          lineBuffer = lineBuffer.slice(idx + 1);
+          if (!line) continue;
+          let parsed;
+          try {
+            parsed = JSON.parse(line);
+          } catch (e) {
+            continue;
+          }
+          if (pending) {
+            const p = pending;
+            pending = null;
+            clearTimeout(p.timer);
+            p.resolve(parsed);
+          }
+        }
+      }
+    } catch (e) {/* port closed/disconnected - close() handles cleanup */}
+  })();
+  function writeLine(str) {
+    return writer.write(str + '\n');
+  }
+  function waitForReply(timeout) {
+    return new Promise(resolve => {
+      const timer = setTimeout(() => {
+        pending = null;
+        resolve(null);
+      }, timeout);
+      pending = {
+        resolve,
+        timer
+      };
+    });
+  }
+
+  // Every command - even ones the caller treats as "fire and forget" -
+  // still needs to wait for its ack/response line before the next command
+  // is written, otherwise a later writeCmdWait() could consume a stale reply.
+  function writeCmdWait(cmdObj) {
+    let timeout = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 5000;
+    const task = () => writeLine(JSON.stringify(cmdObj)).then(() => waitForReply(timeout));
+    const result = queue.then(task, task);
+    queue = result.catch(() => {});
+    return result.then(parsed => parsed && parsed.value !== undefined ? parsed.value : 0);
+  }
+  function writeCmd(cmdObj) {
+    let timeout = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 5000;
+    return writeCmdWait(cmdObj, timeout);
+  }
+
+  // Raw fire-and-forget write, bypassing the ack queue entirely - for
+  // protocols (e.g. python-tab's {cmd:'exec',...}) that don't reply in the
+  // ack/response shape stage_firmware.ino uses.
+  async function writeRaw(str) {
+    await writeLine(str);
+  }
+  async function close() {
+    closed = true;
+    if (pending) {
+      clearTimeout(pending.timer);
+      pending.resolve(null);
+      pending = null;
+    }
+    try {
+      await reader.cancel();
+    } catch (e) {/* ignore */}
+    try {
+      await readableClosed;
+    } catch (e) {/* ignore */}
+    try {
+      await writer.close();
+    } catch (e) {/* ignore */}
+    try {
+      await writableClosed;
+    } catch (e) {/* ignore */}
+    try {
+      await port.close();
+    } catch (e) {/* ignore */}
+  }
+  return {
+    port,
+    writeCmd,
+    writeCmdWait,
+    writeRaw,
+    close
+  };
+}
+
+/**
+ * Sets the global bridge objects (window.STEMWebSerial, window.__hardwareConnection)
+ * from an already-open connection - shared by menu-bar.jsx (first connect)
+ * and gui.jsx (reconnecting after flashing new firmware over Web Serial),
+ * so both stay consistent instead of duplicating this wiring.
+ */
+function activateGlobalWebSerialConnection(conn) {
+  window.STEMWebSerial = {
+    available: true,
+    writeCmd: conn.writeCmd,
+    writeCmdWait: conn.writeCmdWait
+  };
+  window.__hardwareConnection = {
+    port: 'USB',
+    id: null,
+    webSerial: true,
+    webSerialPort: conn.port,
+    sendCommand: function sendCommand(str) {
+      return conn.writeRaw(str);
+    },
+    disconnect: function disconnect() {
+      window.STEMWebSerial = null;
+      return conn.close().catch(function () {});
+    }
+  };
+}
 
 /***/ }),
 

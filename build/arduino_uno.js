@@ -81,10 +81,18 @@
   }
 
   function doSend(deviceId, cmd) {
+    // Prefer talking straight to the board over Web Serial - no local agent
+    // needed once it's already flashed with the interpreter firmware.
+    if (window.STEMWebSerial && window.STEMWebSerial.available) {
+      return window.STEMWebSerial.writeCmd(cmd);
+    }
     return jsonFetch('/serial/send/' + deviceId, cmd);
   }
 
   function doSendWait(deviceId, cmd, timeout) {
+    if (window.STEMWebSerial && window.STEMWebSerial.available) {
+      return window.STEMWebSerial.writeCmdWait(cmd, timeout || 5000);
+    }
     cmd._wait = true;
     cmd._timeout = timeout || 5000;
     return jsonFetch('/serial/send/' + deviceId, cmd).then(function(d) {
@@ -155,11 +163,13 @@
     }
 
     onStart() {
+      // Report connection state only - must NOT trigger a connect flow here.
+      // This hat has shouldRestartExistingThreads:true, so Scratch/TurboWarp
+      // re-fires it on ANY workspace edit (dragging any block anywhere in
+      // the project), not just pressing the green flag. Calling
+      // scanAndConnect() from here popped a serial-port picker on every drag.
       var existingId = getDeviceId(this._deviceId);
-      if (!existingId) {
-        this.scanAndConnect();
-        return false;
-      }
+      if (!existingId) return false;
       this._deviceId = existingId;
       this._connected = true;
       return true;
