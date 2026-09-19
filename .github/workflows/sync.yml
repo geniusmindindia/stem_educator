@@ -1,0 +1,21 @@
+name: Sync Upstream
+
+on:
+  workflow_dispatch: # इससे आपको वेबसाइट पर 'Run' का बटन मिल जाएगा
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Sync with Chetan Nanda Repo
+        run: |
+          git remote add upstream https://github.com/nandachetan2023-cloud/stem_educator.git
+          git fetch upstream
+          git checkout main
+          git merge upstream/main --allow-unrelated-histories -m "Sync from upstream"
+          git push origin main
